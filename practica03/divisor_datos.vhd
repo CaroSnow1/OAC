@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity divisor_datos is
+Port( entrada: in std_logic_vector(5 downto 0);
+		liga: out std_logic_vector(2 downto 0); --liga
+		salidas: out std_logic_vector(2 downto 0) --salidas
+);
+end divisor_datos;
+
+architecture behavioral of divisor_datos is
+begin
+	process(entrada)
+		begin
+			liga <= entrada(5 downto 3); -- De 5  a 3 es liga
+			salidas <= entrada(2 downto 0);--De 2 a 0 es salidas
+	end process;
+end behavioral;

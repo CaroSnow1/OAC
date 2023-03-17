@@ -1,0 +1,15 @@
+|registro
+clk => internal_value[0].CLK
+clk => internal_value[1].CLK
+clk => internal_value[2].CLK
+reset => internal_value[0].ACLR
+reset => internal_value[1].ACLR
+reset => internal_value[2].ACLR
+data_in[0] => internal_value[0].DATAIN
+data_in[1] => internal_value[1].DATAIN
+data_in[2] => internal_value[2].DATAIN
+data_out[0] << internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] << internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] << internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
