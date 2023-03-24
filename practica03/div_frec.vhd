@@ -21,6 +21,6 @@ begin
 			cuenta := cuenta +1;
 		end if;
 	end if;
-	div_clk <= cuenta(27);
+	div_clk <= cuenta(26);
 	end process;
 end behavioral;
