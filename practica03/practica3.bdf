@@ -21,41 +21,9 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -152 56 16 72)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 104 136 272 152)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 30 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 272 72 448 88)
+	(rect -144 56 32 72)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "entrada A (2..0)" (rect 5 0 82 12)(font "Arial" ))
+	(text "clk" (rect 9 0 23 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -66,12 +34,62 @@ refer to the applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -208 72 -144 96))
+)
+(pin
+	(input)
+	(rect 64 136 240 152)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 9 0 33 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 8 152 64 176))
+)
+(pin
+	(input)
+	(rect 264 72 432 88)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "A[2..0]" (rect 5 0 38 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 1176 56 1352 72)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "liga[2..0]" (rect 90 0 132 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (pin
 	(output)
 	(rect 504 176 680 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "edoPres(2..0)" (rect 90 0 152 17)(font "Intel Clear" ))
+	(text "edoPres[2..0]" (rect 90 0 156 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -87,23 +105,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 1144 120 1320 136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "salidas(2..0)" (rect 90 0 150 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 1176 56 1352 72)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "liga(2..0)" (rect 90 0 132 12)(font "Arial" ))
+	(text "salidas[2..0]" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -118,7 +120,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 256 96 464 208)
 	(text "registro" (rect 5 0 41 12)(font "Arial" ))
-	(text "inst2" (rect 8 96 30 113)(font "Intel Clear" ))
+	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -154,7 +156,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 512 80 680 160)
 	(text "concatenador_datos" (rect 5 0 104 12)(font "Arial" ))
-	(text "inst3" (rect 8 64 30 81)(font "Intel Clear" ))
+	(text "inst3" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -183,7 +185,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 704 80 872 160)
 	(text "memory" (rect 5 0 46 12)(font "Arial" ))
-	(text "inst4" (rect 8 64 30 81)(font "Intel Clear" ))
+	(text "inst4" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -205,7 +207,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 896 80 1096 160)
 	(text "divisor_datos" (rect 5 0 71 12)(font "Arial" ))
-	(text "inst5" (rect 8 64 30 81)(font "Intel Clear" ))
+	(text "inst5" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -266,21 +268,6 @@ refer to the applicable agreement for further details.
 	(pt 256 128)
 )
 (connector
-	(pt 448 80)
-	(pt 488 80)
-	(bus)
-)
-(connector
-	(pt 488 80)
-	(pt 488 112)
-	(bus)
-)
-(connector
-	(pt 512 112)
-	(pt 488 112)
-	(bus)
-)
-(connector
 	(pt 488 128)
 	(pt 488 184)
 	(bus)
@@ -301,10 +288,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 256 144)
-	(pt 272 144)
-)
-(connector
 	(pt 680 112)
 	(pt 704 112)
 	(bus)
@@ -313,10 +296,6 @@ refer to the applicable agreement for further details.
 	(pt 872 112)
 	(pt 896 112)
 	(bus)
-)
-(connector
-	(pt 1096 128)
-	(pt 1144 128)
 )
 (connector
 	(pt 1144 112)
@@ -354,8 +333,32 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 16 64)
 	(pt 80 64)
+	(pt 32 64)
+)
+(connector
+	(pt 512 112)
+	(pt 480 112)
+	(bus)
+)
+(connector
+	(pt 480 112)
+	(pt 480 80)
+	(bus)
+)
+(connector
+	(pt 480 80)
+	(pt 432 80)
+	(bus)
+)
+(connector
+	(pt 1096 128)
+	(pt 1144 128)
+	(bus)
+)
+(connector
+	(pt 240 144)
+	(pt 256 144)
 )
 (junction (pt 488 128))
 (junction (pt 1144 64))
