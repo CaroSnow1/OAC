@@ -6,7 +6,7 @@ entity registro is
 Port( clk : in std_logic;
 		reset :  in std_logic;
 		data_in: in std_logic_vector(2 downto 0); --LIGA
-		data_out: out std_logic_vector(2 downto 0) --Edo
+		data_out: out std_logic_vector(2 downto 0) --Edo presente 
 );
 end registro;
 

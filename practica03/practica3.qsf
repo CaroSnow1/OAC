@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY registro
+set_global_assignment -name TOP_LEVEL_ENTITY practica3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:03:05  MARCH 17, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
@@ -54,10 +54,24 @@ set_global_assignment -name VHDL_FILE div_frec.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE registro.vhd
+set_global_assignment -name VHDL_FILE concatenador_datos.vhd
+set_global_assignment -name VHDL_FILE divisor_datos.vhd
+set_global_assignment -name BDF_FILE practica3.bdf
+set_location_assignment PIN_P11 -to clk
+set_location_assignment PIN_F15 -to reset
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE concatenador_datos.vhd
-set_global_assignment -name VHDL_FILE divisor_datos.vhd
+set_location_assignment PIN_D12 -to A[0]
+set_location_assignment PIN_C11 -to A[1]
+set_location_assignment PIN_C10 -to A[2]
+set_location_assignment PIN_A8 -to salidas[0]
+set_location_assignment PIN_A9 -to salidas[1]
+set_location_assignment PIN_A10 -to salidas[2]
+set_location_assignment PIN_B10 -to liga[0]
+set_location_assignment PIN_D13 -to liga[1]
+set_location_assignment PIN_E14 -to edoPres[0]
+set_location_assignment PIN_C13 -to liga[2]
+set_location_assignment PIN_D14 -to edoPres[1]
+set_location_assignment PIN_A11 -to edoPres[2]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE practica3.bdf

@@ -4,23 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "data_out[0]",
+					"name" : "edoPres[2]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[1]",
+					"name" : "edoPres[1]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[2]",
+					"name" : "edoPres[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data_in[0]",
+					"name" : "liga[2]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "liga[1]",
+					"strict" : false
+				},
+				{
+					"name" : "liga[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salidas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{
@@ -28,11 +56,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[2]",
+					"name" : "clk",
 					"strict" : false
 				}
 			]

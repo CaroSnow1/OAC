@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Mar 17 10:45:34 2023
+Analysis & Synthesis Status : Successful - Fri Mar 24 08:55:34 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : practica3
-Top-level Entity Name : registro
+Top-level Entity Name : practica3
 Family : MAX 10
-Total logic elements : 3
-    Total combinational functions : 0
-    Dedicated logic registers : 3
-Total registers : 3
-Total pins : 8
+Total logic elements : 38
+    Total combinational functions : 38
+    Dedicated logic registers : 31
+Total registers : 31
+Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
