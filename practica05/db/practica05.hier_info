@@ -2,7 +2,7 @@
 SALIDA[0] <= registro:inst6.data_out[0]
 SALIDA[1] <= registro:inst6.data_out[1]
 SALIDA[2] <= registro:inst6.data_out[2]
-RELOJ => registro:inst6.clk
+RELOJ => div_frec:inst1.reloj
 RESET => registro:inst6.reset
 carga => mux1x2x1_3:inst5.selection
 liga[0] => mux1x2x1_3:inst5.e1[0]
@@ -23,6 +23,38 @@ data_in[2] => internal_value[2].DATAIN
 data_out[0] <= internal_value[0].DB_MAX_OUTPUT_PORT_TYPE
 data_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 data_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador|div_frec:inst1
+reloj => cuenta[0].CLK
+reloj => cuenta[1].CLK
+reloj => cuenta[2].CLK
+reloj => cuenta[3].CLK
+reloj => cuenta[4].CLK
+reloj => cuenta[5].CLK
+reloj => cuenta[6].CLK
+reloj => cuenta[7].CLK
+reloj => cuenta[8].CLK
+reloj => cuenta[9].CLK
+reloj => cuenta[10].CLK
+reloj => cuenta[11].CLK
+reloj => cuenta[12].CLK
+reloj => cuenta[13].CLK
+reloj => cuenta[14].CLK
+reloj => cuenta[15].CLK
+reloj => cuenta[16].CLK
+reloj => cuenta[17].CLK
+reloj => cuenta[18].CLK
+reloj => cuenta[19].CLK
+reloj => cuenta[20].CLK
+reloj => cuenta[21].CLK
+reloj => cuenta[22].CLK
+reloj => cuenta[23].CLK
+reloj => cuenta[24].CLK
+reloj => cuenta[25].CLK
+reloj => cuenta[26].CLK
+reloj => cuenta[27].CLK
+div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |contador|mux1x2x1_3:inst5

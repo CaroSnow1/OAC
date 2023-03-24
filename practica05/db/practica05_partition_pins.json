@@ -24,10 +24,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "RELOJ",
-					"strict" : false
-				},
-				{
 					"name" : "RESET",
 					"strict" : false
 				},
@@ -37,6 +33,10 @@
 				},
 				{
 					"name" : "liga[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RELOJ",
 					"strict" : false
 				}
 			]

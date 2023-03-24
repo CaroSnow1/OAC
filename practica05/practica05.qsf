@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY contador
+set_global_assignment -name TOP_LEVEL_ENTITY practica05
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:08:44  MARCH 31, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"

@@ -1,4 +1,4 @@
-----	Practica 5 - mux1x2x1_3
+----	Practica 5 - mux1x2x1_3 - Mux de salidas
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;

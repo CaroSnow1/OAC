@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 32 256 200 272)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "carga" (rect 5 0 33 12)(font "Arial" ))
+	(text "carga" (rect 5 0 32 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 32 288 200 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "liga[2..0]" (rect 5 0 47 17)(font "Intel Clear" ))
+	(text "liga[2..0]" (rect 5 0 46 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,9 +53,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 280 128 448 144)
+	(rect 136 192 304 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RELOJ" (rect 5 0 39 17)(font "Intel Clear" ))
+	(text "RESET" (rect 5 0 35 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -69,9 +69,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 280 152 448 168)
+	(rect 136 128 304 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RESET" (rect 5 0 36 17)(font "Intel Clear" ))
+	(text "RELOJ" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -194,6 +194,28 @@ refer to the applicable agreement for further details.
 	)
 	(flipy)
 )
+(symbol
+	(rect 304 104 448 184)
+	(text "div_frec" (rect 5 0 46 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
+		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "div_clk" (rect 0 0 35 12)(font "Arial" ))
+		(text "div_clk" (rect 94 27 129 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
+)
 (connector
 	(pt 472 232)
 	(pt 496 232)
@@ -225,14 +247,6 @@ refer to the applicable agreement for further details.
 	(pt 456 248)
 )
 (connector
-	(pt 448 160)
-	(pt 456 160)
-)
-(connector
-	(pt 456 248)
-	(pt 456 160)
-)
-(connector
 	(pt 16 56)
 	(pt 16 280)
 	(bus)
@@ -261,5 +275,13 @@ refer to the applicable agreement for further details.
 	(pt 16 56)
 	(pt 432 56)
 	(bus)
+)
+(connector
+	(pt 456 248)
+	(pt 456 200)
+)
+(connector
+	(pt 304 200)
+	(pt 456 200)
 )
 (junction (pt 768 232))
