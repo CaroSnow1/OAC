@@ -40,15 +40,25 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
+=======
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+>>>>>>> main
 					"name" : "A[0]",
 					"strict" : false
 				},
 				{
 					"name" : "A[1]",
+<<<<<<< HEAD
 					"strict" : false
 				},
 				{
 					"name" : "A[2]",
+=======
+>>>>>>> main
 					"strict" : false
 				},
 				{
