@@ -1,5 +1,9 @@
 Analysis & Synthesis report for practica3
+<<<<<<< HEAD
 Fri Mar 24 00:34:42 2023
+=======
+Fri Mar 24 08:55:34 2023
+>>>>>>> 8b052fd (Version practica 04)
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,15 +47,26 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Fri Mar 24 00:34:42 2023       ;
+=======
+; Analysis & Synthesis Status        ; Successful - Fri Mar 24 08:55:34 2023       ;
+>>>>>>> 8b052fd (Version practica 04)
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; practica3                                   ;
 ; Top-level Entity Name              ; practica3                                   ;
 ; Family                             ; MAX 10                                      ;
+<<<<<<< HEAD
 ; Total logic elements               ; 37                                          ;
 ;     Total combinational functions  ; 37                                          ;
 ;     Dedicated logic registers      ; 30                                          ;
 ; Total registers                    ; 30                                          ;
+=======
+; Total logic elements               ; 38                                          ;
+;     Total combinational functions  ; 38                                          ;
+;     Dedicated logic registers      ; 31                                          ;
+; Total registers                    ; 31                                          ;
+>>>>>>> 8b052fd (Version practica 04)
 ; Total pins                         ; 14                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -165,6 +180,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
@@ -177,6 +193,20 @@ refer to the applicable agreement for further details.
 ; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/divisor_datos.vhd      ;         ;
 ; practica3.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/practica3.bdf          ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+=======
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+; memory.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd             ;         ;
+; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/div_frec.vhd           ;         ;
+; registro.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/registro.vhd           ;         ;
+; concatenador_datos.vhd           ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/concatenador_datos.vhd ;         ;
+; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/divisor_datos.vhd      ;         ;
+; practica3.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/practica3.bdf          ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
+>>>>>>> 8b052fd (Version practica 04)
 
 
 +---------------------------------------------------------+
@@ -184,6 +214,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
+<<<<<<< HEAD
 ; Estimated Total logic elements              ; 37        ;
 ;                                             ;           ;
 ; Total combinational functions               ; 37        ;
@@ -198,6 +229,22 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Total registers                             ; 30        ;
 ;     -- Dedicated logic registers            ; 30        ;
+=======
+; Estimated Total logic elements              ; 38        ;
+;                                             ;           ;
+; Total combinational functions               ; 38        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 6         ;
+;     -- 3 input functions                    ; 1         ;
+;     -- <=2 input functions                  ; 31        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 11        ;
+;     -- arithmetic mode                      ; 27        ;
+;                                             ;           ;
+; Total registers                             ; 31        ;
+;     -- Dedicated logic registers            ; 31        ;
+>>>>>>> 8b052fd (Version practica 04)
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 14        ;
@@ -205,8 +252,13 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
+<<<<<<< HEAD
 ; Maximum fan-out                             ; 27        ;
 ; Total fan-out                               ; 171       ;
+=======
+; Maximum fan-out                             ; 28        ;
+; Total fan-out                               ; 175       ;
+>>>>>>> 8b052fd (Version practica 04)
 ; Average fan-out                             ; 1.80      ;
 +---------------------------------------------+-----------+
 
@@ -216,8 +268,13 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name       ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
+<<<<<<< HEAD
 ; |practica3                 ; 37 (0)              ; 30 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |practica3                ; practica3   ; work         ;
 ;    |div_frec:inst|         ; 27 (27)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica3|div_frec:inst  ; div_frec    ; work         ;
+=======
+; |practica3                 ; 38 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |practica3                ; practica3   ; work         ;
+;    |div_frec:inst|         ; 28 (28)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica3|div_frec:inst  ; div_frec    ; work         ;
+>>>>>>> 8b052fd (Version practica 04)
 ;    |memory:inst4|          ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica3|memory:inst4   ; memory      ; work         ;
 ;    |registro:inst2|        ; 1 (1)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica3|registro:inst2 ; registro    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
@@ -239,7 +296,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
+<<<<<<< HEAD
 ; Total registers                              ; 30    ;
+=======
+; Total registers                              ; 31    ;
+>>>>>>> 8b052fd (Version practica 04)
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 3     ;
@@ -255,20 +316,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 14                          ;
+<<<<<<< HEAD
 ; cycloneiii_ff         ; 30                          ;
 ;     CLR               ; 3                           ;
 ;     plain             ; 27                          ;
 ; cycloneiii_lcell_comb ; 40                          ;
 ;     arith             ; 26                          ;
 ;         2 data inputs ; 26                          ;
+=======
+; cycloneiii_ff         ; 31                          ;
+;     CLR               ; 3                           ;
+;     plain             ; 28                          ;
+; cycloneiii_lcell_comb ; 41                          ;
+;     arith             ; 27                          ;
+;         2 data inputs ; 27                          ;
+>>>>>>> 8b052fd (Version practica 04)
 ;     normal            ; 14                          ;
 ;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 6                           ;
 ;                       ;                             ;
+<<<<<<< HEAD
 ; Max LUT depth         ; 3.60                        ;
 ; Average LUT depth     ; 2.58                        ;
+=======
+; Max LUT depth         ; 3.70                        ;
+; Average LUT depth     ; 2.66                        ;
+>>>>>>> 8b052fd (Version practica 04)
 +-----------------------+-----------------------------+
 
 
@@ -287,11 +362,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Mar 24 00:33:52 2023
+=======
+    Info: Processing started: Fri Mar 24 08:55:09 2023
+>>>>>>> 8b052fd (Version practica 04)
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off practica3 -c practica3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+<<<<<<< HEAD
     Info (12022): Found design unit 1: memory-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 13
     Info (12023): Found entity 1: memory File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file div_frec.vhd
@@ -306,6 +386,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file concate
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
     Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/divisor_datos.vhd Line: 13
     Info (12023): Found entity 1: divisor_datos File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/divisor_datos.vhd Line: 6
+=======
+    Info (12022): Found design unit 1: memory-behavioral File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 13
+    Info (12023): Found entity 1: memory File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file div_frec.vhd
+    Info (12022): Found design unit 1: div_frec-behavioral File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/div_frec.vhd Line: 12
+    Info (12023): Found entity 1: div_frec File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/div_frec.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file registro.vhd
+    Info (12022): Found design unit 1: registro-behavioral File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/registro.vhd Line: 13
+    Info (12023): Found entity 1: registro File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/registro.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file concatenador_datos.vhd
+    Info (12022): Found design unit 1: concatenador_datos-behavioral File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/concatenador_datos.vhd Line: 14
+    Info (12023): Found entity 1: concatenador_datos File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/concatenador_datos.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
+    Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/divisor_datos.vhd Line: 13
+    Info (12023): Found entity 1: divisor_datos File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/divisor_datos.vhd Line: 6
+>>>>>>> 8b052fd (Version practica 04)
 Info (12021): Found 1 design units, including 1 entities, in source file practica3.bdf
     Info (12023): Found entity 1: practica3
 Info (12127): Elaborating entity "practica3" for the top level hierarchy
@@ -313,6 +409,7 @@ Info (12128): Elaborating entity "registro" for hierarchy "registro:inst2"
 Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:inst"
 Info (12128): Elaborating entity "divisor_datos" for hierarchy "divisor_datos:inst5"
 Info (12128): Elaborating entity "memory" for hierarchy "memory:inst4"
+<<<<<<< HEAD
 Warning (10492): VHDL Process Statement warning at memory.vhd(90): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 90
 Warning (10873): Using initial value X (don't care) for net "internal_mem[6..7]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 15
 Warning (10873): Using initial value X (don't care) for net "internal_mem[14..15]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 15
@@ -321,11 +418,22 @@ Warning (10873): Using initial value X (don't care) for net "internal_mem[30..31
 Warning (10873): Using initial value X (don't care) for net "internal_mem[38..39]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 15
 Warning (10873): Using initial value X (don't care) for net "internal_mem[46..47]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 15
 Warning (10873): Using initial value X (don't care) for net "internal_mem[54..55]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd Line: 15
+=======
+Warning (10492): VHDL Process Statement warning at memory.vhd(90): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 90
+Warning (10873): Using initial value X (don't care) for net "internal_mem[6..7]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "internal_mem[14..15]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "internal_mem[22..23]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "internal_mem[30..31]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "internal_mem[38..39]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "internal_mem[46..47]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+Warning (10873): Using initial value X (don't care) for net "internal_mem[54..55]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd Line: 15
+>>>>>>> 8b052fd (Version practica 04)
 Info (12128): Elaborating entity "concatenador_datos" for hierarchy "concatenador_datos:inst3"
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+<<<<<<< HEAD
 Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 9 output pins
@@ -335,5 +443,16 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Processing ended: Fri Mar 24 00:34:42 2023
     Info: Elapsed time: 00:00:50
     Info: Total CPU time (on all processors): 00:01:17
+=======
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 40 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Fri Mar 24 08:55:34 2023
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:37
+>>>>>>> 8b052fd (Version practica 04)
 
 

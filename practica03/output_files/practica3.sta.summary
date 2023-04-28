@@ -3,6 +3,7 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
+<<<<<<< HEAD
 Slack : -2.331
 TNS   : -38.893
 
@@ -13,20 +14,41 @@ TNS   : -2.267
 Type  : Slow 1200mV 85C Model Hold 'div_frec:inst|cuenta[26]'
 Slack : 0.329
 TNS   : 0.000
+=======
+Slack : -2.270
+TNS   : -40.453
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:inst|cuenta[27]'
+Slack : -1.325
+TNS   : -3.154
+>>>>>>> 8b052fd (Version practica 04)
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
 Slack : 0.498
 TNS   : 0.000
 
+<<<<<<< HEAD
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -40.881
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:inst|cuenta[26]'
+=======
+Type  : Slow 1200mV 85C Model Hold 'div_frec:inst|cuenta[27]'
+Slack : 1.076
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -42.284
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
+>>>>>>> 8b052fd (Version practica 04)
 Slack : -1.403
 TNS   : -4.209
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
+<<<<<<< HEAD
 Slack : -1.987
 TNS   : -32.359
 
@@ -37,21 +59,43 @@ TNS   : -1.799
 Type  : Slow 1200mV 0C Model Hold 'div_frec:inst|cuenta[26]'
 Slack : 0.295
 TNS   : 0.000
+=======
+Slack : -1.934
+TNS   : -33.740
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:inst|cuenta[27]'
+Slack : -1.120
+TNS   : -2.608
+>>>>>>> 8b052fd (Version practica 04)
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.444
 TNS   : 0.000
+<<<<<<< HEAD
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -40.881
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[26]'
+=======
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:inst|cuenta[27]'
+Slack : 0.996
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -42.284
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
+>>>>>>> 8b052fd (Version practica 04)
 Slack : -1.403
 TNS   : -4.209
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
 Slack : -0.825
+<<<<<<< HEAD
 TNS   : -2.037
 
 Type  : Fast 1200mV 0C Model Setup 'div_frec:inst|cuenta[26]'
@@ -60,17 +104,36 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'div_frec:inst|cuenta[26]'
 Slack : 0.143
+=======
+TNS   : -2.116
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:inst|cuenta[27]'
+Slack : 0.040
+>>>>>>> 8b052fd (Version practica 04)
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.181
 TNS   : 0.000
+<<<<<<< HEAD
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -30.996
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[26]'
+=======
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:inst|cuenta[27]'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -32.056
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
+>>>>>>> 8b052fd (Version practica 04)
 Slack : -1.000
 TNS   : -3.000
 

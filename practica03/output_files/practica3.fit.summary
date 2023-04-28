@@ -1,14 +1,25 @@
+<<<<<<< HEAD
 Fitter Status : Successful - Fri Mar 24 00:35:17 2023
+=======
+Fitter Status : Successful - Fri Mar 24 08:55:48 2023
+>>>>>>> 8b052fd (Version practica 04)
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : practica3
 Top-level Entity Name : practica3
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
+<<<<<<< HEAD
 Total logic elements : 38 / 49,760 ( < 1 % )
     Total combinational functions : 38 / 49,760 ( < 1 % )
     Dedicated logic registers : 30 / 49,760 ( < 1 % )
 Total registers : 30
+=======
+Total logic elements : 39 / 49,760 ( < 1 % )
+    Total combinational functions : 39 / 49,760 ( < 1 % )
+    Dedicated logic registers : 31 / 49,760 ( < 1 % )
+Total registers : 31
+>>>>>>> 8b052fd (Version practica 04)
 Total pins : 14 / 360 ( 4 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

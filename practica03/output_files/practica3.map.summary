@@ -1,12 +1,23 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Fri Mar 24 00:34:42 2023
+=======
+Analysis & Synthesis Status : Successful - Fri Mar 24 08:55:34 2023
+>>>>>>> 8b052fd (Version practica 04)
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : practica3
 Top-level Entity Name : practica3
 Family : MAX 10
+<<<<<<< HEAD
 Total logic elements : 37
     Total combinational functions : 37
     Dedicated logic registers : 30
 Total registers : 30
+=======
+Total logic elements : 38
+    Total combinational functions : 38
+    Dedicated logic registers : 31
+Total registers : 31
+>>>>>>> 8b052fd (Version practica 04)
 Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0

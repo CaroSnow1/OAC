@@ -40,15 +40,25 @@
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
+=======
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+>>>>>>> 8b052fd (Version practica 04)
 					"name" : "A[0]",
 					"strict" : false
 				},
 				{
 					"name" : "A[1]",
+<<<<<<< HEAD
 					"strict" : false
 				},
 				{
 					"name" : "A[2]",
+=======
+>>>>>>> 8b052fd (Version practica 04)
 					"strict" : false
 				},
 				{
