@@ -41,17 +41,24 @@
 				},
 				{
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 					"name" : "A[2]",
 					"strict" : false
 				},
 				{
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 					"name" : "A[0]",
 					"strict" : false
 				},
 				{
 					"name" : "A[1]",
+<<<<<<< HEAD
 <<<<<<< HEAD
 					"strict" : false
 				},
@@ -59,6 +66,8 @@
 					"name" : "A[2]",
 =======
 >>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 					"strict" : false
 				},
 				{

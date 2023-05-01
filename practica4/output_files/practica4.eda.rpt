@@ -1,5 +1,9 @@
 EDA Netlist Writer report for practica4
+<<<<<<< HEAD
 Fri Mar 31 08:06:19 2023
+=======
+Fri Mar 24 10:52:28 2023
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +40,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
+<<<<<<< HEAD
 ; EDA Netlist Writer Status ; Successful - Fri Mar 31 08:06:18 2023 ;
+=======
+; EDA Netlist Writer Status ; Successful - Fri Mar 24 10:52:28 2023 ;
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 ; Revision Name             ; practica4                             ;
 ; Top-level Entity Name     ; practica4                             ;
 ; Family                    ; MAX 10                                ;
@@ -50,7 +58,12 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                ;
 +---------------------------------------------------------------------------------------------------+------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+<<<<<<< HEAD
 ; Generate functional simulation netlist                                                            ; On                     ;
+=======
+; Generate functional simulation netlist                                                            ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 ; Truncate long hierarchy paths                                                                     ; Off                    ;
 ; Map illegal HDL characters                                                                        ; Off                    ;
 ; Flatten buses into individual nodes                                                               ; Off                    ;
@@ -65,6 +78,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------+
 ; Simulation Generated Files                                          ;
 +---------------------------------------------------------------------+
@@ -72,6 +86,15 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; C:/intelFPGA_lite/18.0/oac/practica4/simulation/qsim//practica4.vho ;
 +---------------------------------------------------------------------+
+=======
++------------------------------------------------------------------------+
+; Simulation Generated Files                                             ;
++------------------------------------------------------------------------+
+; Generated Files                                                        ;
++------------------------------------------------------------------------+
+; C:/intelFPGA_lite/18.0/oac/practica4/simulation/modelsim/practica4.vho ;
++------------------------------------------------------------------------+
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 
 
 +-----------------------------+
@@ -80,6 +103,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+<<<<<<< HEAD
     Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
@@ -101,6 +125,17 @@ Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4632 megabytes
     Info: Processing ended: Fri Mar 31 08:06:19 2023
     Info: Elapsed time: 00:00:02
+=======
+    Info: Processing started: Fri Mar 24 10:52:27 2023
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off practica4 -c practica4
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
+Info (204019): Generated file practica4.vho in folder "C:/intelFPGA_lite/18.0/oac/practica4/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4641 megabytes
+    Info: Processing ended: Fri Mar 24 10:52:28 2023
+    Info: Elapsed time: 00:00:01
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
     Info: Total CPU time (on all processors): 00:00:01
 
 
