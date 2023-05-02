@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SALIDA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carga",
+					"strict" : false
+				},
+				{
+					"name" : "liga[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "liga[1]",
+					"strict" : false
+				},
+				{
+					"name" : "liga[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RELOJ",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

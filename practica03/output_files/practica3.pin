@@ -167,9 +167,20 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 7         :                
 <<<<<<< HEAD
+<<<<<<< HEAD
 A[0]                         : C10       : input  : 2.5 V             :         : 7         : Y              
 =======
 A[2]                         : C10       : input  : 2.5 V             :         : 7         : Y              
+>>>>>>> main
+=======
+<<<<<<< HEAD
+A[0]                         : C10       : input  : 2.5 V             :         : 7         : Y              
+=======
+A[2]                         : C10       : input  : 2.5 V             :         : 7         : Y              
+>>>>>>> 8b052fd (Version practica 04)
+=======
+A[2]                         : C10       : input  : 2.5 V             :         : 7         : Y              
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 A[1]                         : C11       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7         :                
@@ -195,9 +206,20 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 GND                          : D11       : gnd    :                   :         :           :                
 <<<<<<< HEAD
+<<<<<<< HEAD
 A[2]                         : D12       : input  : 2.5 V             :         : 7         : Y              
 =======
 A[0]                         : D12       : input  : 2.5 V             :         : 7         : Y              
+>>>>>>> main
+=======
+<<<<<<< HEAD
+A[2]                         : D12       : input  : 2.5 V             :         : 7         : Y              
+=======
+A[0]                         : D12       : input  : 2.5 V             :         : 7         : Y              
+>>>>>>> 8b052fd (Version practica 04)
+=======
+A[0]                         : D12       : input  : 2.5 V             :         : 7         : Y              
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 liga[1]                      : D13       : output : 2.5 V             :         : 7         : Y              
 edoPres[1]                   : D14       : output : 2.5 V             :         : 7         : Y              

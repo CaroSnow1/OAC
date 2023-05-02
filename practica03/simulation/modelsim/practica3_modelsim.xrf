@@ -1,5 +1,9 @@
 vendor_name = ModelSim
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/memory.vhd
 source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/div_frec.vhd
 source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/registro.vhd
@@ -7,21 +11,44 @@ source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/c
 source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/divisor_datos.vhd
 source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/practica3.bdf
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/memory.vhd
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/div_frec.vhd
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/registro.vhd
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/concatenador_datos.vhd
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/divisor_datos.vhd
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/practica3.bdf
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/timing_p.vhd
 <<<<<<< HEAD
+<<<<<<< HEAD
 source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/db/practica3.cbx.xml
 =======
 source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/db/practica3.cbx.xml
+>>>>>>> main
+=======
+<<<<<<< HEAD
+source_file = 1, C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/db/practica3.cbx.xml
+=======
+source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/db/practica3.cbx.xml
+>>>>>>> 8b052fd (Version practica 04)
+=======
+source_file = 1, C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/db/practica3.cbx.xml
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 design_name = hard_block
 design_name = practica3
@@ -38,6 +65,10 @@ instance = comp, \salidas[0]~output\, salidas[0]~output, practica3, 1
 instance = comp, \clk~input\, clk~input, practica3, 1
 instance = comp, \clk~inputclkctrl\, clk~inputclkctrl, practica3, 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 instance = comp, \inst|cuenta[0]~27\, inst|cuenta[0]~27, practica3, 1
 instance = comp, \inst|cuenta[0]\, inst|cuenta[0], practica3, 1
 instance = comp, \inst|cuenta[1]~29\, inst|cuenta[1]~29, practica3, 1
@@ -97,6 +128,11 @@ instance = comp, \A[2]~input\, A[2]~input, practica3, 1
 instance = comp, \A[1]~input\, A[1]~input, practica3, 1
 instance = comp, \A[0]~input\, A[0]~input, practica3, 1
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 instance = comp, \inst|cuenta[0]~28\, inst|cuenta[0]~28, practica3, 1
 instance = comp, \inst|cuenta[0]\, inst|cuenta[0], practica3, 1
 instance = comp, \inst|cuenta[1]~30\, inst|cuenta[1]~30, practica3, 1
@@ -157,6 +193,13 @@ instance = comp, \inst|cuenta[27]~clkctrl\, inst|cuenta[27]~clkctrl, practica3, 
 instance = comp, \A[2]~input\, A[2]~input, practica3, 1
 instance = comp, \A[0]~input\, A[0]~input, practica3, 1
 instance = comp, \A[1]~input\, A[1]~input, practica3, 1
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 instance = comp, \inst4|Mux2~0\, inst4|Mux2~0, practica3, 1
 instance = comp, \inst4|Mux2~1\, inst4|Mux2~1, practica3, 1
@@ -164,6 +207,10 @@ instance = comp, \inst2|internal_value[0]~0\, inst2|internal_value[0]~0, practic
 instance = comp, \reset~input\, reset~input, practica3, 1
 instance = comp, \inst2|internal_value[0]\, inst2|internal_value[0], practica3, 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 instance = comp, \inst4|Mux0~0\, inst4|Mux0~0, practica3, 1
 instance = comp, \inst4|Mux0~1\, inst4|Mux0~1, practica3, 1
 instance = comp, \inst2|internal_value[2]\, inst2|internal_value[2], practica3, 1
@@ -171,12 +218,24 @@ instance = comp, \inst4|Mux1~0\, inst4|Mux1~0, practica3, 1
 instance = comp, \inst4|Mux1~1\, inst4|Mux1~1, practica3, 1
 instance = comp, \inst2|internal_value[1]\, inst2|internal_value[1], practica3, 1
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 instance = comp, \inst4|Mux1~0\, inst4|Mux1~0, practica3, 1
 instance = comp, \inst4|Mux1~1\, inst4|Mux1~1, practica3, 1
 instance = comp, \inst2|internal_value[1]\, inst2|internal_value[1], practica3, 1
 instance = comp, \inst4|Mux0~0\, inst4|Mux0~0, practica3, 1
 instance = comp, \inst4|Mux0~1\, inst4|Mux0~1, practica3, 1
 instance = comp, \inst2|internal_value[2]\, inst2|internal_value[2], practica3, 1
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 instance = comp, \inst4|Mux3~0\, inst4|Mux3~0, practica3, 1
 instance = comp, \inst4|Mux4~0\, inst4|Mux4~0, practica3, 1

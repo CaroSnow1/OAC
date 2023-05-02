@@ -17,9 +17,20 @@
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- DATE "03/24/2023 00:35:47"
 =======
 -- DATE "03/24/2023 08:56:04"
+>>>>>>> main
+=======
+<<<<<<< HEAD
+-- DATE "03/24/2023 00:35:47"
+=======
+-- DATE "03/24/2023 08:56:04"
+>>>>>>> 8b052fd (Version practica 04)
+=======
+-- DATE "03/24/2023 08:56:04"
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- 
@@ -113,15 +124,31 @@ END practica3;
 -- salidas[1]	=>  Location: PIN_A9,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- salidas[0]	=>  Location: PIN_A8,	 I/O Standard: 2.5 V,	 Current Strength: Default
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- A[0]	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[1]	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[2]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- reset	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- A[2]	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[0]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[1]	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- reset	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 -- clk	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
@@ -145,9 +172,20 @@ SIGNAL ww_salidas : std_logic_vector(2 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
 SIGNAL \inst|cuenta[26]~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 =======
 SIGNAL \inst|cuenta[27]~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+>>>>>>> main
+=======
+<<<<<<< HEAD
+SIGNAL \inst|cuenta[26]~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+=======
+SIGNAL \inst|cuenta[27]~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+>>>>>>> 8b052fd (Version practica 04)
+=======
+SIGNAL \inst|cuenta[27]~clkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 SIGNAL \clk~inputclkctrl_INCLK_bus\ : std_logic_vector(3 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
@@ -166,6 +204,10 @@ SIGNAL \salidas[0]~output_o\ : std_logic;
 SIGNAL \clk~input_o\ : std_logic;
 SIGNAL \clk~inputclkctrl_outclk\ : std_logic;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 SIGNAL \inst|cuenta[0]~27_combout\ : std_logic;
 SIGNAL \inst|cuenta[0]~28\ : std_logic;
 SIGNAL \inst|cuenta[1]~29_combout\ : std_logic;
@@ -224,6 +266,11 @@ SIGNAL \A[2]~input_o\ : std_logic;
 SIGNAL \A[1]~input_o\ : std_logic;
 SIGNAL \A[0]~input_o\ : std_logic;
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 SIGNAL \inst|cuenta[0]~28_combout\ : std_logic;
 SIGNAL \inst|cuenta[0]~29\ : std_logic;
 SIGNAL \inst|cuenta[1]~30_combout\ : std_logic;
@@ -283,21 +330,44 @@ SIGNAL \inst|cuenta[27]~clkctrl_outclk\ : std_logic;
 SIGNAL \A[2]~input_o\ : std_logic;
 SIGNAL \A[0]~input_o\ : std_logic;
 SIGNAL \A[1]~input_o\ : std_logic;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 SIGNAL \inst4|Mux2~0_combout\ : std_logic;
 SIGNAL \inst4|Mux2~1_combout\ : std_logic;
 SIGNAL \inst2|internal_value[0]~0_combout\ : std_logic;
 SIGNAL \reset~input_o\ : std_logic;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 SIGNAL \inst4|Mux0~0_combout\ : std_logic;
 SIGNAL \inst4|Mux0~1_combout\ : std_logic;
 SIGNAL \inst4|Mux1~0_combout\ : std_logic;
 SIGNAL \inst4|Mux1~1_combout\ : std_logic;
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 SIGNAL \inst4|Mux1~0_combout\ : std_logic;
 SIGNAL \inst4|Mux1~1_combout\ : std_logic;
 SIGNAL \inst4|Mux0~0_combout\ : std_logic;
 SIGNAL \inst4|Mux0~1_combout\ : std_logic;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 SIGNAL \inst4|Mux3~0_combout\ : std_logic;
 SIGNAL \inst4|Mux4~0_combout\ : std_logic;
@@ -332,9 +402,20 @@ ww_devpor <= devpor;
 \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ <= (\~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 \inst|cuenta[26]~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst|cuenta\(26));
 =======
 \inst|cuenta[27]~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst|cuenta\(27));
+>>>>>>> main
+=======
+<<<<<<< HEAD
+\inst|cuenta[26]~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst|cuenta\(26));
+=======
+\inst|cuenta[27]~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst|cuenta\(27));
+>>>>>>> 8b052fd (Version practica 04)
+=======
+\inst|cuenta[27]~clkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \inst|cuenta\(27));
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 \clk~inputclkctrl_INCLK_bus\ <= (vcc & vcc & vcc & \clk~input_o\);
@@ -494,6 +575,10 @@ PORT MAP (
 	outclk => \clk~inputclkctrl_outclk\);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N6
 \inst|cuenta[0]~27\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -513,6 +598,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N7
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N4
 \inst|cuenta[0]~28\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -531,6 +621,13 @@ PORT MAP (
 	cout => \inst|cuenta[0]~29\);
 
 -- Location: FF_X45_Y53_N5
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[0]\ : dffeas
 -- pragma translate_off
@@ -541,15 +638,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[0]~27_combout\,
 =======
 	d => \inst|cuenta[0]~28_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[0]~27_combout\,
+=======
+	d => \inst|cuenta[0]~28_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[0]~28_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(0));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N8
 \inst|cuenta[1]~29\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -570,6 +682,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N9
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N6
 \inst|cuenta[1]~30\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -589,6 +706,13 @@ PORT MAP (
 	cout => \inst|cuenta[1]~31\);
 
 -- Location: FF_X45_Y53_N7
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[1]\ : dffeas
 -- pragma translate_off
@@ -599,15 +723,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[1]~29_combout\,
 =======
 	d => \inst|cuenta[1]~30_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[1]~29_combout\,
+=======
+	d => \inst|cuenta[1]~30_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[1]~30_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(1));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N10
 \inst|cuenta[2]~31\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -628,6 +767,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N11
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N8
 \inst|cuenta[2]~32\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -647,6 +791,13 @@ PORT MAP (
 	cout => \inst|cuenta[2]~33\);
 
 -- Location: FF_X45_Y53_N9
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[2]\ : dffeas
 -- pragma translate_off
@@ -657,26 +808,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[2]~31_combout\,
 =======
 	d => \inst|cuenta[2]~32_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[2]~31_combout\,
+=======
+	d => \inst|cuenta[2]~32_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[2]~32_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(2));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N12
 \inst|cuenta[3]~33\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[3]~33_combout\ = (\inst|cuenta\(3) & (!\inst|cuenta[2]~32\)) # (!\inst|cuenta\(3) & ((\inst|cuenta[2]~32\) # (GND)))
 -- \inst|cuenta[3]~34\ = CARRY((!\inst|cuenta[2]~32\) # (!\inst|cuenta\(3)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N10
 \inst|cuenta[3]~34\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[3]~34_combout\ = (\inst|cuenta\(3) & (!\inst|cuenta[2]~33\)) # (!\inst|cuenta\(3) & ((\inst|cuenta[2]~33\) # (GND)))
 -- \inst|cuenta[3]~35\ = CARRY((!\inst|cuenta[2]~33\) # (!\inst|cuenta\(3)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -688,17 +866,33 @@ PORT MAP (
 	dataa => \inst|cuenta\(3),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[2]~32\,
 	combout => \inst|cuenta[3]~33_combout\,
 	cout => \inst|cuenta[3]~34\);
 
 -- Location: FF_X45_Y53_N13
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[2]~33\,
 	combout => \inst|cuenta[3]~34_combout\,
 	cout => \inst|cuenta[3]~35\);
 
 -- Location: FF_X45_Y53_N11
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[3]\ : dffeas
 -- pragma translate_off
@@ -709,15 +903,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[3]~33_combout\,
 =======
 	d => \inst|cuenta[3]~34_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[3]~33_combout\,
+=======
+	d => \inst|cuenta[3]~34_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[3]~34_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(3));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N14
 \inst|cuenta[4]~35\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -738,6 +947,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N15
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N12
 \inst|cuenta[4]~36\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -757,6 +971,13 @@ PORT MAP (
 	cout => \inst|cuenta[4]~37\);
 
 -- Location: FF_X45_Y53_N13
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[4]\ : dffeas
 -- pragma translate_off
@@ -767,26 +988,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[4]~35_combout\,
 =======
 	d => \inst|cuenta[4]~36_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[4]~35_combout\,
+=======
+	d => \inst|cuenta[4]~36_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[4]~36_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(4));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N16
 \inst|cuenta[5]~37\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[5]~37_combout\ = (\inst|cuenta\(5) & (!\inst|cuenta[4]~36\)) # (!\inst|cuenta\(5) & ((\inst|cuenta[4]~36\) # (GND)))
 -- \inst|cuenta[5]~38\ = CARRY((!\inst|cuenta[4]~36\) # (!\inst|cuenta\(5)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N14
 \inst|cuenta[5]~38\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[5]~38_combout\ = (\inst|cuenta\(5) & (!\inst|cuenta[4]~37\)) # (!\inst|cuenta\(5) & ((\inst|cuenta[4]~37\) # (GND)))
 -- \inst|cuenta[5]~39\ = CARRY((!\inst|cuenta[4]~37\) # (!\inst|cuenta\(5)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -798,17 +1046,33 @@ PORT MAP (
 	datab => \inst|cuenta\(5),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[4]~36\,
 	combout => \inst|cuenta[5]~37_combout\,
 	cout => \inst|cuenta[5]~38\);
 
 -- Location: FF_X45_Y53_N17
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[4]~37\,
 	combout => \inst|cuenta[5]~38_combout\,
 	cout => \inst|cuenta[5]~39\);
 
 -- Location: FF_X45_Y53_N15
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[5]\ : dffeas
 -- pragma translate_off
@@ -819,26 +1083,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[5]~37_combout\,
 =======
 	d => \inst|cuenta[5]~38_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[5]~37_combout\,
+=======
+	d => \inst|cuenta[5]~38_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[5]~38_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(5));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N18
 \inst|cuenta[6]~39\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[6]~39_combout\ = (\inst|cuenta\(6) & (\inst|cuenta[5]~38\ $ (GND))) # (!\inst|cuenta\(6) & (!\inst|cuenta[5]~38\ & VCC))
 -- \inst|cuenta[6]~40\ = CARRY((\inst|cuenta\(6) & !\inst|cuenta[5]~38\))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N16
 \inst|cuenta[6]~40\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[6]~40_combout\ = (\inst|cuenta\(6) & (\inst|cuenta[5]~39\ $ (GND))) # (!\inst|cuenta\(6) & (!\inst|cuenta[5]~39\ & VCC))
 -- \inst|cuenta[6]~41\ = CARRY((\inst|cuenta\(6) & !\inst|cuenta[5]~39\))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -850,17 +1141,33 @@ PORT MAP (
 	datab => \inst|cuenta\(6),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[5]~38\,
 	combout => \inst|cuenta[6]~39_combout\,
 	cout => \inst|cuenta[6]~40\);
 
 -- Location: FF_X45_Y53_N19
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[5]~39\,
 	combout => \inst|cuenta[6]~40_combout\,
 	cout => \inst|cuenta[6]~41\);
 
 -- Location: FF_X45_Y53_N17
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[6]\ : dffeas
 -- pragma translate_off
@@ -871,26 +1178,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[6]~39_combout\,
 =======
 	d => \inst|cuenta[6]~40_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[6]~39_combout\,
+=======
+	d => \inst|cuenta[6]~40_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[6]~40_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(6));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N20
 \inst|cuenta[7]~41\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[7]~41_combout\ = (\inst|cuenta\(7) & (!\inst|cuenta[6]~40\)) # (!\inst|cuenta\(7) & ((\inst|cuenta[6]~40\) # (GND)))
 -- \inst|cuenta[7]~42\ = CARRY((!\inst|cuenta[6]~40\) # (!\inst|cuenta\(7)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N18
 \inst|cuenta[7]~42\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[7]~42_combout\ = (\inst|cuenta\(7) & (!\inst|cuenta[6]~41\)) # (!\inst|cuenta\(7) & ((\inst|cuenta[6]~41\) # (GND)))
 -- \inst|cuenta[7]~43\ = CARRY((!\inst|cuenta[6]~41\) # (!\inst|cuenta\(7)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -902,17 +1236,33 @@ PORT MAP (
 	datab => \inst|cuenta\(7),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[6]~40\,
 	combout => \inst|cuenta[7]~41_combout\,
 	cout => \inst|cuenta[7]~42\);
 
 -- Location: FF_X45_Y53_N21
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[6]~41\,
 	combout => \inst|cuenta[7]~42_combout\,
 	cout => \inst|cuenta[7]~43\);
 
 -- Location: FF_X45_Y53_N19
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[7]\ : dffeas
 -- pragma translate_off
@@ -923,15 +1273,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[7]~41_combout\,
 =======
 	d => \inst|cuenta[7]~42_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[7]~41_combout\,
+=======
+	d => \inst|cuenta[7]~42_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[7]~42_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(7));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N22
 \inst|cuenta[8]~43\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -952,6 +1317,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N23
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N20
 \inst|cuenta[8]~44\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -971,6 +1341,13 @@ PORT MAP (
 	cout => \inst|cuenta[8]~45\);
 
 -- Location: FF_X45_Y53_N21
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[8]\ : dffeas
 -- pragma translate_off
@@ -981,15 +1358,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[8]~43_combout\,
 =======
 	d => \inst|cuenta[8]~44_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[8]~43_combout\,
+=======
+	d => \inst|cuenta[8]~44_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[8]~44_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(8));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N24
 \inst|cuenta[9]~45\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1010,6 +1402,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N25
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N22
 \inst|cuenta[9]~46\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1029,6 +1426,13 @@ PORT MAP (
 	cout => \inst|cuenta[9]~47\);
 
 -- Location: FF_X45_Y53_N23
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[9]\ : dffeas
 -- pragma translate_off
@@ -1039,15 +1443,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[9]~45_combout\,
 =======
 	d => \inst|cuenta[9]~46_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[9]~45_combout\,
+=======
+	d => \inst|cuenta[9]~46_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[9]~46_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(9));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N26
 \inst|cuenta[10]~47\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1068,6 +1487,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N27
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N24
 \inst|cuenta[10]~48\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1087,6 +1511,13 @@ PORT MAP (
 	cout => \inst|cuenta[10]~49\);
 
 -- Location: FF_X45_Y53_N25
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[10]\ : dffeas
 -- pragma translate_off
@@ -1097,15 +1528,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[10]~47_combout\,
 =======
 	d => \inst|cuenta[10]~48_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[10]~47_combout\,
+=======
+	d => \inst|cuenta[10]~48_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[10]~48_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(10));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N28
 \inst|cuenta[11]~49\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1126,6 +1572,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N29
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N26
 \inst|cuenta[11]~50\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1145,6 +1596,13 @@ PORT MAP (
 	cout => \inst|cuenta[11]~51\);
 
 -- Location: FF_X45_Y53_N27
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[11]\ : dffeas
 -- pragma translate_off
@@ -1155,15 +1613,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[11]~49_combout\,
 =======
 	d => \inst|cuenta[11]~50_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[11]~49_combout\,
+=======
+	d => \inst|cuenta[11]~50_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[11]~50_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(11));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N30
 \inst|cuenta[12]~51\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1184,6 +1657,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y53_N31
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N28
 \inst|cuenta[12]~52\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1203,6 +1681,13 @@ PORT MAP (
 	cout => \inst|cuenta[12]~53\);
 
 -- Location: FF_X45_Y53_N29
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[12]\ : dffeas
 -- pragma translate_off
@@ -1213,15 +1698,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[12]~51_combout\,
 =======
 	d => \inst|cuenta[12]~52_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[12]~51_combout\,
+=======
+	d => \inst|cuenta[12]~52_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[12]~52_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(12));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N0
 \inst|cuenta[13]~53\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1242,6 +1742,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N1
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y53_N30
 \inst|cuenta[13]~54\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1261,6 +1766,13 @@ PORT MAP (
 	cout => \inst|cuenta[13]~55\);
 
 -- Location: FF_X45_Y53_N31
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[13]\ : dffeas
 -- pragma translate_off
@@ -1271,26 +1783,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[13]~53_combout\,
 =======
 	d => \inst|cuenta[13]~54_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[13]~53_combout\,
+=======
+	d => \inst|cuenta[13]~54_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[13]~54_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(13));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N2
 \inst|cuenta[14]~55\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[14]~55_combout\ = (\inst|cuenta\(14) & (\inst|cuenta[13]~54\ $ (GND))) # (!\inst|cuenta\(14) & (!\inst|cuenta[13]~54\ & VCC))
 -- \inst|cuenta[14]~56\ = CARRY((\inst|cuenta\(14) & !\inst|cuenta[13]~54\))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N0
 \inst|cuenta[14]~56\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[14]~56_combout\ = (\inst|cuenta\(14) & (\inst|cuenta[13]~55\ $ (GND))) # (!\inst|cuenta\(14) & (!\inst|cuenta[13]~55\ & VCC))
 -- \inst|cuenta[14]~57\ = CARRY((\inst|cuenta\(14) & !\inst|cuenta[13]~55\))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -1302,17 +1841,33 @@ PORT MAP (
 	datab => \inst|cuenta\(14),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[13]~54\,
 	combout => \inst|cuenta[14]~55_combout\,
 	cout => \inst|cuenta[14]~56\);
 
 -- Location: FF_X45_Y52_N3
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[13]~55\,
 	combout => \inst|cuenta[14]~56_combout\,
 	cout => \inst|cuenta[14]~57\);
 
 -- Location: FF_X45_Y52_N1
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[14]\ : dffeas
 -- pragma translate_off
@@ -1323,26 +1878,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[14]~55_combout\,
 =======
 	d => \inst|cuenta[14]~56_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[14]~55_combout\,
+=======
+	d => \inst|cuenta[14]~56_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[14]~56_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(14));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N4
 \inst|cuenta[15]~57\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[15]~57_combout\ = (\inst|cuenta\(15) & (!\inst|cuenta[14]~56\)) # (!\inst|cuenta\(15) & ((\inst|cuenta[14]~56\) # (GND)))
 -- \inst|cuenta[15]~58\ = CARRY((!\inst|cuenta[14]~56\) # (!\inst|cuenta\(15)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N2
 \inst|cuenta[15]~58\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[15]~58_combout\ = (\inst|cuenta\(15) & (!\inst|cuenta[14]~57\)) # (!\inst|cuenta\(15) & ((\inst|cuenta[14]~57\) # (GND)))
 -- \inst|cuenta[15]~59\ = CARRY((!\inst|cuenta[14]~57\) # (!\inst|cuenta\(15)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -1354,17 +1936,33 @@ PORT MAP (
 	datab => \inst|cuenta\(15),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[14]~56\,
 	combout => \inst|cuenta[15]~57_combout\,
 	cout => \inst|cuenta[15]~58\);
 
 -- Location: FF_X45_Y52_N5
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[14]~57\,
 	combout => \inst|cuenta[15]~58_combout\,
 	cout => \inst|cuenta[15]~59\);
 
 -- Location: FF_X45_Y52_N3
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[15]\ : dffeas
 -- pragma translate_off
@@ -1375,15 +1973,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[15]~57_combout\,
 =======
 	d => \inst|cuenta[15]~58_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[15]~57_combout\,
+=======
+	d => \inst|cuenta[15]~58_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[15]~58_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(15));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N6
 \inst|cuenta[16]~59\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1404,6 +2017,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N7
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N4
 \inst|cuenta[16]~60\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1423,6 +2041,13 @@ PORT MAP (
 	cout => \inst|cuenta[16]~61\);
 
 -- Location: FF_X45_Y52_N5
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[16]\ : dffeas
 -- pragma translate_off
@@ -1433,15 +2058,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[16]~59_combout\,
 =======
 	d => \inst|cuenta[16]~60_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[16]~59_combout\,
+=======
+	d => \inst|cuenta[16]~60_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[16]~60_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(16));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N8
 \inst|cuenta[17]~61\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1462,6 +2102,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N9
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N6
 \inst|cuenta[17]~62\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1481,6 +2126,13 @@ PORT MAP (
 	cout => \inst|cuenta[17]~63\);
 
 -- Location: FF_X45_Y52_N7
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[17]\ : dffeas
 -- pragma translate_off
@@ -1491,15 +2143,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[17]~61_combout\,
 =======
 	d => \inst|cuenta[17]~62_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[17]~61_combout\,
+=======
+	d => \inst|cuenta[17]~62_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[17]~62_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(17));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N10
 \inst|cuenta[18]~63\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1520,6 +2187,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N11
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N8
 \inst|cuenta[18]~64\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1539,6 +2211,13 @@ PORT MAP (
 	cout => \inst|cuenta[18]~65\);
 
 -- Location: FF_X45_Y52_N9
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[18]\ : dffeas
 -- pragma translate_off
@@ -1549,26 +2228,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[18]~63_combout\,
 =======
 	d => \inst|cuenta[18]~64_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[18]~63_combout\,
+=======
+	d => \inst|cuenta[18]~64_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[18]~64_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(18));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N12
 \inst|cuenta[19]~65\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[19]~65_combout\ = (\inst|cuenta\(19) & (!\inst|cuenta[18]~64\)) # (!\inst|cuenta\(19) & ((\inst|cuenta[18]~64\) # (GND)))
 -- \inst|cuenta[19]~66\ = CARRY((!\inst|cuenta[18]~64\) # (!\inst|cuenta\(19)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N10
 \inst|cuenta[19]~66\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[19]~66_combout\ = (\inst|cuenta\(19) & (!\inst|cuenta[18]~65\)) # (!\inst|cuenta\(19) & ((\inst|cuenta[18]~65\) # (GND)))
 -- \inst|cuenta[19]~67\ = CARRY((!\inst|cuenta[18]~65\) # (!\inst|cuenta\(19)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -1580,17 +2286,33 @@ PORT MAP (
 	dataa => \inst|cuenta\(19),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[18]~64\,
 	combout => \inst|cuenta[19]~65_combout\,
 	cout => \inst|cuenta[19]~66\);
 
 -- Location: FF_X45_Y52_N13
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[18]~65\,
 	combout => \inst|cuenta[19]~66_combout\,
 	cout => \inst|cuenta[19]~67\);
 
 -- Location: FF_X45_Y52_N11
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[19]\ : dffeas
 -- pragma translate_off
@@ -1601,15 +2323,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[19]~65_combout\,
 =======
 	d => \inst|cuenta[19]~66_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[19]~65_combout\,
+=======
+	d => \inst|cuenta[19]~66_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[19]~66_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(19));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N14
 \inst|cuenta[20]~67\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1630,6 +2367,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N15
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N12
 \inst|cuenta[20]~68\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1649,6 +2391,13 @@ PORT MAP (
 	cout => \inst|cuenta[20]~69\);
 
 -- Location: FF_X45_Y52_N13
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[20]\ : dffeas
 -- pragma translate_off
@@ -1659,26 +2408,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[20]~67_combout\,
 =======
 	d => \inst|cuenta[20]~68_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[20]~67_combout\,
+=======
+	d => \inst|cuenta[20]~68_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[20]~68_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(20));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N16
 \inst|cuenta[21]~69\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[21]~69_combout\ = (\inst|cuenta\(21) & (!\inst|cuenta[20]~68\)) # (!\inst|cuenta\(21) & ((\inst|cuenta[20]~68\) # (GND)))
 -- \inst|cuenta[21]~70\ = CARRY((!\inst|cuenta[20]~68\) # (!\inst|cuenta\(21)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N14
 \inst|cuenta[21]~70\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[21]~70_combout\ = (\inst|cuenta\(21) & (!\inst|cuenta[20]~69\)) # (!\inst|cuenta\(21) & ((\inst|cuenta[20]~69\) # (GND)))
 -- \inst|cuenta[21]~71\ = CARRY((!\inst|cuenta[20]~69\) # (!\inst|cuenta\(21)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -1690,17 +2466,33 @@ PORT MAP (
 	datab => \inst|cuenta\(21),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[20]~68\,
 	combout => \inst|cuenta[21]~69_combout\,
 	cout => \inst|cuenta[21]~70\);
 
 -- Location: FF_X45_Y52_N17
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[20]~69\,
 	combout => \inst|cuenta[21]~70_combout\,
 	cout => \inst|cuenta[21]~71\);
 
 -- Location: FF_X45_Y52_N15
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[21]\ : dffeas
 -- pragma translate_off
@@ -1711,26 +2503,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[21]~69_combout\,
 =======
 	d => \inst|cuenta[21]~70_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[21]~69_combout\,
+=======
+	d => \inst|cuenta[21]~70_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[21]~70_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(21));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N18
 \inst|cuenta[22]~71\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[22]~71_combout\ = (\inst|cuenta\(22) & (\inst|cuenta[21]~70\ $ (GND))) # (!\inst|cuenta\(22) & (!\inst|cuenta[21]~70\ & VCC))
 -- \inst|cuenta[22]~72\ = CARRY((\inst|cuenta\(22) & !\inst|cuenta[21]~70\))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N16
 \inst|cuenta[22]~72\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[22]~72_combout\ = (\inst|cuenta\(22) & (\inst|cuenta[21]~71\ $ (GND))) # (!\inst|cuenta\(22) & (!\inst|cuenta[21]~71\ & VCC))
 -- \inst|cuenta[22]~73\ = CARRY((\inst|cuenta\(22) & !\inst|cuenta[21]~71\))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -1742,17 +2561,33 @@ PORT MAP (
 	datab => \inst|cuenta\(22),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[21]~70\,
 	combout => \inst|cuenta[22]~71_combout\,
 	cout => \inst|cuenta[22]~72\);
 
 -- Location: FF_X45_Y52_N19
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[21]~71\,
 	combout => \inst|cuenta[22]~72_combout\,
 	cout => \inst|cuenta[22]~73\);
 
 -- Location: FF_X45_Y52_N17
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[22]\ : dffeas
 -- pragma translate_off
@@ -1763,26 +2598,53 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[22]~71_combout\,
 =======
 	d => \inst|cuenta[22]~72_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[22]~71_combout\,
+=======
+	d => \inst|cuenta[22]~72_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[22]~72_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(22));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N20
 \inst|cuenta[23]~73\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[23]~73_combout\ = (\inst|cuenta\(23) & (!\inst|cuenta[22]~72\)) # (!\inst|cuenta\(23) & ((\inst|cuenta[22]~72\) # (GND)))
 -- \inst|cuenta[23]~74\ = CARRY((!\inst|cuenta[22]~72\) # (!\inst|cuenta\(23)))
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N18
 \inst|cuenta[23]~74\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|cuenta[23]~74_combout\ = (\inst|cuenta\(23) & (!\inst|cuenta[22]~73\)) # (!\inst|cuenta\(23) & ((\inst|cuenta[22]~73\) # (GND)))
 -- \inst|cuenta[23]~75\ = CARRY((!\inst|cuenta[22]~73\) # (!\inst|cuenta\(23)))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 
 -- pragma translate_off
@@ -1794,17 +2656,33 @@ PORT MAP (
 	datab => \inst|cuenta\(23),
 	datad => VCC,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	cin => \inst|cuenta[22]~72\,
 	combout => \inst|cuenta[23]~73_combout\,
 	cout => \inst|cuenta[23]~74\);
 
 -- Location: FF_X45_Y52_N21
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	cin => \inst|cuenta[22]~73\,
 	combout => \inst|cuenta[23]~74_combout\,
 	cout => \inst|cuenta[23]~75\);
 
 -- Location: FF_X45_Y52_N19
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[23]\ : dffeas
 -- pragma translate_off
@@ -1815,15 +2693,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[23]~73_combout\,
 =======
 	d => \inst|cuenta[23]~74_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[23]~73_combout\,
+=======
+	d => \inst|cuenta[23]~74_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[23]~74_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(23));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N22
 \inst|cuenta[24]~75\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1844,6 +2737,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N23
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N20
 \inst|cuenta[24]~76\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1863,6 +2761,13 @@ PORT MAP (
 	cout => \inst|cuenta[24]~77\);
 
 -- Location: FF_X45_Y52_N21
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[24]\ : dffeas
 -- pragma translate_off
@@ -1873,15 +2778,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[24]~75_combout\,
 =======
 	d => \inst|cuenta[24]~76_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[24]~75_combout\,
+=======
+	d => \inst|cuenta[24]~76_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[24]~76_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(24));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N24
 \inst|cuenta[25]~77\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1902,6 +2822,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N25
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N22
 \inst|cuenta[25]~78\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1921,6 +2846,13 @@ PORT MAP (
 	cout => \inst|cuenta[25]~79\);
 
 -- Location: FF_X45_Y52_N23
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[25]\ : dffeas
 -- pragma translate_off
@@ -1931,15 +2863,30 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[25]~77_combout\,
 =======
 	d => \inst|cuenta[25]~78_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[25]~77_combout\,
+=======
+	d => \inst|cuenta[25]~78_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[25]~78_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(25));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N26
 \inst|cuenta[26]~79\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1957,6 +2904,11 @@ PORT MAP (
 
 -- Location: FF_X45_Y52_N27
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N24
 \inst|cuenta[26]~80\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -1976,6 +2928,13 @@ PORT MAP (
 	cout => \inst|cuenta[26]~81\);
 
 -- Location: FF_X45_Y52_N25
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst|cuenta[26]\ : dffeas
 -- pragma translate_off
@@ -1986,18 +2945,38 @@ GENERIC MAP (
 PORT MAP (
 	clk => \clk~inputclkctrl_outclk\,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	d => \inst|cuenta[26]~79_combout\,
 =======
 	d => \inst|cuenta[26]~80_combout\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	d => \inst|cuenta[26]~79_combout\,
+=======
+	d => \inst|cuenta[26]~80_combout\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	d => \inst|cuenta[26]~80_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|cuenta\(26));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Location: CLKCTRL_G14
 \inst|cuenta[26]~clkctrl\ : fiftyfivenm_clkctrl
 =======
+=======
+<<<<<<< HEAD
+-- Location: CLKCTRL_G14
+\inst|cuenta[26]~clkctrl\ : fiftyfivenm_clkctrl
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: LCCOMB_X45_Y52_N26
 \inst|cuenta[27]~82\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -2029,6 +3008,13 @@ PORT MAP (
 
 -- Location: CLKCTRL_G13
 \inst|cuenta[27]~clkctrl\ : fiftyfivenm_clkctrl
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 -- pragma translate_off
 GENERIC MAP (
@@ -2037,6 +3023,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	inclk => \inst|cuenta[26]~clkctrl_INCLK_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
@@ -2044,12 +3034,24 @@ PORT MAP (
 
 -- Location: IOIBUF_X51_Y54_N1
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	inclk => \inst|cuenta[27]~clkctrl_INCLK_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	outclk => \inst|cuenta[27]~clkctrl_outclk\);
 
 -- Location: IOIBUF_X51_Y54_N29
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \A[2]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
@@ -2063,7 +3065,14 @@ PORT MAP (
 	o => \A[2]~input_o\);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 -- Location: IOIBUF_X51_Y54_N1
 \A[0]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
@@ -2076,6 +3085,13 @@ PORT MAP (
 	i => ww_A(0),
 	o => \A[0]~input_o\);
 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 -- Location: IOIBUF_X51_Y54_N22
 \A[1]~input\ : fiftyfivenm_io_ibuf
@@ -2090,6 +3106,10 @@ PORT MAP (
 	o => \A[1]~input_o\);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: IOIBUF_X51_Y54_N29
 \A[0]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
@@ -2153,6 +3173,25 @@ PORT MAP (
 	datad => \inst2|internal_value\(0),
 	combout => \inst4|Mux2~0_combout\);
 
+=======
+-- Location: LCCOMB_X51_Y53_N2
+\inst4|Mux2~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst4|Mux2~0_combout\ = (\inst2|internal_value\(1) & (!\inst2|internal_value\(0) & ((!\A[0]~input_o\) # (!\A[2]~input_o\)))) # (!\inst2|internal_value\(1) & (((\inst2|internal_value\(0)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000111101110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \A[2]~input_o\,
+	datab => \A[0]~input_o\,
+	datac => \inst2|internal_value\(1),
+	datad => \inst2|internal_value\(0),
+	combout => \inst4|Mux2~0_combout\);
+
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 -- Location: LCCOMB_X51_Y53_N24
 \inst4|Mux2~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -2169,6 +3208,13 @@ PORT MAP (
 	combout => \inst4|Mux2~1_combout\);
 
 -- Location: LCCOMB_X51_Y53_N0
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst2|internal_value[0]~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -2184,9 +3230,20 @@ PORT MAP (
 	combout => \inst2|internal_value[0]~0_combout\);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Location: IOIBUF_X46_Y54_N29
 =======
 -- Location: IOIBUF_X69_Y54_N1
+>>>>>>> main
+=======
+<<<<<<< HEAD
+-- Location: IOIBUF_X46_Y54_N29
+=======
+-- Location: IOIBUF_X69_Y54_N1
+>>>>>>> 8b052fd (Version practica 04)
+=======
+-- Location: IOIBUF_X69_Y54_N1
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \reset~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
@@ -2200,9 +3257,20 @@ PORT MAP (
 	o => \reset~input_o\);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Location: FF_X51_Y53_N5
 =======
 -- Location: FF_X51_Y53_N1
+>>>>>>> main
+=======
+<<<<<<< HEAD
+-- Location: FF_X51_Y53_N5
+=======
+-- Location: FF_X51_Y53_N1
+>>>>>>> 8b052fd (Version practica 04)
+=======
+-- Location: FF_X51_Y53_N1
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 \inst2|internal_value[0]\ : dffeas
 -- pragma translate_off
@@ -2212,9 +3280,20 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 <<<<<<< HEAD
+<<<<<<< HEAD
 	clk => \inst|cuenta[26]~clkctrl_outclk\,
 =======
 	clk => \inst|cuenta[27]~clkctrl_outclk\,
+>>>>>>> main
+=======
+<<<<<<< HEAD
+	clk => \inst|cuenta[26]~clkctrl_outclk\,
+=======
+	clk => \inst|cuenta[27]~clkctrl_outclk\,
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	clk => \inst|cuenta[27]~clkctrl_outclk\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	d => \inst2|internal_value[0]~0_combout\,
 	clrn => \reset~input_o\,
@@ -2223,6 +3302,10 @@ PORT MAP (
 	q => \inst2|internal_value\(0));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 -- Location: LCCOMB_X51_Y53_N2
 \inst4|Mux0~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -2276,6 +3359,26 @@ PORT MAP (
 	combout => \inst4|Mux1~0_combout\);
 
 -- Location: LCCOMB_X51_Y53_N8
+=======
+-- Location: LCCOMB_X51_Y53_N18
+\inst4|Mux1~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst4|Mux1~0_combout\ = (\inst2|internal_value\(1) & ((\inst2|internal_value\(0) & (!\A[2]~input_o\)) # (!\inst2|internal_value\(0) & ((!\A[0]~input_o\))))) # (!\inst2|internal_value\(1) & (((\inst2|internal_value\(0)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101111100110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \A[2]~input_o\,
+	datab => \A[0]~input_o\,
+	datac => \inst2|internal_value\(1),
+	datad => \inst2|internal_value\(0),
+	combout => \inst4|Mux1~0_combout\);
+
+-- Location: LCCOMB_X51_Y53_N8
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 \inst4|Mux1~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst4|Mux1~1_combout\ = (!\inst2|internal_value\(2) & ((\A[1]~input_o\ & (!\inst4|Mux0~0_combout\)) # (!\A[1]~input_o\ & ((\inst4|Mux1~0_combout\)))))
@@ -2294,6 +3397,13 @@ PORT MAP (
 
 -- Location: FF_X51_Y53_N23
 \inst2|internal_value[1]\ : dffeas
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 -- pragma translate_off
 GENERIC MAP (
@@ -2302,17 +3412,33 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	clk => \inst|cuenta[26]~clkctrl_outclk\,
 	asdata => \inst4|Mux0~1_combout\,
 =======
 	clk => \inst|cuenta[27]~clkctrl_outclk\,
 	asdata => \inst4|Mux1~1_combout\,
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> 8b052fd (Version practica 04)
+=======
+	clk => \inst|cuenta[27]~clkctrl_outclk\,
+	asdata => \inst4|Mux1~1_combout\,
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	clrn => \reset~input_o\,
 	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	q => \inst2|internal_value\(2));
 
 -- Location: LCCOMB_X51_Y53_N26
@@ -2371,6 +3497,27 @@ PORT MAP (
 	datad => \inst2|internal_value\(0),
 	combout => \inst4|Mux0~0_combout\);
 
+=======
+	q => \inst2|internal_value\(1));
+
+-- Location: LCCOMB_X51_Y53_N6
+\inst4|Mux0~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst4|Mux0~0_combout\ = (\inst2|internal_value\(1) & ((\inst2|internal_value\(0) & (\A[2]~input_o\)) # (!\inst2|internal_value\(0) & ((\A[0]~input_o\)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010000011000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \A[2]~input_o\,
+	datab => \A[0]~input_o\,
+	datac => \inst2|internal_value\(1),
+	datad => \inst2|internal_value\(0),
+	combout => \inst4|Mux0~0_combout\);
+
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 -- Location: LCCOMB_X51_Y53_N4
 \inst4|Mux0~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
@@ -2388,6 +3535,13 @@ PORT MAP (
 
 -- Location: FF_X51_Y53_N29
 \inst2|internal_value[2]\ : dffeas
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 -- pragma translate_off
 GENERIC MAP (
@@ -2396,6 +3550,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	clk => \inst|cuenta[26]~clkctrl_outclk\,
 	d => \inst4|Mux1~1_combout\,
 	clrn => \reset~input_o\,
@@ -2429,6 +3587,11 @@ PORT MAP (
 GENERIC MAP (
 	lut_mask => "0011001101000100",
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	clk => \inst|cuenta[27]~clkctrl_outclk\,
 	asdata => \inst4|Mux0~1_combout\,
 	clrn => \reset~input_o\,
@@ -2445,12 +3608,23 @@ GENERIC MAP (
 -- pragma translate_off
 GENERIC MAP (
 	lut_mask => "1100110011111110",
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \A[1]~input_o\,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	datab => \A[2]~input_o\,
 	datad => \A[0]~input_o\,
 	combout => \inst4|Mux4~0_combout\);
@@ -2471,6 +3645,11 @@ PORT MAP (
 	datac => \A[1]~input_o\,
 	datad => \A[0]~input_o\,
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	datab => \inst2|internal_value\(1),
 	datac => \inst2|internal_value\(2),
 	datad => \inst2|internal_value\(0),
@@ -2507,6 +3686,13 @@ PORT MAP (
 	datab => \inst2|internal_value\(2),
 	datac => \A[1]~input_o\,
 	datad => \inst2|internal_value\(0),
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	combout => \inst4|Mux5~0_combout\);
 

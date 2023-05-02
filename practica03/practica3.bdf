@@ -36,6 +36,12 @@ refer to the applicable agreement for further details.
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect -208 72 -144 96))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 )
 (pin
 	(input)
@@ -69,6 +75,10 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+<<<<<<< HEAD
+=======
+	(annotation_block (location)(rect 200 88 264 112))
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 )
 (pin
 	(output)
@@ -85,6 +95,7 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 1352 72 1416 96))
 )
 (pin
 	(output)
@@ -92,6 +103,43 @@ refer to the applicable agreement for further details.
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "edoPres[2..0]" (rect 90 0 156 12)(font "Arial" ))
 	(pt 0 8)
+<<<<<<< HEAD
+=======
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 680 192 744 216))
+)
+(pin
+	(output)
+	(rect 1144 120 1320 136)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "salidas[2..0]" (rect 90 0 150 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1320 136 1376 160))
+)
+(pin
+	(output)
+	(rect 504 176 680 192)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "edoPres[2..0]" (rect 90 0 156 12)(font "Arial" ))
+	(pt 0 8)
+>>>>>>> main
 =======
 )
 (pin
@@ -100,6 +148,10 @@ refer to the applicable agreement for further details.
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "reset" (rect 9 0 33 12)(font "Arial" ))
 	(pt 176 8)
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> 8b052fd (Version practica 04)
 >>>>>>> main
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -140,6 +192,10 @@ refer to the applicable agreement for further details.
 	(rect 1176 56 1352 72)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "liga[2..0]" (rect 90 0 132 12)(font "Arial" ))
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> 8b052fd (Version practica 04)
 >>>>>>> main
 	(pt 0 8)
 	(drawing
@@ -339,6 +395,10 @@ refer to the applicable agreement for further details.
 )
 (connector
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	(pt 488 128)
 	(pt 488 184)
 	(bus)
@@ -360,6 +420,12 @@ refer to the applicable agreement for further details.
 )
 (connector
 =======
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	(pt 680 112)
 	(pt 704 112)
@@ -411,6 +477,10 @@ refer to the applicable agreement for further details.
 )
 (connector
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	(pt 512 112)
 	(pt 480 112)
 	(bus)
@@ -427,6 +497,12 @@ refer to the applicable agreement for further details.
 )
 (connector
 =======
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 	(pt 1096 128)
 	(pt 1144 128)
@@ -436,7 +512,14 @@ refer to the applicable agreement for further details.
 	(pt 240 144)
 	(pt 256 144)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 )
 (connector
 	(pt 432 80)
@@ -477,6 +560,13 @@ refer to the applicable agreement for further details.
 	(pt 472 128)
 	(pt 472 184)
 	(bus)
+<<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
+>>>>>>> 8b052fd (Version practica 04)
+=======
+>>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
 >>>>>>> main
 )
 (junction (pt 1144 64))
