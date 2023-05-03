@@ -5,8 +5,10 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity incrementador is
-	Port ( entrada : in STD_LOGIC_VECTOR(2 downto 0); --Edo presente
-			 salida: out STD_LOGIC_VECTOR(2 downto 0)); --Edo presente + 1
+	Port	( 
+		entrada	: in STD_LOGIC_VECTOR(2 downto 0); --Edo presente
+		salida	: out STD_LOGIC_VECTOR(2 downto 0) --Edo presente + 1
+			);
 end incrementador;
 
 architecture Behavioral of incrementador is

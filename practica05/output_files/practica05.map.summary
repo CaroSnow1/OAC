@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon May 01 16:13:16 2023
+Analysis & Synthesis Status : Successful - Wed May 03 02:21:02 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : practica05
-Top-level Entity Name : contador
+Top-level Entity Name : practica05
 Family : MAX 10
-Total logic elements : 32
-    Total combinational functions : 32
+Total logic elements : 38
+    Total combinational functions : 38
     Dedicated logic registers : 31
 Total registers : 31
-Total pins : 9
+Total pins : 13
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

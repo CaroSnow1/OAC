@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 136 128 304 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RELOJ" (rect 5 0 41 12)(font "Arial" ))
+	(text "RELOJ" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -267,11 +267,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 768 56)
-	(pt 624 56)
-	(bus)
-)
-(connector
 	(pt 16 56)
 	(pt 432 56)
 	(bus)
@@ -283,5 +278,10 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 304 200)
 	(pt 456 200)
+)
+(connector
+	(pt 624 56)
+	(pt 768 56)
+	(bus)
 )
 (junction (pt 768 232))
