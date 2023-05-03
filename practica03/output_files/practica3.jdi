@@ -5,10 +5,17 @@
     <hash md5_digest_80b="6a38485a0be8e7d75d0a"/>
 =======
     <hash md5_digest_80b="abde7547cc41f6d1e3c9"/>
+>>>>>>> main
+=======
+<<<<<<< HEAD
+    <hash md5_digest_80b="6a38485a0be8e7d75d0a"/>
+=======
+    <hash md5_digest_80b="abde7547cc41f6d1e3c9"/>
 >>>>>>> 8b052fd (Version practica 04)
 =======
     <hash md5_digest_80b="abde7547cc41f6d1e3c9"/>
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
   </project>
   <file_info>
     <file device="10M50DAF484C7G" path="practica3.sof" usercode="0xFFFFFFFF"/>

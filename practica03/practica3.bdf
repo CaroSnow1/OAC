@@ -38,7 +38,10 @@ refer to the applicable agreement for further details.
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 )
 (pin
 	(input)
@@ -100,6 +103,8 @@ refer to the applicable agreement for further details.
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "edoPres[2..0]" (rect 90 0 156 12)(font "Arial" ))
 	(pt 0 8)
+<<<<<<< HEAD
+=======
 	(drawing
 		(line (pt 0 8)(pt 52 8))
 		(line (pt 52 4)(pt 78 4))
@@ -134,6 +139,7 @@ refer to the applicable agreement for further details.
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "edoPres[2..0]" (rect 90 0 156 12)(font "Arial" ))
 	(pt 0 8)
+>>>>>>> main
 =======
 )
 (pin
@@ -142,7 +148,11 @@ refer to the applicable agreement for further details.
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "reset" (rect 9 0 33 12)(font "Arial" ))
 	(pt 176 8)
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
+>>>>>>> main
 	(drawing
 		(line (pt 92 12)(pt 117 12))
 		(line (pt 92 4)(pt 117 4))
@@ -182,7 +192,11 @@ refer to the applicable agreement for further details.
 	(rect 1176 56 1352 72)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "liga[2..0]" (rect 90 0 132 12)(font "Arial" ))
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
+>>>>>>> main
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -382,6 +396,9 @@ refer to the applicable agreement for further details.
 (connector
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	(pt 488 128)
 	(pt 488 184)
 	(bus)
@@ -403,9 +420,13 @@ refer to the applicable agreement for further details.
 )
 (connector
 =======
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	(pt 680 112)
 	(pt 704 112)
 	(bus)
@@ -457,6 +478,9 @@ refer to the applicable agreement for further details.
 (connector
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 	(pt 512 112)
 	(pt 480 112)
 	(bus)
@@ -473,9 +497,13 @@ refer to the applicable agreement for further details.
 )
 (connector
 =======
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 	(pt 1096 128)
 	(pt 1144 128)
 	(bus)
@@ -487,7 +515,11 @@ refer to the applicable agreement for further details.
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+=======
+=======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 )
 (connector
 	(pt 432 80)
@@ -529,9 +561,13 @@ refer to the applicable agreement for further details.
 	(pt 472 184)
 	(bus)
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 )
 (junction (pt 1144 64))
 (junction (pt 472 128))

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 { "Warning" "WQCU_PARALLEL_USER_SHOULD_SPECIFY_NUM_PROC" "" "Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance." {  } {  } 0 18236 "Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance." 0 0 "Fitter" 0 -1 1679639687030 ""}
 { "Info" "IQCU_PARALLEL_AUTODETECT_MULTIPLE_PROCESSORS" "2 2 " "Parallel compilation is enabled and will use 2 of the 2 processors detected" {  } {  } 0 20030 "Parallel compilation is enabled and will use %1!i! of the %2!i! processors detected" 0 0 "Fitter" 0 -1 1679639687030 ""}
 { "Info" "IMPP_MPP_USER_DEVICE" "practica3 10M50DAF484C7G " "Selected device 10M50DAF484C7G for design \"practica3\"" {  } {  } 0 119006 "Selected device %2!s! for design \"%1!s!\"" 0 0 "Fitter" 0 -1 1679639687060 ""}
@@ -51,8 +54,11 @@
 { "Info" "IRDB_WROTE_SUPPRESSED_MSGS" "C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/output_files/practica3.fit.smsg " "Generated suppressed messages file C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica03/output_files/practica3.fit.smsg" {  } {  } 0 144001 "Generated suppressed messages file %1!s!" 0 0 "Fitter" 0 -1 1679639717444 ""}
 { "Info" "IQEXE_ERROR_COUNT" "Fitter 0 s 4 s Quartus Prime " "Quartus Prime Fitter was successful. 0 errors, 4 warnings" { { "Info" "IQEXE_END_PEAK_VSIZE_MEMORY" "5339 " "Peak virtual memory: 5339 megabytes" {  } {  } 0 0 "Peak virtual memory: %1!s! megabytes" 0 0 "Design Software" 0 -1 1679639718809 ""} { "Info" "IQEXE_END_BANNER_TIME" "Fri Mar 24 00:35:18 2023 " "Processing ended: Fri Mar 24 00:35:18 2023" {  } {  } 0 0 "Processing ended: %1!s!" 0 0 "Design Software" 0 -1 1679639718809 ""} { "Info" "IQEXE_ELAPSED_TIME" "00:00:34 " "Elapsed time: 00:00:34" {  } {  } 0 0 "Elapsed time: %1!s!" 0 0 "Design Software" 0 -1 1679639718809 ""} { "Info" "IQEXE_ELAPSED_CPU_TIME" "00:00:40 " "Total CPU time (on all processors): 00:00:40" {  } {  } 0 0 "Total CPU time (on all processors): %1!s!" 0 0 "Design Software" 0 -1 1679639718809 ""}  } {  } 0 0 "%6!s! %1!s! was successful. %2!d! error%3!s!, %4!d! warning%5!s!" 0 0 "Fitter" 0 -1 1679639718809 ""}
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 { "Warning" "WQCU_PARALLEL_USER_SHOULD_SPECIFY_NUM_PROC" "" "Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance." {  } {  } 0 18236 "Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance." 0 0 "Fitter" 0 -1 1679669737103 ""}
 { "Info" "IQCU_PARALLEL_AUTODETECT_MULTIPLE_PROCESSORS" "2 2 " "Parallel compilation is enabled and will use 2 of the 2 processors detected" {  } {  } 0 20030 "Parallel compilation is enabled and will use %1!i! of the %2!i! processors detected" 0 0 "Fitter" 0 -1 1679669737103 ""}
 { "Info" "IMPP_MPP_USER_DEVICE" "practica3 10M50DAF484C7G " "Selected device 10M50DAF484C7G for design \"practica3\"" {  } {  } 0 119006 "Selected device %2!s! for design \"%1!s!\"" 0 0 "Fitter" 0 -1 1679669737113 ""}
@@ -104,6 +110,10 @@
 { "Info" "IRDB_WROTE_SUPPRESSED_MSGS" "C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/output_files/practica3.fit.smsg " "Generated suppressed messages file C:/intelFPGA_lite/18.0/oac_practicas/OAC-main/practica03/output_files/practica3.fit.smsg" {  } {  } 0 144001 "Generated suppressed messages file %1!s!" 0 0 "Fitter" 0 -1 1679669748776 ""}
 { "Info" "IQEXE_ERROR_COUNT" "Fitter 0 s 4 s Quartus Prime " "Quartus Prime Fitter was successful. 0 errors, 4 warnings" { { "Info" "IQEXE_END_PEAK_VSIZE_MEMORY" "5366 " "Peak virtual memory: 5366 megabytes" {  } {  } 0 0 "Peak virtual memory: %1!s! megabytes" 0 0 "Design Software" 0 -1 1679669749540 ""} { "Info" "IQEXE_END_BANNER_TIME" "Fri Mar 24 08:55:49 2023 " "Processing ended: Fri Mar 24 08:55:49 2023" {  } {  } 0 0 "Processing ended: %1!s!" 0 0 "Design Software" 0 -1 1679669749540 ""} { "Info" "IQEXE_ELAPSED_TIME" "00:00:13 " "Elapsed time: 00:00:13" {  } {  } 0 0 "Elapsed time: %1!s!" 0 0 "Design Software" 0 -1 1679669749540 ""} { "Info" "IQEXE_ELAPSED_CPU_TIME" "00:00:14 " "Total CPU time (on all processors): 00:00:14" {  } {  } 0 0 "Total CPU time (on all processors): %1!s!" 0 0 "Design Software" 0 -1 1679669749540 ""}  } {  } 0 0 "%6!s! %1!s! was successful. %2!d! error%3!s!, %4!d! warning%5!s!" 0 0 "Fitter" 0 -1 1679669749540 ""}
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main

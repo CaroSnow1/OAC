@@ -1,13 +1,15 @@
+-- Practica 4 - Registro
 library ieee;
 use ieee.std_logic_1164.all;
 
 
 entity registro is 
-Port( clk : in std_logic;
+Port( 
+		clk : in std_logic;
 		reset :  in std_logic;
 		data_in: in std_logic_vector(2 downto 0); --LIGA
 		data_out: out std_logic_vector(2 downto 0) --Edo
-);
+	);
 end registro;
 
 architecture behavioral of registro is
@@ -27,4 +29,3 @@ architecture behavioral of registro is
 			data_out <= internal_value;
 	end process;
 end behavioral;
-			

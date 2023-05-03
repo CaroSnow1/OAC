@@ -5,10 +5,12 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 entity mux1x2x1_3 is
-Port(  selection: in std_logic; --Carga
-		 e0: in std_logic_vector(2 downto 0); --Incremento
-		 e1: in std_logic_vector(2 downto 0);  --Salto
-		 salida: out std_logic_vector(2 downto 0)); --Edo. presente 
+Port(  
+		selection: in std_logic; -- Carga
+		e0: in std_logic_vector(2 downto 0); --Incremento
+		e1: in std_logic_vector(2 downto 0);  --Salto
+		salida: out std_logic_vector(2 downto 0) --Edo. presente 
+	);
 end mux1x2x1_3; 
 
 architecture Behavioral of mux1x2x1_3 is

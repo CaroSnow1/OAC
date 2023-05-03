@@ -5,6 +5,9 @@ Timing Analyzer Summary
 Type  : Slow 1200mV 85C Model Setup 'clk'
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 Slack : -2.331
 TNS   : -38.893
 
@@ -16,8 +19,11 @@ Type  : Slow 1200mV 85C Model Hold 'div_frec:inst|cuenta[26]'
 Slack : 0.329
 TNS   : 0.000
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Slack : -2.270
 TNS   : -40.453
 
@@ -25,9 +31,13 @@ Type  : Slow 1200mV 85C Model Setup 'div_frec:inst|cuenta[27]'
 Slack : -1.325
 TNS   : -3.154
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
 Slack : 0.498
@@ -35,6 +45,9 @@ TNS   : 0.000
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -40.881
@@ -50,6 +63,9 @@ Slack : -3.000
 TNS   : -42.284
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 Type  : Slow 1200mV 85C Model Hold 'div_frec:inst|cuenta[27]'
@@ -62,12 +78,16 @@ TNS   : -42.284
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Slack : -1.403
 TNS   : -4.209
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 Slack : -1.987
 TNS   : -32.359
 
@@ -79,8 +99,11 @@ Type  : Slow 1200mV 0C Model Hold 'div_frec:inst|cuenta[26]'
 Slack : 0.295
 TNS   : 0.000
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Slack : -1.934
 TNS   : -33.740
 
@@ -88,15 +111,22 @@ Type  : Slow 1200mV 0C Model Setup 'div_frec:inst|cuenta[27]'
 Slack : -1.120
 TNS   : -2.608
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.444
 TNS   : 0.000
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
@@ -114,6 +144,9 @@ Slack : -3.000
 TNS   : -42.284
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 
@@ -127,6 +160,7 @@ TNS   : -42.284
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Slack : -1.403
 TNS   : -4.209
 
@@ -134,6 +168,9 @@ Type  : Fast 1200mV 0C Model Setup 'clk'
 Slack : -0.825
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 TNS   : -2.037
 
 Type  : Fast 1200mV 0C Model Setup 'div_frec:inst|cuenta[26]'
@@ -143,16 +180,23 @@ TNS   : 0.000
 Type  : Fast 1200mV 0C Model Hold 'div_frec:inst|cuenta[26]'
 Slack : 0.143
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 TNS   : -2.116
 
 Type  : Fast 1200mV 0C Model Setup 'div_frec:inst|cuenta[27]'
 Slack : 0.040
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
@@ -160,6 +204,9 @@ Slack : 0.181
 TNS   : 0.000
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
@@ -177,6 +224,9 @@ Slack : -3.000
 TNS   : -32.056
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 
@@ -190,6 +240,7 @@ TNS   : -32.056
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:inst|cuenta[27]'
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Slack : -1.000
 TNS   : -3.000
 

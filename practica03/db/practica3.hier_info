@@ -6,6 +6,9 @@ clk => div_frec:inst.reloj
 reset => registro:inst2.reset
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 A[0] => concatenador_datos:inst3.A[0]
 A[1] => concatenador_datos:inst3.A[1]
 A[2] => concatenador_datos:inst3.A[2]
@@ -13,12 +16,16 @@ A[2] => concatenador_datos:inst3.A[2]
 A[0] => concatenador_datos:inst3.B[0]
 A[1] => concatenador_datos:inst3.B[1]
 A[2] => concatenador_datos:inst3.B[2]
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 A[0] => concatenador_datos:inst3.B[0]
 A[1] => concatenador_datos:inst3.B[1]
 A[2] => concatenador_datos:inst3.B[2]
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 liga[0] <= divisor_datos:inst5.liga[0]
 liga[1] <= divisor_datos:inst5.liga[1]
 liga[2] <= divisor_datos:inst5.liga[2]
@@ -76,10 +83,17 @@ reloj => cuenta[27].CLK
 div_clk <= cuenta[26].DB_MAX_OUTPUT_PORT_TYPE
 =======
 div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> main
+=======
+<<<<<<< HEAD
+div_clk <= cuenta[26].DB_MAX_OUTPUT_PORT_TYPE
+=======
+div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
 >>>>>>> 8b052fd (Version practica 04)
 =======
 div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 
 
 |practica3|divisor_datos:inst5

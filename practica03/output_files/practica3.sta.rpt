@@ -4,10 +4,17 @@ Timing Analyzer report for practica3
 Fri Mar 24 00:35:41 2023
 =======
 Fri Mar 24 08:56:02 2023
+>>>>>>> main
+=======
+<<<<<<< HEAD
+Fri Mar 24 00:35:41 2023
+=======
+Fri Mar 24 08:56:02 2023
 >>>>>>> 8b052fd (Version practica 04)
 =======
 Fri Mar 24 08:56:02 2023
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -109,10 +116,17 @@ refer to the applicable agreement for further details.
 ;     Processor 2            ;   1.0%      ;
 =======
 ;     Processor 2            ;   0.5%      ;
+>>>>>>> main
+=======
+<<<<<<< HEAD
+;     Processor 2            ;   1.0%      ;
+=======
+;     Processor 2            ;   0.5%      ;
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ;     Processor 2            ;   0.5%      ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +----------------------------+-------------+
 
 
@@ -127,10 +141,17 @@ refer to the applicable agreement for further details.
 ; div_frec:inst|cuenta[26] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst|cuenta[26] } ;
 =======
 ; div_frec:inst|cuenta[27] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst|cuenta[27] } ;
+>>>>>>> main
+=======
+<<<<<<< HEAD
+; div_frec:inst|cuenta[26] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst|cuenta[26] } ;
+=======
+; div_frec:inst|cuenta[27] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst|cuenta[27] } ;
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; div_frec:inst|cuenta[27] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst|cuenta[27] } ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
 
 
@@ -141,16 +162,23 @@ refer to the applicable agreement for further details.
 +------------+-----------------+--------------------------+---------------------------------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; 300.21 MHz ; 250.0 MHz       ; clk                      ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 503.52 MHz ; 416.15 MHz      ; div_frec:inst|cuenta[26] ; limit due to minimum period restriction (tmin)                ;
 =======
 ; 305.81 MHz ; 250.0 MHz       ; clk                      ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 430.11 MHz ; 416.15 MHz      ; div_frec:inst|cuenta[27] ; limit due to minimum period restriction (tmin)                ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; 305.81 MHz ; 250.0 MHz       ; clk                      ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 430.11 MHz ; 416.15 MHz      ; div_frec:inst|cuenta[27] ; limit due to minimum period restriction (tmin)                ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +------------+-----------------+--------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -162,16 +190,23 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------+--------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; -2.331 ; -38.893       ;
 ; div_frec:inst|cuenta[26] ; -0.986 ; -2.267        ;
 =======
 ; clk                      ; -2.270 ; -40.453       ;
 ; div_frec:inst|cuenta[27] ; -1.325 ; -3.154        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; -2.270 ; -40.453       ;
 ; div_frec:inst|cuenta[27] ; -1.325 ; -3.154        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------+---------------+
 
 
@@ -182,16 +217,23 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------+-------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; div_frec:inst|cuenta[26] ; 0.329 ; 0.000         ;
 ; clk                      ; 0.498 ; 0.000         ;
 =======
 ; clk                      ; 0.498 ; 0.000         ;
 ; div_frec:inst|cuenta[27] ; 1.076 ; 0.000         ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; 0.498 ; 0.000         ;
 ; div_frec:inst|cuenta[27] ; 1.076 ; 0.000         ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+-------+---------------+
 
 
@@ -214,16 +256,23 @@ No paths to report.
 +--------------------------+--------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; -3.000 ; -40.881       ;
 ; div_frec:inst|cuenta[26] ; -1.403 ; -4.209        ;
 =======
 ; clk                      ; -3.000 ; -42.284       ;
 ; div_frec:inst|cuenta[27] ; -1.403 ; -4.209        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; -3.000 ; -42.284       ;
 ; div_frec:inst|cuenta[27] ; -1.403 ; -4.209        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------+---------------+
 
 
@@ -240,16 +289,23 @@ No synchronizer chains to report.
 +------------+-----------------+--------------------------+---------------------------------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; 334.78 MHz ; 250.0 MHz       ; clk                      ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 551.57 MHz ; 416.15 MHz      ; div_frec:inst|cuenta[26] ; limit due to minimum period restriction (tmin)                ;
 =======
 ; 340.83 MHz ; 250.0 MHz       ; clk                      ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 471.7 MHz  ; 416.15 MHz      ; div_frec:inst|cuenta[27] ; limit due to minimum period restriction (tmin)                ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; 340.83 MHz ; 250.0 MHz       ; clk                      ; limit due to minimum period restriction (max I/O toggle rate) ;
 ; 471.7 MHz  ; 416.15 MHz      ; div_frec:inst|cuenta[27] ; limit due to minimum period restriction (tmin)                ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +------------+-----------------+--------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -261,16 +317,23 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------+--------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; -1.987 ; -32.359       ;
 ; div_frec:inst|cuenta[26] ; -0.813 ; -1.799        ;
 =======
 ; clk                      ; -1.934 ; -33.740       ;
 ; div_frec:inst|cuenta[27] ; -1.120 ; -2.608        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; -1.934 ; -33.740       ;
 ; div_frec:inst|cuenta[27] ; -1.120 ; -2.608        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------+---------------+
 
 
@@ -281,16 +344,23 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------+-------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; div_frec:inst|cuenta[26] ; 0.295 ; 0.000         ;
 ; clk                      ; 0.444 ; 0.000         ;
 =======
 ; clk                      ; 0.444 ; 0.000         ;
 ; div_frec:inst|cuenta[27] ; 0.996 ; 0.000         ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; 0.444 ; 0.000         ;
 ; div_frec:inst|cuenta[27] ; 0.996 ; 0.000         ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+-------+---------------+
 
 
@@ -313,16 +383,23 @@ No paths to report.
 +--------------------------+--------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; -3.000 ; -40.881       ;
 ; div_frec:inst|cuenta[26] ; -1.403 ; -4.209        ;
 =======
 ; clk                      ; -3.000 ; -42.284       ;
 ; div_frec:inst|cuenta[27] ; -1.403 ; -4.209        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; -3.000 ; -42.284       ;
 ; div_frec:inst|cuenta[27] ; -1.403 ; -4.209        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------+---------------+
 
 
@@ -339,16 +416,23 @@ No synchronizer chains to report.
 +--------------------------+--------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; -0.825 ; -2.037        ;
 ; div_frec:inst|cuenta[26] ; 0.175  ; 0.000         ;
 =======
 ; clk                      ; -0.825 ; -2.116        ;
 ; div_frec:inst|cuenta[27] ; 0.040  ; 0.000         ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; -0.825 ; -2.116        ;
 ; div_frec:inst|cuenta[27] ; 0.040  ; 0.000         ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------+---------------+
 
 
@@ -359,16 +443,23 @@ No synchronizer chains to report.
 +--------------------------+-------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; div_frec:inst|cuenta[26] ; 0.143 ; 0.000         ;
 ; clk                      ; 0.181 ; 0.000         ;
 =======
 ; clk                      ; 0.181 ; 0.000         ;
 ; div_frec:inst|cuenta[27] ; 0.426 ; 0.000         ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; 0.181 ; 0.000         ;
 ; div_frec:inst|cuenta[27] ; 0.426 ; 0.000         ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+-------+---------------+
 
 
@@ -391,16 +482,23 @@ No paths to report.
 +--------------------------+--------+---------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; -3.000 ; -30.996       ;
 ; div_frec:inst|cuenta[26] ; -1.000 ; -3.000        ;
 =======
 ; clk                      ; -3.000 ; -32.056       ;
 ; div_frec:inst|cuenta[27] ; -1.000 ; -3.000        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; -3.000 ; -32.056       ;
 ; div_frec:inst|cuenta[27] ; -1.000 ; -3.000        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------+---------------+
 
 
@@ -417,6 +515,9 @@ No synchronizer chains to report.
 +---------------------------+---------+-------+----------+---------+---------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; Worst-case Slack          ; -2.331  ; 0.143 ; N/A      ; N/A     ; -3.000              ;
 ;  clk                      ; -2.331  ; 0.181 ; N/A      ; N/A     ; -3.000              ;
 ;  div_frec:inst|cuenta[26] ; -0.986  ; 0.143 ; N/A      ; N/A     ; -1.403              ;
@@ -424,8 +525,11 @@ No synchronizer chains to report.
 ;  clk                      ; -38.893 ; 0.000 ; N/A      ; N/A     ; -40.881             ;
 ;  div_frec:inst|cuenta[26] ; -2.267  ; 0.000 ; N/A      ; N/A     ; -4.209              ;
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 ; Worst-case Slack          ; -2.270  ; 0.181 ; N/A      ; N/A     ; -3.000              ;
 ;  clk                      ; -2.270  ; 0.181 ; N/A      ; N/A     ; -3.000              ;
 ;  div_frec:inst|cuenta[27] ; -1.325  ; 0.426 ; N/A      ; N/A     ; -1.403              ;
@@ -433,9 +537,13 @@ No synchronizer chains to report.
 ;  clk                      ; -40.453 ; 0.000 ; N/A      ; N/A     ; -42.284             ;
 ;  div_frec:inst|cuenta[27] ; -3.154  ; 0.000 ; N/A      ; N/A     ; -4.209              ;
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +---------------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -464,6 +572,9 @@ No synchronizer chains to report.
 +---------------------+-----------------------+-----------------+-----------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; A[0]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; A[1]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; A[2]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
@@ -471,12 +582,16 @@ No synchronizer chains to report.
 ; A[2]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; A[0]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; A[1]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; A[2]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; A[0]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; A[1]                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 ; reset               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; clk                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -550,6 +665,9 @@ No synchronizer chains to report.
 +--------------------------+--------------------------+----------+----------+----------+----------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; clk                      ; 377      ; 0        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[26] ; clk                      ; 1        ; 1        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[26] ; div_frec:inst|cuenta[26] ; 9        ; 0        ; 0        ; 0        ;
@@ -557,12 +675,16 @@ No synchronizer chains to report.
 ; clk                      ; clk                      ; 405      ; 0        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; clk                      ; 1        ; 1        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; 11       ; 0        ; 0        ; 0        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; clk                      ; 405      ; 0        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; clk                      ; 1        ; 1        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; 11       ; 0        ; 0        ; 0        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -574,6 +696,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------+--------------------------+----------+----------+----------+----------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 ; clk                      ; clk                      ; 377      ; 0        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[26] ; clk                      ; 1        ; 1        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[26] ; div_frec:inst|cuenta[26] ; 9        ; 0        ; 0        ; 0        ;
@@ -581,12 +706,16 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; clk                      ; clk                      ; 405      ; 0        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; clk                      ; 1        ; 1        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; 11       ; 0        ; 0        ; 0        ;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; clk                      ; clk                      ; 405      ; 0        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; clk                      ; 1        ; 1        ; 0        ; 0        ;
 ; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; 11       ; 0        ; 0        ; 0        ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -616,10 +745,17 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Input Port Paths  ; 30    ; 30   ;
 =======
 ; Unconstrained Input Port Paths  ; 19    ; 19   ;
+>>>>>>> main
+=======
+<<<<<<< HEAD
+; Unconstrained Input Port Paths  ; 30    ; 30   ;
+=======
+; Unconstrained Input Port Paths  ; 19    ; 19   ;
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; Unconstrained Input Port Paths  ; 19    ; 19   ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 ; Unconstrained Output Ports      ; 9     ; 9    ;
 ; Unconstrained Output Port Paths ; 30    ; 30   ;
 +---------------------------------+-------+------+
@@ -636,10 +772,17 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; div_frec:inst|cuenta[26] ; div_frec:inst|cuenta[26] ; Base ; Constrained ;
 =======
 ; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; Base ; Constrained ;
+>>>>>>> main
+=======
+<<<<<<< HEAD
+; div_frec:inst|cuenta[26] ; div_frec:inst|cuenta[26] ; Base ; Constrained ;
+=======
+; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; Base ; Constrained ;
 >>>>>>> 8b052fd (Version practica 04)
 =======
 ; div_frec:inst|cuenta[27] ; div_frec:inst|cuenta[27] ; Base ; Constrained ;
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 +--------------------------+--------------------------+------+-------------+
 
 
@@ -712,10 +855,17 @@ Info: Running Quartus Prime Timing Analyzer
     Info: Processing started: Fri Mar 24 00:35:32 2023
 =======
     Info: Processing started: Fri Mar 24 08:55:58 2023
+>>>>>>> main
+=======
+<<<<<<< HEAD
+    Info: Processing started: Fri Mar 24 00:35:32 2023
+=======
+    Info: Processing started: Fri Mar 24 08:55:58 2023
 >>>>>>> 8b052fd (Version practica 04)
 =======
     Info: Processing started: Fri Mar 24 08:55:58 2023
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info: Command: quartus_sta practica3 -c practica3
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -731,10 +881,17 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name div_frec:inst|cuenta[26] div_frec:inst|cuenta[26]
 =======
     Info (332105): create_clock -period 1.000 -name div_frec:inst|cuenta[27] div_frec:inst|cuenta[27]
+>>>>>>> main
+=======
+<<<<<<< HEAD
+    Info (332105): create_clock -period 1.000 -name div_frec:inst|cuenta[26] div_frec:inst|cuenta[26]
+=======
+    Info (332105): create_clock -period 1.000 -name div_frec:inst|cuenta[27] div_frec:inst|cuenta[27]
 >>>>>>> 8b052fd (Version practica 04)
 =======
     Info (332105): create_clock -period 1.000 -name div_frec:inst|cuenta[27] div_frec:inst|cuenta[27]
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
@@ -743,6 +900,9 @@ Info: Can't run Report Timing Closure Recommendations. The current device family
 Critical Warning (332148): Timing requirements not met
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 Info (332146): Worst-case setup slack is -2.331
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -754,8 +914,11 @@ Info (332146): Worst-case hold slack is 0.329
     Info (332119):     0.329               0.000 div_frec:inst|cuenta[26] 
     Info (332119):     0.498               0.000 clk 
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332146): Worst-case setup slack is -2.270
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -767,9 +930,13 @@ Info (332146): Worst-case hold slack is 0.498
     Info (332119):     0.498               0.000 clk 
     Info (332119):     1.076               0.000 div_frec:inst|cuenta[27] 
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -777,16 +944,23 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119): ========= =================== =====================
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     Info (332119):    -3.000             -40.881 clk 
     Info (332119):    -1.403              -4.209 div_frec:inst|cuenta[26] 
 =======
     Info (332119):    -3.000             -42.284 clk 
     Info (332119):    -1.403              -4.209 div_frec:inst|cuenta[27] 
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
     Info (332119):    -3.000             -42.284 clk 
     Info (332119):    -1.403              -4.209 div_frec:inst|cuenta[27] 
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -794,6 +968,9 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Critical Warning (332148): Timing requirements not met
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 Info (332146): Worst-case setup slack is -1.987
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -805,8 +982,11 @@ Info (332146): Worst-case hold slack is 0.295
     Info (332119):     0.295               0.000 div_frec:inst|cuenta[26] 
     Info (332119):     0.444               0.000 clk 
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332146): Worst-case setup slack is -1.934
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -818,9 +998,13 @@ Info (332146): Worst-case hold slack is 0.444
     Info (332119):     0.444               0.000 clk 
     Info (332119):     0.996               0.000 div_frec:inst|cuenta[27] 
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -828,16 +1012,23 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119): ========= =================== =====================
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     Info (332119):    -3.000             -40.881 clk 
     Info (332119):    -1.403              -4.209 div_frec:inst|cuenta[26] 
 =======
     Info (332119):    -3.000             -42.284 clk 
     Info (332119):    -1.403              -4.209 div_frec:inst|cuenta[27] 
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
     Info (332119):    -3.000             -42.284 clk 
     Info (332119):    -1.403              -4.209 div_frec:inst|cuenta[27] 
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
@@ -846,6 +1037,9 @@ Info (332146): Worst-case setup slack is -0.825
     Info (332119): ========= =================== =====================
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     Info (332119):    -0.825              -2.037 clk 
     Info (332119):     0.175               0.000 div_frec:inst|cuenta[26] 
 Info (332146): Worst-case hold slack is 0.143
@@ -854,8 +1048,11 @@ Info (332146): Worst-case hold slack is 0.143
     Info (332119):     0.143               0.000 div_frec:inst|cuenta[26] 
     Info (332119):     0.181               0.000 clk 
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
     Info (332119):    -0.825              -2.116 clk 
     Info (332119):     0.040               0.000 div_frec:inst|cuenta[27] 
 Info (332146): Worst-case hold slack is 0.181
@@ -864,9 +1061,13 @@ Info (332146): Worst-case hold slack is 0.181
     Info (332119):     0.181               0.000 clk 
     Info (332119):     0.426               0.000 div_frec:inst|cuenta[27] 
 <<<<<<< HEAD
+>>>>>>> main
+=======
+<<<<<<< HEAD
 >>>>>>> 8b052fd (Version practica 04)
 =======
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -874,22 +1075,32 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119): ========= =================== =====================
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     Info (332119):    -3.000             -30.996 clk 
     Info (332119):    -1.000              -3.000 div_frec:inst|cuenta[26] 
 =======
     Info (332119):    -3.000             -32.056 clk 
     Info (332119):    -1.000              -3.000 div_frec:inst|cuenta[27] 
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
     Info (332119):    -3.000             -32.056 clk 
     Info (332119):    -1.000              -3.000 div_frec:inst|cuenta[27] 
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4789 megabytes
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     Info: Processing ended: Fri Mar 24 00:35:41 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:09
@@ -897,11 +1108,15 @@ Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Processing ended: Fri Mar 24 08:56:02 2023
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> 8b052fd (Version practica 04)
 =======
     Info: Processing ended: Fri Mar 24 08:56:02 2023
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 >>>>>>> 8b052fd8f1de3b2e6a912938a51f7765113d8464
+>>>>>>> main
 
 
