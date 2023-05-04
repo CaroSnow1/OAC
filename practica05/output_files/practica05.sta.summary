@@ -7,8 +7,8 @@ Slack : -2.270
 TNS   : -40.453
 
 Type  : Slow 1200mV 85C Model Setup 'contador:contador|div_frec:inst1|cuenta[27]'
-Slack : -1.040
-TNS   : -2.965
+Slack : -1.190
+TNS   : -3.120
 
 Type  : Slow 1200mV 85C Model Hold 'contador:contador|div_frec:inst1|cuenta[27]'
 Slack : 0.347
@@ -31,8 +31,8 @@ Slack : -1.934
 TNS   : -33.740
 
 Type  : Slow 1200mV 0C Model Setup 'contador:contador|div_frec:inst1|cuenta[27]'
-Slack : -0.865
-TNS   : -2.489
+Slack : -1.000
+TNS   : -2.600
 
 Type  : Slow 1200mV 0C Model Hold 'contador:contador|div_frec:inst1|cuenta[27]'
 Slack : 0.311
@@ -55,7 +55,7 @@ Slack : -0.823
 TNS   : -2.114
 
 Type  : Fast 1200mV 0C Model Setup 'contador:contador|div_frec:inst1|cuenta[27]'
-Slack : 0.167
+Slack : 0.097
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'contador:contador|div_frec:inst1|cuenta[27]'
