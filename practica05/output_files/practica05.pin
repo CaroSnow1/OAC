@@ -76,9 +76,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 7         :                
-SALIDAS[3]                   : A8        : output : 2.5 V             :         : 7         : Y              
-SALIDAS[2]                   : A9        : output : 2.5 V             :         : 7         : Y              
-SALIDAS[1]                   : A10       : output : 2.5 V             :         : 7         : Y              
+SALIDAS[0]                   : A8        : output : 2.5 V             :         : 7         : Y              
+SALIDAS[1]                   : A9        : output : 2.5 V             :         : 7         : Y              
+SALIDAS[2]                   : A10       : output : 2.5 V             :         : 7         : Y              
 EDO_PRESENTE[1]              : A11       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A12       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 7         :                
@@ -144,7 +144,7 @@ GND                          : B6        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 7         :                
 GND                          : B9        : gnd    :                   :         :           :                
-SALIDAS[0]                   : B10       : output : 2.5 V             :         : 7         : Y              
+SALIDAS[3]                   : B10       : output : 2.5 V             :         : 7         : Y              
 EDO_PRESENTE[2]              : B11       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :         : 7         :                
 GND                          : B13       : gnd    :                   :         :           :                
@@ -167,7 +167,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 7         :                
 W                            : C10       : input  : 2.5 V             :         : 7         : Y              
-Z                            : C11       : input  : 2.5 V             :         : 7         : Y              
+V                            : C11       : input  : 2.5 V             :         : 7         : Y              
 X                            : C12       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
@@ -190,7 +190,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 GND                          : D11       : gnd    :                   :         :           :                
-V                            : D12       : input  : 2.5 V             :         : 7         : Y              
+Z                            : D12       : input  : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
 EDO_PRESENTE[0]              : D14       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 7         :                

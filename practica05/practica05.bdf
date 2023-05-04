@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 24 40 192 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clock" (rect 5 0 31 12)(font "Arial" ))
+	(text "clock" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 24 56 192 72)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "reset" (rect 5 0 29 17)(font "Intel Clear" ))
+	(text "reset" (rect 5 0 28 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -89,7 +89,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 936 88 1104 104)
+	(rect 936 72 1104 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Z" (rect 5 0 10 17)(font "Intel Clear" ))
 	(pt 168 8)
@@ -102,13 +102,13 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 872 104 936 128))
+	(annotation_block (location)(rect 872 88 936 112))
 )
 (pin
 	(input)
-	(rect 936 72 1104 88)
+	(rect 936 88 1104 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "V" (rect 5 0 13 17)(font "Intel Clear" ))
+	(text "V" (rect 5 0 12 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 872 88 936 112))
+	(annotation_block (location)(rect 872 104 936 128))
 )
 (pin
 	(output)
