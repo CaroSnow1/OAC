@@ -1,0 +1,23 @@
+--Practica 6. Mux de direcciones
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_direccion is
+port( sel: in std_logic; --Lógica interna
+		E0: in std_logic_vector(3 downto 0); --Incrementador
+		E1: in std_logic_vector(3 downto 0); --RT, RI o Liga
+		salida: out std_logic_vector(3 downto 0)
+);
+end mux_direccion;
+
+architecture Behavioral of mux_direccion is
+begin
+	process(sel,E0,E1)
+	begin
+		if sel = '0' then
+			salida <= E0;
+		elsif sel = '1' then
+			salida <= E1;
+		end if;
+	end process;
+end Behavioral;
