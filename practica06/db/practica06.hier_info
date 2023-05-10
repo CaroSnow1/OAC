@@ -1,0 +1,90 @@
+|practica06
+nPL <= logica_interna:IntLogic.npl
+nCC => logica_interna:IntLogic.ncc
+inst[0] => logica_interna:IntLogic.instruccion[0]
+inst[1] => logica_interna:IntLogic.instruccion[1]
+nMAP <= logica_interna:IntLogic.nmap
+nVECT <= logica_interna:IntLogic.nvect
+Y[0] <= mux_direccion:MuxDireccion.salida[0]
+Y[1] <= mux_direccion:MuxDireccion.salida[1]
+Y[2] <= mux_direccion:MuxDireccion.salida[2]
+Y[3] <= mux_direccion:MuxDireccion.salida[3]
+CLK => registro_12:MicroPC.clk
+RESET => registro_12:MicroPC.reset
+ENA => registro_12:MicroPC.ena
+D[0] => mux_direccion:MuxDireccion.E1[0]
+D[1] => mux_direccion:MuxDireccion.E1[1]
+D[2] => mux_direccion:MuxDireccion.E1[2]
+D[3] => mux_direccion:MuxDireccion.E1[3]
+
+
+|practica06|logica_interna:IntLogic
+instruccion[0] => Equal0.IN1
+instruccion[0] => Equal1.IN1
+instruccion[0] => Equal2.IN0
+instruccion[0] => Equal3.IN1
+instruccion[1] => Equal0.IN0
+instruccion[1] => Equal1.IN0
+instruccion[1] => Equal2.IN1
+instruccion[1] => Equal3.IN0
+ncc => sel.DATAA
+ncc => sel.DATAB
+sel <= sel$latch.DB_MAX_OUTPUT_PORT_TYPE
+npl <= npl$latch.DB_MAX_OUTPUT_PORT_TYPE
+nmap <= nmap$latch.DB_MAX_OUTPUT_PORT_TYPE
+nvect <= nvect$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica06|mux_direccion:MuxDireccion
+sel => salida[0].OUTPUTSELECT
+sel => salida[1].OUTPUTSELECT
+sel => salida[2].OUTPUTSELECT
+sel => salida[3].OUTPUTSELECT
+E0[0] => salida[0].DATAB
+E0[1] => salida[1].DATAB
+E0[2] => salida[2].DATAB
+E0[3] => salida[3].DATAB
+E1[0] => salida[0].DATAA
+E1[1] => salida[1].DATAA
+E1[2] => salida[2].DATAA
+E1[3] => salida[3].DATAA
+salida[0] <= salida[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= salida[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= salida[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= salida[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica06|registro_12:MicroPC
+clk => internal_value[0].CLK
+clk => internal_value[1].CLK
+clk => internal_value[2].CLK
+clk => internal_value[3].CLK
+reset => internal_value[0].ACLR
+reset => internal_value[1].ACLR
+reset => internal_value[2].ACLR
+reset => internal_value[3].ACLR
+ena => data_out[3].OE
+ena => data_out[2].OE
+ena => data_out[1].OE
+ena => data_out[0].OE
+data_in[0] => internal_value[0].DATAIN
+data_in[1] => internal_value[1].DATAIN
+data_in[2] => internal_value[2].DATAIN
+data_in[3] => internal_value[3].DATAIN
+data_out[0] <= data_out[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica06|incrementador:Inc
+entrada[0] => Add0.IN8
+entrada[1] => Add0.IN7
+entrada[2] => Add0.IN6
+entrada[3] => Add0.IN5
+salida[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+

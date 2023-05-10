@@ -7,7 +7,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity incrementador is
 	Port( 
 		entrada	: in STD_LOGIC_VECTOR(3 downto 0); --Edo presente
-		salida	: osut STD_LOGIC_VECTOR(3 downto 0) --Edo presente + 1
+		salida	: out STD_LOGIC_VECTOR(3 downto 0) --Edo presente + 1
 		);
 end incrementador;
 
