@@ -1,4 +1,20 @@
-|contador
+|practica05
+EDO_PRESENTE[0] <= contador:contador.SALIDA[0]
+EDO_PRESENTE[1] <= contador:contador.SALIDA[1]
+EDO_PRESENTE[2] <= contador:contador.SALIDA[2]
+clock => contador:contador.RELOJ
+reset => contador:contador.RESET
+X => mux2_5:inst3.I0
+Z => mux2_5:inst3.I1
+V => mux2_5:inst3.I2
+W => mux2_5:inst3.I3
+SALIDAS[0] <= mux1x2x1:inst.salida[0]
+SALIDAS[1] <= mux1x2x1:inst.salida[1]
+SALIDAS[2] <= mux1x2x1:inst.salida[2]
+SALIDAS[3] <= mux1x2x1:inst.salida[3]
+
+
+|practica05|contador:contador
 SALIDA[0] <= registro:inst6.data_out[0]
 SALIDA[1] <= registro:inst6.data_out[1]
 SALIDA[2] <= registro:inst6.data_out[2]
@@ -10,7 +26,7 @@ liga[1] => mux1x2x1_3:inst5.e1[1]
 liga[2] => mux1x2x1_3:inst5.e1[2]
 
 
-|contador|registro:inst6
+|practica05|contador:contador|registro:inst6
 clk => internal_value[0].CLK
 clk => internal_value[1].CLK
 clk => internal_value[2].CLK
@@ -25,7 +41,7 @@ data_out[1] <= internal_value[1].DB_MAX_OUTPUT_PORT_TYPE
 data_out[2] <= internal_value[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador|div_frec:inst1
+|practica05|contador:contador|div_frec:inst1
 reloj => cuenta[0].CLK
 reloj => cuenta[1].CLK
 reloj => cuenta[2].CLK
@@ -57,7 +73,7 @@ reloj => cuenta[27].CLK
 div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador|mux1x2x1_3:inst5
+|practica05|contador:contador|mux1x2x1_3:inst5
 selection => salida[0].OUTPUTSELECT
 selection => salida[1].OUTPUTSELECT
 selection => salida[2].OUTPUTSELECT
@@ -72,12 +88,151 @@ salida[1] <= salida[1].DB_MAX_OUTPUT_PORT_TYPE
 salida[2] <= salida[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador|incrementador:inst
+|practica05|contador:contador|incrementador:inst
 entrada[0] => Add0.IN6
 entrada[1] => Add0.IN5
 entrada[2] => Add0.IN4
 salida[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 salida[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 salida[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica05|mux2_5:inst3
+sel[0] => Equal0.IN2
+sel[0] => Equal1.IN2
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN2
+sel[0] => Equal4.IN1
+sel[1] => Equal0.IN1
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN2
+sel[1] => Equal3.IN1
+sel[1] => Equal4.IN0
+sel[2] => Equal0.IN0
+sel[2] => Equal1.IN0
+sel[2] => Equal2.IN0
+sel[2] => Equal3.IN0
+sel[2] => Equal4.IN2
+I0 => O.DATAB
+I1 => O.DATAB
+I2 => O.DATAB
+I3 => O.DATAB
+I4 => O.DATAA
+O <= O$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica05|divisor_datos:inst7
+entrada[0] => salidas_v[0].DATAIN
+entrada[1] => salidas_v[1].DATAIN
+entrada[2] => salidas_v[2].DATAIN
+entrada[3] => salidas_v[3].DATAIN
+entrada[4] => salidas_f[0].DATAIN
+entrada[5] => salidas_f[1].DATAIN
+entrada[6] => salidas_f[2].DATAIN
+entrada[7] => salidas_f[3].DATAIN
+entrada[8] => liga[0].DATAIN
+entrada[9] => liga[1].DATAIN
+entrada[10] => liga[2].DATAIN
+entrada[11] => vf.DATAIN
+entrada[12] => prueba[0].DATAIN
+entrada[13] => prueba[1].DATAIN
+entrada[14] => prueba[2].DATAIN
+prueba[0] <= entrada[12].DB_MAX_OUTPUT_PORT_TYPE
+prueba[1] <= entrada[13].DB_MAX_OUTPUT_PORT_TYPE
+prueba[2] <= entrada[14].DB_MAX_OUTPUT_PORT_TYPE
+vf <= entrada[11].DB_MAX_OUTPUT_PORT_TYPE
+liga[0] <= entrada[8].DB_MAX_OUTPUT_PORT_TYPE
+liga[1] <= entrada[9].DB_MAX_OUTPUT_PORT_TYPE
+liga[2] <= entrada[10].DB_MAX_OUTPUT_PORT_TYPE
+salidas_f[0] <= entrada[4].DB_MAX_OUTPUT_PORT_TYPE
+salidas_f[1] <= entrada[5].DB_MAX_OUTPUT_PORT_TYPE
+salidas_f[2] <= entrada[6].DB_MAX_OUTPUT_PORT_TYPE
+salidas_f[3] <= entrada[7].DB_MAX_OUTPUT_PORT_TYPE
+salidas_v[0] <= entrada[0].DB_MAX_OUTPUT_PORT_TYPE
+salidas_v[1] <= entrada[1].DB_MAX_OUTPUT_PORT_TYPE
+salidas_v[2] <= entrada[2].DB_MAX_OUTPUT_PORT_TYPE
+salidas_v[3] <= entrada[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica05|memory:inst1
+dir[0] => Mux0.IN10
+dir[0] => Mux1.IN10
+dir[0] => Mux2.IN10
+dir[0] => Mux3.IN10
+dir[0] => Mux4.IN10
+dir[0] => Mux5.IN10
+dir[0] => Mux6.IN10
+dir[0] => Mux7.IN10
+dir[0] => Mux8.IN10
+dir[0] => Mux9.IN10
+dir[0] => Mux10.IN10
+dir[0] => Mux11.IN10
+dir[0] => Mux12.IN10
+dir[0] => Mux13.IN10
+dir[0] => Mux14.IN10
+dir[1] => Mux0.IN9
+dir[1] => Mux1.IN9
+dir[1] => Mux2.IN9
+dir[1] => Mux3.IN9
+dir[1] => Mux4.IN9
+dir[1] => Mux5.IN9
+dir[1] => Mux6.IN9
+dir[1] => Mux7.IN9
+dir[1] => Mux8.IN9
+dir[1] => Mux9.IN9
+dir[1] => Mux10.IN9
+dir[1] => Mux11.IN9
+dir[1] => Mux12.IN9
+dir[1] => Mux13.IN9
+dir[1] => Mux14.IN9
+dir[2] => Mux0.IN8
+dir[2] => Mux1.IN8
+dir[2] => Mux2.IN8
+dir[2] => Mux3.IN8
+dir[2] => Mux4.IN8
+dir[2] => Mux5.IN8
+dir[2] => Mux6.IN8
+dir[2] => Mux7.IN8
+dir[2] => Mux8.IN8
+dir[2] => Mux9.IN8
+dir[2] => Mux10.IN8
+dir[2] => Mux11.IN8
+dir[2] => Mux12.IN8
+dir[2] => Mux13.IN8
+dir[2] => Mux14.IN8
+data[0] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+data[8] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+data[9] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+data[10] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+data[11] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+data[12] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+data[13] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+data[14] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica05|mux1x2x1:inst
+prueba => salida[0].OUTPUTSELECT
+prueba => salida[1].OUTPUTSELECT
+prueba => salida[2].OUTPUTSELECT
+prueba => salida[3].OUTPUTSELECT
+e0[0] => salida[0].DATAB
+e0[1] => salida[1].DATAB
+e0[2] => salida[2].DATAB
+e0[3] => salida[3].DATAB
+e1[0] => salida[0].DATAA
+e1[1] => salida[1].DATAA
+e1[2] => salida[2].DATAA
+e1[3] => salida[3].DATAA
+salida[0] <= salida[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= salida[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= salida[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= salida[3].DB_MAX_OUTPUT_PORT_TYPE
 
 

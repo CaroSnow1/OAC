@@ -1,5 +1,5 @@
 Analysis & Synthesis report for practica05
-Mon May 01 16:13:16 2023
+Fri May 05 07:26:23 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -13,10 +13,12 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 01 16:13:16 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 05 07:26:23 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; practica05                                  ;
-; Top-level Entity Name              ; contador                                    ;
+; Top-level Entity Name              ; practica05                                  ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 32                                          ;
-;     Total combinational functions  ; 32                                          ;
+; Total logic elements               ; 38                                          ;
+;     Total combinational functions  ; 38                                          ;
 ;     Dedicated logic registers      ; 31                                          ;
 ; Total registers                    ; 31                                          ;
-; Total pins                         ; 9                                           ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +69,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; contador           ; practica05         ;
+; Top-level entity name                                            ; practica05         ; practica05         ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -160,7 +162,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -171,9 +173,14 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
 ; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/div_frec.vhd      ;         ;
 ; registro.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/registro.vhd      ;         ;
+; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/divisor_datos.vhd ;         ;
+; mux2_5.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/mux2_5.vhd        ;         ;
+; memory.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/memory.vhd        ;         ;
 ; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/incrementador.vhd ;         ;
 ; mux1x2x1_3.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd    ;         ;
+; practica05.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/practica05/practica05.bdf    ;         ;
 ; contador.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/practica05/contador.bdf      ;         ;
+; mux1x2x1.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd      ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
 
 
@@ -182,44 +189,58 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 32          ;
+; Estimated Total logic elements              ; 38          ;
 ;                                             ;             ;
-; Total combinational functions               ; 32          ;
+; Total combinational functions               ; 38          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 2           ;
-;     -- 3 input functions                    ; 2           ;
+;     -- 4 input functions                    ; 9           ;
+;     -- 3 input functions                    ; 1           ;
 ;     -- <=2 input functions                  ; 28          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 5           ;
+;     -- normal mode                          ; 11          ;
 ;     -- arithmetic mode                      ; 27          ;
 ;                                             ;             ;
 ; Total registers                             ; 31          ;
 ;     -- Dedicated logic registers            ; 31          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 9           ;
+; I/O pins                                    ; 13          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; RELOJ~input ;
+; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 28          ;
-; Total fan-out                               ; 146         ;
-; Average fan-out                             ; 1.80        ;
+; Total fan-out                               ; 179         ;
+; Average fan-out                             ; 1.88        ;
 +---------------------------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
-; |contador                  ; 32 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 9    ; 0            ; 0          ; |contador                  ; contador    ; work         ;
-;    |div_frec:inst1|        ; 28 (28)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |contador|div_frec:inst1   ; div_frec    ; work         ;
-;    |mux1x2x1_3:inst5|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |contador|mux1x2x1_3:inst5 ; mux1x2x1_3  ; work         ;
-;    |registro:inst6|        ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |contador|registro:inst6   ; registro    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                            ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------+-------------+--------------+
+; |practica05                ; 38 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |practica05                                    ; practica05  ; work         ;
+;    |contador:contador|     ; 31 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica05|contador:contador                  ; contador    ; work         ;
+;       |div_frec:inst1|     ; 28 (28)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica05|contador:contador|div_frec:inst1   ; div_frec    ; work         ;
+;       |mux1x2x1_3:inst5|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica05|contador:contador|mux1x2x1_3:inst5 ; mux1x2x1_3  ; work         ;
+;       |registro:inst6|     ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica05|contador:contador|registro:inst6   ; registro    ; work         ;
+;    |memory:inst1|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica05|memory:inst1                       ; memory      ; work         ;
+;    |mux2_5:inst3|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica05|mux2_5:inst3                       ; mux2_5      ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; mux2_5:inst3|O                                     ; mux2_5:inst3|O      ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -237,25 +258,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |practica05|contador:contador|registro:inst6|internal_value[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 9                           ;
+; boundary_port         ; 13                          ;
 ; cycloneiii_ff         ; 31                          ;
 ;     CLR               ; 3                           ;
 ;     plain             ; 28                          ;
-; cycloneiii_lcell_comb ; 32                          ;
+; cycloneiii_lcell_comb ; 40                          ;
 ;     arith             ; 27                          ;
 ;         2 data inputs ; 27                          ;
-;     normal            ; 5                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 2                           ;
+;     normal            ; 13                          ;
+;         1 data inputs ; 3                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 9                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.70                        ;
-; Average LUT depth     ; 2.58                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +294,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -274,7 +304,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon May 01 16:13:01 2023
+    Info: Processing started: Fri May 05 07:21:34 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off practica05 -c practica05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -282,8 +312,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file div_fre
     Info (12022): Found design unit 1: div_frec-behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/div_frec.vhd Line: 12
     Info (12023): Found entity 1: div_frec File: C:/intelFPGA_lite/18.0/oac/practica05/div_frec.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file registro.vhd
-    Info (12022): Found design unit 1: registro-behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/registro.vhd Line: 13
-    Info (12023): Found entity 1: registro File: C:/intelFPGA_lite/18.0/oac/practica05/registro.vhd Line: 5
+    Info (12022): Found design unit 1: registro-behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/registro.vhd Line: 15
+    Info (12023): Found entity 1: registro File: C:/intelFPGA_lite/18.0/oac/practica05/registro.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
     Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/divisor_datos.vhd Line: 17
     Info (12023): Found entity 1: divisor_datos File: C:/intelFPGA_lite/18.0/oac/practica05/divisor_datos.vhd Line: 7
@@ -297,35 +327,54 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux5.vh
     Info (12022): Found design unit 1: mux5-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/mux5.vhd Line: 16
     Info (12023): Found entity 1: mux5 File: C:/intelFPGA_lite/18.0/oac/practica05/mux5.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file incrementador.vhd
-    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/incrementador.vhd Line: 12
+    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/incrementador.vhd Line: 14
     Info (12023): Found entity 1: incrementador File: C:/intelFPGA_lite/18.0/oac/practica05/incrementador.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux1x2x1_3.vhd
-    Info (12022): Found design unit 1: mux1x2x1_3-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 14
+    Info (12022): Found design unit 1: mux1x2x1_3-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 16
     Info (12023): Found entity 1: mux1x2x1_3 File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file practica05.bdf
     Info (12023): Found entity 1: practica05
 Info (12021): Found 1 design units, including 1 entities, in source file contador.bdf
     Info (12023): Found entity 1: contador
-Info (12127): Elaborating entity "contador" for the top level hierarchy
-Info (12128): Elaborating entity "registro" for hierarchy "registro:inst6"
-Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:inst1"
-Info (12128): Elaborating entity "mux1x2x1_3" for hierarchy "mux1x2x1_3:inst5"
-Warning (10631): VHDL Process Statement warning at mux1x2x1_3.vhd(16): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 16
-Info (10041): Inferred latch for "salida[0]" at mux1x2x1_3.vhd(16) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 16
-Info (10041): Inferred latch for "salida[1]" at mux1x2x1_3.vhd(16) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 16
-Info (10041): Inferred latch for "salida[2]" at mux1x2x1_3.vhd(16) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 16
-Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:inst"
+Info (12021): Found 2 design units, including 1 entities, in source file mux1x2x1.vhd
+    Info (12022): Found design unit 1: mux1x2x1-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 16
+    Info (12023): Found entity 1: mux1x2x1 File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 7
+Info (12127): Elaborating entity "practica05" for the top level hierarchy
+Info (12128): Elaborating entity "contador" for hierarchy "contador:contador"
+Info (12128): Elaborating entity "registro" for hierarchy "contador:contador|registro:inst6"
+Info (12128): Elaborating entity "div_frec" for hierarchy "contador:contador|div_frec:inst1"
+Info (12128): Elaborating entity "mux1x2x1_3" for hierarchy "contador:contador|mux1x2x1_3:inst5"
+Warning (10631): VHDL Process Statement warning at mux1x2x1_3.vhd(18): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 18
+Info (10041): Inferred latch for "salida[0]" at mux1x2x1_3.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 18
+Info (10041): Inferred latch for "salida[1]" at mux1x2x1_3.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 18
+Info (10041): Inferred latch for "salida[2]" at mux1x2x1_3.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1_3.vhd Line: 18
+Info (12128): Elaborating entity "incrementador" for hierarchy "contador:contador|incrementador:inst"
+Info (12128): Elaborating entity "mux2_5" for hierarchy "mux2_5:inst3"
+Warning (10631): VHDL Process Statement warning at mux2_5.vhd(18): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica05/mux2_5.vhd Line: 18
+Info (10041): Inferred latch for "O" at mux2_5.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux2_5.vhd Line: 18
+Info (12128): Elaborating entity "divisor_datos" for hierarchy "divisor_datos:inst7"
+Info (12128): Elaborating entity "memory" for hierarchy "memory:inst1"
+Warning (10492): VHDL Process Statement warning at memory.vhd(37): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/practica05/memory.vhd Line: 37
+Info (12128): Elaborating entity "mux1x2x1" for hierarchy "mux1x2x1:inst"
+Warning (10631): VHDL Process Statement warning at mux1x2x1.vhd(18): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 18
+Info (10041): Inferred latch for "salida[0]" at mux1x2x1.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 18
+Info (10041): Inferred latch for "salida[1]" at mux1x2x1.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 18
+Info (10041): Inferred latch for "salida[2]" at mux1x2x1.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 18
+Info (10041): Inferred latch for "salida[3]" at mux1x2x1.vhd(18) File: C:/intelFPGA_lite/18.0/oac/practica05/mux1x2x1.vhd Line: 18
+Warning (13012): Latch mux2_5:inst3|O has unsafe behavior File: C:/intelFPGA_lite/18.0/oac/practica05/mux2_5.vhd Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal contador:contador|registro:inst6|internal_value[0] File: C:/intelFPGA_lite/18.0/oac/practica05/registro.vhd Line: 20
+Warning (14026): LATCH primitive "mux2_5:inst3|O" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/practica05/mux2_5.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 41 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 32 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Mon May 01 16:13:16 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:24
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 38 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4768 megabytes
+    Info: Processing ended: Fri May 05 07:26:23 2023
+    Info: Elapsed time: 00:04:49
+    Info: Total CPU time (on all processors): 00:00:26
 
 
