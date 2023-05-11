@@ -2,14 +2,13 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-
 entity registro_1 is 
 Port( 
-		clk : in std_logic;
-		reset :  in std_logic;
-		ena: in std_logic;
-		data_in: in std_logic_vector(3 downto 0); --LIGA
-		data_out: out std_logic_vector(3 downto 0) --Edo
+		clk:			in  std_logic;
+		reset: 		in  std_logic;
+		ena:			in  std_logic;
+		data_in:		in  std_logic;
+		data_out:	out std_logic
 	);
 end registro_1;
 
@@ -17,6 +16,7 @@ architecture behavioral of registro_1 is
 	signal internal_value: std_logic:= '0';
 	constant alta_impedancia : std_logic:= 'Z';
 	constant zero: std_logic := '0';
+	
 	begin
 		process(clk, reset, data_in)
 			begin 
