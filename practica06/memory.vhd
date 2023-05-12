@@ -15,37 +15,37 @@ architecture behavioral of memory is
 	signal internal_mem : mem;
 	-- EDITAR LOS ESTADOS 
 	begin
-						--  PRUEBA   VF     MI    	LIGA  	OUTS
+						 --  PRUEBA  VF     MI    	LIGA  	OUTS
 	--ESTADO 0000 
-	internal_mem(0)  <= "010" & "1" & "110" & "0011"& "0101"; 
+	internal_mem(0)  <= "00" & "0" & "00" & "0000"& "000001"; 
 	--ESTADO 0001 
-	internal_mem(1)  <= "000" & "0" & "111" & "1011"& "1000";
+	internal_mem(1)  <= "00" & "1" & "01" & "0111"& "001111";
 	--ESTADO 0010 
-	internal_mem(2)  <= "001" & "0" & "101" & "1010"& "1111"; 
+	internal_mem(2)  <= "00" & "0" & "00" & "0000"& "000011"; 
 	--ESTADO 0011 
-	internal_mem(3)  <= "100" & "1" & "100" & "0101"& "0101";
+	internal_mem(3)  <= "00" & "0" & "00" & "0000"& "001010";
 	--ESTADO 0100 
-	internal_mem(4)  <= "011" & "1" & "010" & "1111"& "1111";
+	internal_mem(4)  <= "00" & "0" & "10" & "0000"& "010000";
 	--ESTADO 0101 
-	internal_mem(5)  <= "100" & "0" & "011" & "1011"& "1011"; 
+	internal_mem(5)  <= "01" & "0" & "01" & "1010"& "010010"; 
 	--ESTADO 0110 
-	internal_mem(6)  <= "100" & "0" & "100" & "0101"& "0101";
+	internal_mem(6)  <= "11" & "0" & "01" & "0010"& "001001";
 	--ESTADO 0111 
-	internal_mem(7)  <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(7)  <= "10" & "0" & "11" & "0000"& "010000";
 	--ESTADO 1000 
-	internal_mem(8)  <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(8)  <= "11" & "0" & "01" & "0001"& "100000";
 	--ESTADO 1001 
-	internal_mem(9)  <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(9)  <= "10" & "1" & "11" & "0000"& "001010";
 	--ESTADO 1010 
-	internal_mem(10) <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(10) <= "11" & "0" & "01" & "0000"& "000000";
 	--ESTADO 1011 
-	internal_mem(11) <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(11) <= "00" & "0" & "10" & "0000"& "000100";
 	--ESTADO 1100 
-	internal_mem(12) <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(12) <= "11" & "0" & "01" & "0000"& "000100";
 	--ESTADO 1101 
-	internal_mem(13) <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(13) <= "11" & "0" & "01" & "0000"& "101000";
 	--ESTADO 1110 
-	internal_mem(14) <= "100" & "0" & "001" & "0000"& "0000";
+	internal_mem(14) <= "11" & "0" & "01" & "0000"& "010011";
 	
 	process(dir)
 		begin

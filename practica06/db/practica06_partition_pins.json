@@ -4,59 +4,59 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "nPL",
+					"name" : "EDO_PST[3]",
 					"strict" : false
 				},
 				{
-					"name" : "nMAP",
+					"name" : "EDO_PST[2]",
 					"strict" : false
 				},
 				{
-					"name" : "nVECT",
+					"name" : "EDO_PST[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[3]",
+					"name" : "EDO_PST[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[2]",
+					"name" : "OUTS[5]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[1]",
+					"name" : "OUTS[4]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[0]",
+					"name" : "OUTS[3]",
 					"strict" : false
 				},
 				{
-					"name" : "inst[0]",
+					"name" : "OUTS[2]",
 					"strict" : false
 				},
 				{
-					"name" : "inst[1]",
+					"name" : "OUTS[1]",
 					"strict" : false
 				},
 				{
-					"name" : "D[3]",
+					"name" : "OUTS[0]",
 					"strict" : false
 				},
 				{
-					"name" : "nCC",
+					"name" : "X",
 					"strict" : false
 				},
 				{
-					"name" : "D[2]",
+					"name" : "Y",
 					"strict" : false
 				},
 				{
-					"name" : "D[1]",
+					"name" : "INT",
 					"strict" : false
 				},
 				{
-					"name" : "D[0]",
+					"name" : "IN_1[3]",
 					"strict" : false
 				},
 				{
@@ -65,6 +65,34 @@
 				},
 				{
 					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "IN_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IN_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IN_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IN_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IN_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IN_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IN_2[0]",
 					"strict" : false
 				}
 			]
