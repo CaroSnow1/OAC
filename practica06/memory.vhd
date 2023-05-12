@@ -11,7 +11,7 @@ port (dir: in std_logic_vector(3 downto 0);
 end memory;
 
 architecture behavioral of memory is
-	type mem is array(0 to 15) of std_logic_vector(14 downto 0);
+	type mem is array(0 to 16) of std_logic_vector(14 downto 0);
 	signal internal_mem : mem;
 	-- EDITAR LOS ESTADOS 
 	begin

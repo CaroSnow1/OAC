@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity registro_sec is
+Port ( CLK : in STD_LOGIC;
+		 RESET : in STD_LOGIC;
+		 ENTRADA : in STD_LOGIC_VECTOR(93 downto 0);
+		 SALIDA : out STD_LOGIC_VECTOR(15 downto 0));
+end registro_sec;
+
+architecture Behavioral of registro_sec is
+signal valor_interno : std_logic_vector (15 downto 0) := B"0000000000000000";
+begin
+	process (CLK, RESET, ENTRADA)
+	begin
+		if RESET = '0' then
+			valor_interno <= B"0000000000000000";
+		elsif rising_edge (CBD) then
+			valor_interno <= ENTRADA;
+		end if;
+	end process;
+	
+	process (valor_interno)
+	begin
+		SALIDA <= valor_interno;
+	end process;
+end Behavioral;

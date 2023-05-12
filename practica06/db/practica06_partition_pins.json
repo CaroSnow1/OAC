@@ -48,19 +48,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Y",
-					"strict" : false
-				},
-				{
 					"name" : "INT",
 					"strict" : false
 				},
 				{
-					"name" : "IN_1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "CLK",
+					"name" : "Y",
 					"strict" : false
 				},
 				{
@@ -68,7 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "IN_2[3]",
+					"name" : "IN_1[3]",
 					"strict" : false
 				},
 				{
@@ -76,15 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "IN_2[2]",
-					"strict" : false
-				},
-				{
 					"name" : "IN_1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "IN_2[1]",
 					"strict" : false
 				},
 				{
@@ -92,7 +76,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "IN_2[0]",
+					"name" : "CLK",
 					"strict" : false
 				}
 			]

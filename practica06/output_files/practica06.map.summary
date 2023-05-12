@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri May 12 03:35:21 2023
+Analysis & Synthesis Status : Successful - Fri May 12 09:15:54 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : practica06
 Top-level Entity Name : implementacion
 Family : MAX 10
-Total logic elements : 74
-    Total combinational functions : 66
-    Dedicated logic registers : 55
-Total registers : 55
-Total pins : 23
+Total logic elements : 69
+    Total combinational functions : 65
+    Dedicated logic registers : 51
+Total registers : 51
+Total pins : 19
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

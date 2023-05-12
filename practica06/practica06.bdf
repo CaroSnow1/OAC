@@ -101,7 +101,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -40 56 128 72)
+	(rect -40 152 128 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -331,28 +331,6 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 168 96))
 	)
 )
-(symbol
-	(rect -24 88 120 168)
-	(text "div_frec" (rect 5 0 46 12)(font "Arial" ))
-	(text "DivisorFrecuencias" (rect 8 64 103 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
-		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "div_clk" (rect 0 0 35 12)(font "Arial" ))
-		(text "div_clk" (rect 94 27 129 39)(font "Arial" ))
-		(line (pt 144 32)(pt 128 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 64))
-	)
-)
 (connector
 	(pt 128 176)
 	(pt 152 176)
@@ -458,35 +436,7 @@ refer to the applicable agreement for further details.
 	(pt 640 64)
 )
 (connector
-	(pt 120 120)
-	(pt 128 120)
-)
-(connector
-	(pt 128 120)
 	(pt 128 160)
-)
-(connector
 	(pt 152 160)
-	(pt 128 160)
-)
-(connector
-	(pt -24 120)
-	(pt -32 120)
-)
-(connector
-	(pt -32 120)
-	(pt -32 80)
-)
-(connector
-	(pt -32 80)
-	(pt 136 80)
-)
-(connector
-	(pt 136 64)
-	(pt 128 64)
-)
-(connector
-	(pt 136 80)
-	(pt 136 64)
 )
 (junction (pt 624 144))
