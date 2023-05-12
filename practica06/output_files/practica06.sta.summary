@@ -2,40 +2,76 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : -4.657
+TNS   : -17.958
+
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -0.574
-TNS   : -1.552
+Slack : -4.351
+TNS   : -118.611
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.341
+Slack : 0.610
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : 1.517
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -8.612
+TNS   : -74.553
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Setup 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : -4.230
+TNS   : -16.262
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -0.433
-TNS   : -1.149
+Slack : -3.946
+TNS   : -104.690
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.305
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : 1.415
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -8.612
+TNS   : -74.553
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Fast 1200mV 0C Model Setup 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : -1.385
+TNS   : -5.214
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : 0.329
-TNS   : 0.000
+Slack : -1.276
+TNS   : -24.438
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.149
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : 0.576
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -7.096
+TNS   : -55.845
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'practica06:secuenciador|div_frec:DivisorFrecuencias|cuenta[27]'
+Slack : -1.000
+TNS   : -4.000
 
 ------------------------------------------------------------

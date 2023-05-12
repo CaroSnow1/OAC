@@ -21,25 +21,9 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -40 152 128 168)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect -40 168 128 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RESET" (rect 5 0 41 12)(font "Arial" ))
+	(text "RESET" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +39,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -40 184 128 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "ENA" (rect 5 0 29 12)(font "Arial" ))
+	(text "ENA" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 224 8 392 24)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inst[1..0]" (rect 5 0 49 12)(font "Arial" ))
+	(text "inst[1..0]" (rect 5 0 48 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +87,23 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 224 24 392 40)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "nCC" (rect 5 0 28 12)(font "Arial" ))
+	(text "nCC" (rect 5 0 27 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -40 56 128 72)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -331,9 +331,27 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 168 96))
 	)
 )
-(connector
-	(pt 128 160)
-	(pt 152 160)
+(symbol
+	(rect -24 88 120 168)
+	(text "div_frec" (rect 5 0 46 12)(font "Arial" ))
+	(text "DivisorFrecuencias" (rect 8 64 103 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "reloj" (rect 0 0 20 12)(font "Arial" ))
+		(text "reloj" (rect 21 27 41 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "div_clk" (rect 0 0 35 12)(font "Arial" ))
+		(text "div_clk" (rect 94 27 129 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
 )
 (connector
 	(pt 128 176)
@@ -438,5 +456,37 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 680 64)
 	(pt 640 64)
+)
+(connector
+	(pt 120 120)
+	(pt 128 120)
+)
+(connector
+	(pt 128 120)
+	(pt 128 160)
+)
+(connector
+	(pt 152 160)
+	(pt 128 160)
+)
+(connector
+	(pt -24 120)
+	(pt -32 120)
+)
+(connector
+	(pt -32 120)
+	(pt -32 80)
+)
+(connector
+	(pt -32 80)
+	(pt 136 80)
+)
+(connector
+	(pt 136 64)
+	(pt 128 64)
+)
+(connector
+	(pt 136 80)
+	(pt 136 64)
 )
 (junction (pt 624 144))
