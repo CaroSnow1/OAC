@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "05/12/2023 09:16:18"
+-- DATE "05/19/2023 09:02:02"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -222,8 +222,8 @@ SIGNAL \inst|Mux6~0_combout\ : std_logic;
 SIGNAL \IN_1[2]~input_o\ : std_logic;
 SIGNAL \secuenciador|MuxDireccion|salida[2]~3_combout\ : std_logic;
 SIGNAL \secuenciador|Inc|Add0~5_combout\ : std_logic;
-SIGNAL \inst|Mux2~0_combout\ : std_logic;
-SIGNAL \VF|internal_value~q\ : std_logic;
+SIGNAL \secuenciador|MuxDireccion|salida[2]~4_combout\ : std_logic;
+SIGNAL \inst|Mux4~0_combout\ : std_logic;
 SIGNAL \Y~input_o\ : std_logic;
 SIGNAL \inst|Mux0~0_combout\ : std_logic;
 SIGNAL \inst|Mux1~0_combout\ : std_logic;
@@ -232,7 +232,6 @@ SIGNAL \X~input_o\ : std_logic;
 SIGNAL \secuenciador|IntLogic|sel~6_combout\ : std_logic;
 SIGNAL \secuenciador|IntLogic|sel~7_combout\ : std_logic;
 SIGNAL \secuenciador|IntLogic|sel~8_combout\ : std_logic;
-SIGNAL \secuenciador|MuxDireccion|salida[2]~4_combout\ : std_logic;
 SIGNAL \inst|Mux7~0_combout\ : std_logic;
 SIGNAL \IN_1[1]~input_o\ : std_logic;
 SIGNAL \secuenciador|MuxDireccion|salida[1]~5_combout\ : std_logic;
@@ -243,16 +242,17 @@ SIGNAL \inst|Mux8~0_combout\ : std_logic;
 SIGNAL \IN_1[0]~input_o\ : std_logic;
 SIGNAL \secuenciador|MuxDireccion|salida[0]~7_combout\ : std_logic;
 SIGNAL \secuenciador|MuxDireccion|salida[0]~8_combout\ : std_logic;
-SIGNAL \inst|Mux4~0_combout\ : std_logic;
-SIGNAL \secuenciador|IntLogic|sel~3_combout\ : std_logic;
-SIGNAL \secuenciador|IntLogic|sel~4_combout\ : std_logic;
-SIGNAL \secuenciador|IntLogic|sel~5_combout\ : std_logic;
-SIGNAL \IN_1[3]~input_o\ : std_logic;
-SIGNAL \inst|Mux5~0_combout\ : std_logic;
-SIGNAL \secuenciador|MuxDireccion|salida[3]~0_combout\ : std_logic;
+SIGNAL \inst|Mux2~0_combout\ : std_logic;
+SIGNAL \VF|internal_value~q\ : std_logic;
 SIGNAL \secuenciador|IntLogic|sel~0_combout\ : std_logic;
 SIGNAL \secuenciador|IntLogic|sel~1_combout\ : std_logic;
 SIGNAL \secuenciador|IntLogic|sel~2_combout\ : std_logic;
+SIGNAL \IN_1[3]~input_o\ : std_logic;
+SIGNAL \inst|Mux5~0_combout\ : std_logic;
+SIGNAL \secuenciador|MuxDireccion|salida[3]~0_combout\ : std_logic;
+SIGNAL \secuenciador|IntLogic|sel~3_combout\ : std_logic;
+SIGNAL \secuenciador|IntLogic|sel~4_combout\ : std_logic;
+SIGNAL \secuenciador|IntLogic|sel~5_combout\ : std_logic;
 SIGNAL \secuenciador|Inc|Add0~4_combout\ : std_logic;
 SIGNAL \secuenciador|MuxDireccion|salida[3]~1_combout\ : std_logic;
 SIGNAL \secuenciador|MuxDireccion|salida[3]~2_combout\ : std_logic;
@@ -1408,24 +1408,24 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \secuenciador|MicroPC|internal_value\(0));
 
--- Location: LCCOMB_X57_Y52_N0
+-- Location: LCCOMB_X57_Y52_N12
 \inst|Mux6~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux6~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\)))
+-- \inst|Mux6~0_combout\ = (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[3]~2_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000000000010",
+	lut_mask => "0000000000000100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
-	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[1]~6_combout\,
+	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
-	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
+	datad => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	combout => \inst|Mux6~0_combout\);
 
--- Location: FF_X57_Y52_N1
+-- Location: FF_X57_Y52_N13
 \LIGA|internal_value[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1452,7 +1452,7 @@ PORT MAP (
 	i => ww_IN_1(2),
 	o => \IN_1[2]~input_o\);
 
--- Location: FF_X57_Y52_N15
+-- Location: FF_X57_Y52_N19
 \R_Interru|internal_value[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1468,7 +1468,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \R_Interru|internal_value\(2));
 
--- Location: LCCOMB_X57_Y52_N14
+-- Location: LCCOMB_X57_Y52_N18
 \secuenciador|MuxDireccion|salida[2]~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \secuenciador|MuxDireccion|salida[2]~3_combout\ = (\Instrucciones|internal_value\(1) & (((\R_Interru|internal_value\(2))))) # (!\Instrucciones|internal_value\(1) & ((\Instrucciones|internal_value\(0) & (\LIGA|internal_value\(2))) # 
@@ -1493,11 +1493,11 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0101101011110000",
+	lut_mask => "0011110011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \secuenciador|Inc|Add0~5_combout\);
@@ -1517,24 +1517,42 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \secuenciador|MicroPC|internal_value\(2));
 
--- Location: LCCOMB_X57_Y52_N26
-\inst|Mux2~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X57_Y52_N14
+\secuenciador|MuxDireccion|salida[2]~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux2~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\))
+-- \secuenciador|MuxDireccion|salida[2]~4_combout\ = (\secuenciador|IntLogic|sel~8_combout\ & (\secuenciador|MuxDireccion|salida[2]~3_combout\)) # (!\secuenciador|IntLogic|sel~8_combout\ & ((\secuenciador|MicroPC|internal_value\(2))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000000001010",
+	lut_mask => "1100110011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \secuenciador|MuxDireccion|salida[2]~3_combout\,
+	datac => \secuenciador|MicroPC|internal_value\(2),
+	datad => \secuenciador|IntLogic|sel~8_combout\,
+	combout => \secuenciador|MuxDireccion|salida[2]~4_combout\);
+
+-- Location: LCCOMB_X56_Y52_N20
+\inst|Mux4~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst|Mux4~0_combout\ = (\secuenciador|MuxDireccion|salida[3]~2_combout\ & (((!\secuenciador|MuxDireccion|salida[1]~6_combout\)) # (!\secuenciador|MuxDireccion|salida[0]~8_combout\))) # (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & 
+-- ((\secuenciador|MuxDireccion|salida[1]~6_combout\ & ((\secuenciador|MuxDireccion|salida[2]~4_combout\))) # (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0111010011101110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
-	combout => \inst|Mux2~0_combout\);
+	combout => \inst|Mux4~0_combout\);
 
--- Location: FF_X57_Y52_N27
-\VF|internal_value\ : dffeas
+-- Location: FF_X56_Y52_N21
+\Instrucciones|internal_value[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1542,11 +1560,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst2|cuenta[27]~clkctrl_outclk\,
-	d => \inst|Mux2~0_combout\,
+	d => \inst|Mux4~0_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \VF|internal_value~q\);
+	q => \Instrucciones|internal_value\(0));
 
 -- Location: IOIBUF_X51_Y54_N22
 \Y~input\ : fiftyfivenm_io_ibuf
@@ -1596,18 +1614,18 @@ PORT MAP (
 -- Location: LCCOMB_X56_Y52_N26
 \inst|Mux1~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux1~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ & ((!\secuenciador|MuxDireccion|salida[1]~6_combout\)))) # (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & 
+-- \inst|Mux1~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (((\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\)))) # (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & 
 -- ((\secuenciador|MuxDireccion|salida[3]~2_combout\) # ((\secuenciador|MuxDireccion|salida[2]~4_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111010101100",
+	lut_mask => "0101010011100100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datac => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \inst|Mux1~0_combout\);
 
@@ -1666,7 +1684,7 @@ PORT MAP (
 	datad => \Prueba|internal_value\(1),
 	combout => \secuenciador|IntLogic|sel~6_combout\);
 
--- Location: LCCOMB_X57_Y52_N18
+-- Location: LCCOMB_X57_Y52_N10
 \secuenciador|IntLogic|sel~7\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \secuenciador|IntLogic|sel~7_combout\ = (\Prueba|internal_value\(0) & (\Y~input_o\ & (!\Prueba|internal_value\(1)))) # (!\Prueba|internal_value\(0) & (((\secuenciador|IntLogic|sel~6_combout\))))
@@ -1686,55 +1704,39 @@ PORT MAP (
 -- Location: LCCOMB_X57_Y52_N20
 \secuenciador|IntLogic|sel~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \secuenciador|IntLogic|sel~8_combout\ = (\Instrucciones|internal_value\(0) & ((\VF|internal_value~q\ $ (!\secuenciador|IntLogic|sel~7_combout\)))) # (!\Instrucciones|internal_value\(0) & (\Instrucciones|internal_value\(1)))
+-- \secuenciador|IntLogic|sel~8_combout\ = (\Instrucciones|internal_value\(0) & (\VF|internal_value~q\ $ (((!\secuenciador|IntLogic|sel~7_combout\))))) # (!\Instrucciones|internal_value\(0) & (((\Instrucciones|internal_value\(1)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110010001001110",
+	lut_mask => "1101100001110010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \Instrucciones|internal_value\(0),
-	datab => \Instrucciones|internal_value\(1),
-	datac => \VF|internal_value~q\,
+	datab => \VF|internal_value~q\,
+	datac => \Instrucciones|internal_value\(1),
 	datad => \secuenciador|IntLogic|sel~7_combout\,
 	combout => \secuenciador|IntLogic|sel~8_combout\);
 
--- Location: LCCOMB_X57_Y52_N30
-\secuenciador|MuxDireccion|salida[2]~4\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \secuenciador|MuxDireccion|salida[2]~4_combout\ = (\secuenciador|IntLogic|sel~8_combout\ & (\secuenciador|MuxDireccion|salida[2]~3_combout\)) # (!\secuenciador|IntLogic|sel~8_combout\ & ((\secuenciador|MicroPC|internal_value\(2))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \secuenciador|MuxDireccion|salida[2]~3_combout\,
-	datac => \secuenciador|MicroPC|internal_value\(2),
-	datad => \secuenciador|IntLogic|sel~8_combout\,
-	combout => \secuenciador|MuxDireccion|salida[2]~4_combout\);
-
--- Location: LCCOMB_X57_Y52_N4
+-- Location: LCCOMB_X57_Y52_N28
 \inst|Mux7~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux7~0_combout\ = (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & ((\secuenciador|MuxDireccion|salida[0]~8_combout\ & ((!\secuenciador|MuxDireccion|salida[1]~6_combout\))) # (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & 
--- (\secuenciador|MuxDireccion|salida[2]~4_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\))))
+-- \inst|Mux7~0_combout\ = (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & ((\secuenciador|MuxDireccion|salida[1]~6_combout\ & (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & \secuenciador|MuxDireccion|salida[2]~4_combout\)) # 
+-- (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0001000000100010",
+	lut_mask => "0000000001100100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
-	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[1]~6_combout\,
+	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
-	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
+	datad => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	combout => \inst|Mux7~0_combout\);
 
--- Location: FF_X57_Y52_N5
+-- Location: FF_X57_Y52_N29
 \LIGA|internal_value[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1803,12 +1805,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0100011110111000",
+	lut_mask => "0010011111011000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[1]~5_combout\,
-	datab => \secuenciador|IntLogic|sel~8_combout\,
+	dataa => \secuenciador|IntLogic|sel~8_combout\,
+	datab => \secuenciador|MuxDireccion|salida[1]~5_combout\,
 	datac => \secuenciador|MicroPC|internal_value\(1),
 	datad => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	combout => \secuenciador|Inc|Add0~6_combout\);
@@ -1844,7 +1846,7 @@ PORT MAP (
 	datad => \secuenciador|IntLogic|sel~8_combout\,
 	combout => \secuenciador|MuxDireccion|salida[1]~6_combout\);
 
--- Location: LCCOMB_X57_Y52_N2
+-- Location: LCCOMB_X57_Y52_N26
 \inst|Mux3~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|Mux3~0_combout\ = (\secuenciador|MuxDireccion|salida[2]~4_combout\ & (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[1]~6_combout\ $ (!\secuenciador|MuxDireccion|salida[0]~8_combout\)))) # 
@@ -1862,7 +1864,7 @@ PORT MAP (
 	datad => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	combout => \inst|Mux3~0_combout\);
 
--- Location: FF_X57_Y52_N3
+-- Location: FF_X57_Y52_N27
 \Instrucciones|internal_value[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1877,24 +1879,24 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \Instrucciones|internal_value\(1));
 
--- Location: LCCOMB_X56_Y52_N30
+-- Location: LCCOMB_X56_Y52_N14
 \inst|Mux8~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux8~0_combout\ = (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[3]~2_combout\ $ (\secuenciador|MuxDireccion|salida[0]~8_combout\))))
+-- \inst|Mux8~0_combout\ = (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\ $ (\secuenciador|MuxDireccion|salida[3]~2_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000000010100",
+	lut_mask => "0000000000000110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datac => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \inst|Mux8~0_combout\);
 
--- Location: FF_X56_Y52_N31
+-- Location: FF_X56_Y52_N15
 \LIGA|internal_value[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1955,7 +1957,7 @@ PORT MAP (
 	datad => \Instrucciones|internal_value\(0),
 	combout => \secuenciador|MuxDireccion|salida[0]~7_combout\);
 
--- Location: LCCOMB_X57_Y52_N10
+-- Location: LCCOMB_X57_Y52_N2
 \secuenciador|MuxDireccion|salida[0]~8\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \secuenciador|MuxDireccion|salida[0]~8_combout\ = (\secuenciador|IntLogic|sel~8_combout\ & ((\secuenciador|MuxDireccion|salida[0]~7_combout\))) # (!\secuenciador|IntLogic|sel~8_combout\ & (\secuenciador|MicroPC|internal_value\(0)))
@@ -1971,26 +1973,24 @@ PORT MAP (
 	datad => \secuenciador|IntLogic|sel~8_combout\,
 	combout => \secuenciador|MuxDireccion|salida[0]~8_combout\);
 
--- Location: LCCOMB_X56_Y52_N24
-\inst|Mux4~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X57_Y52_N30
+\inst|Mux2~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux4~0_combout\ = (\secuenciador|MuxDireccion|salida[3]~2_combout\ & (((!\secuenciador|MuxDireccion|salida[1]~6_combout\)) # (!\secuenciador|MuxDireccion|salida[0]~8_combout\))) # (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & 
--- ((\secuenciador|MuxDireccion|salida[1]~6_combout\ & ((\secuenciador|MuxDireccion|salida[2]~4_combout\))) # (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\))))
+-- \inst|Mux2~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0111001011101110",
+	lut_mask => "0000000000001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
-	combout => \inst|Mux4~0_combout\);
+	combout => \inst|Mux2~0_combout\);
 
--- Location: FF_X56_Y52_N25
-\Instrucciones|internal_value[0]\ : dffeas
+-- Location: FF_X57_Y52_N31
+\VF|internal_value\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1998,138 +1998,11 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst2|cuenta[27]~clkctrl_outclk\,
-	d => \inst|Mux4~0_combout\,
+	d => \inst|Mux2~0_combout\,
 	clrn => \RESET~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Instrucciones|internal_value\(0));
-
--- Location: LCCOMB_X57_Y52_N12
-\secuenciador|IntLogic|sel~3\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \secuenciador|IntLogic|sel~3_combout\ = (\VF|internal_value~q\ & ((\INT~input_o\) # (!\Prueba|internal_value\(1))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1010000011110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \INT~input_o\,
-	datac => \VF|internal_value~q\,
-	datad => \Prueba|internal_value\(1),
-	combout => \secuenciador|IntLogic|sel~3_combout\);
-
--- Location: LCCOMB_X56_Y52_N2
-\secuenciador|IntLogic|sel~4\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \secuenciador|IntLogic|sel~4_combout\ = (\Prueba|internal_value\(0) & (\Y~input_o\ & ((!\Prueba|internal_value\(1))))) # (!\Prueba|internal_value\(0) & (((\X~input_o\) # (\Prueba|internal_value\(1)))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0101010111011000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \Prueba|internal_value\(0),
-	datab => \Y~input_o\,
-	datac => \X~input_o\,
-	datad => \Prueba|internal_value\(1),
-	combout => \secuenciador|IntLogic|sel~4_combout\);
-
--- Location: LCCOMB_X56_Y52_N12
-\secuenciador|IntLogic|sel~5\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \secuenciador|IntLogic|sel~5_combout\ = (\Instrucciones|internal_value\(0) & (\secuenciador|IntLogic|sel~3_combout\ & \secuenciador|IntLogic|sel~4_combout\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100000000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \Instrucciones|internal_value\(0),
-	datac => \secuenciador|IntLogic|sel~3_combout\,
-	datad => \secuenciador|IntLogic|sel~4_combout\,
-	combout => \secuenciador|IntLogic|sel~5_combout\);
-
--- Location: IOIBUF_X54_Y54_N15
-\IN_1[3]~input\ : fiftyfivenm_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	listen_to_nsleep_signal => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_IN_1(3),
-	o => \IN_1[3]~input_o\);
-
--- Location: FF_X56_Y52_N7
-\R_Interru|internal_value[3]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \inst2|cuenta[27]~clkctrl_outclk\,
-	asdata => \IN_1[3]~input_o\,
-	clrn => \RESET~input_o\,
-	sload => VCC,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \R_Interru|internal_value\(3));
-
--- Location: LCCOMB_X57_Y52_N28
-\inst|Mux5~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \inst|Mux5~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000000100000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
-	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
-	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
-	combout => \inst|Mux5~0_combout\);
-
--- Location: FF_X57_Y52_N29
-\LIGA|internal_value[3]\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \inst2|cuenta[27]~clkctrl_outclk\,
-	d => \inst|Mux5~0_combout\,
-	clrn => \RESET~input_o\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \LIGA|internal_value\(3));
-
--- Location: LCCOMB_X56_Y52_N6
-\secuenciador|MuxDireccion|salida[3]~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \secuenciador|MuxDireccion|salida[3]~0_combout\ = (\Instrucciones|internal_value\(1) & (((\R_Interru|internal_value\(3))))) # (!\Instrucciones|internal_value\(1) & ((\Instrucciones|internal_value\(0) & ((\LIGA|internal_value\(3)))) # 
--- (!\Instrucciones|internal_value\(0) & (\R_Interru|internal_value\(3)))))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111010010110000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \Instrucciones|internal_value\(1),
-	datab => \Instrucciones|internal_value\(0),
-	datac => \R_Interru|internal_value\(3),
-	datad => \LIGA|internal_value\(3),
-	combout => \secuenciador|MuxDireccion|salida[3]~0_combout\);
+	q => \VF|internal_value~q\);
 
 -- Location: LCCOMB_X56_Y52_N4
 \secuenciador|IntLogic|sel~0\ : fiftyfivenm_lcell_comb
@@ -2164,27 +2037,154 @@ PORT MAP (
 	datad => \Prueba|internal_value\(1),
 	combout => \secuenciador|IntLogic|sel~1_combout\);
 
--- Location: LCCOMB_X56_Y52_N8
+-- Location: LCCOMB_X56_Y52_N12
 \secuenciador|IntLogic|sel~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \secuenciador|IntLogic|sel~2_combout\ = (\Instrucciones|internal_value\(0) & (!\VF|internal_value~q\ & ((\secuenciador|IntLogic|sel~0_combout\) # (\secuenciador|IntLogic|sel~1_combout\))))
+-- \secuenciador|IntLogic|sel~2_combout\ = (!\VF|internal_value~q\ & (\Instrucciones|internal_value\(0) & ((\secuenciador|IntLogic|sel~0_combout\) # (\secuenciador|IntLogic|sel~1_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0010001000100000",
+	lut_mask => "0100010001000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \Instrucciones|internal_value\(0),
-	datab => \VF|internal_value~q\,
+	dataa => \VF|internal_value~q\,
+	datab => \Instrucciones|internal_value\(0),
 	datac => \secuenciador|IntLogic|sel~0_combout\,
 	datad => \secuenciador|IntLogic|sel~1_combout\,
 	combout => \secuenciador|IntLogic|sel~2_combout\);
 
+-- Location: IOIBUF_X54_Y54_N15
+\IN_1[3]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_IN_1(3),
+	o => \IN_1[3]~input_o\);
+
+-- Location: FF_X56_Y52_N7
+\R_Interru|internal_value[3]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst2|cuenta[27]~clkctrl_outclk\,
+	asdata => \IN_1[3]~input_o\,
+	clrn => \RESET~input_o\,
+	sload => VCC,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \R_Interru|internal_value\(3));
+
+-- Location: LCCOMB_X57_Y52_N4
+\inst|Mux5~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst|Mux5~0_combout\ = (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[3]~2_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000001000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \secuenciador|MuxDireccion|salida[1]~6_combout\,
+	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	datad => \secuenciador|MuxDireccion|salida[3]~2_combout\,
+	combout => \inst|Mux5~0_combout\);
+
+-- Location: FF_X57_Y52_N5
+\LIGA|internal_value[3]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst2|cuenta[27]~clkctrl_outclk\,
+	d => \inst|Mux5~0_combout\,
+	clrn => \RESET~input_o\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \LIGA|internal_value\(3));
+
+-- Location: LCCOMB_X56_Y52_N6
+\secuenciador|MuxDireccion|salida[3]~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \secuenciador|MuxDireccion|salida[3]~0_combout\ = (\Instrucciones|internal_value\(0) & ((\Instrucciones|internal_value\(1) & (\R_Interru|internal_value\(3))) # (!\Instrucciones|internal_value\(1) & ((\LIGA|internal_value\(3)))))) # 
+-- (!\Instrucciones|internal_value\(0) & (((\R_Interru|internal_value\(3)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111001011010000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Instrucciones|internal_value\(0),
+	datab => \Instrucciones|internal_value\(1),
+	datac => \R_Interru|internal_value\(3),
+	datad => \LIGA|internal_value\(3),
+	combout => \secuenciador|MuxDireccion|salida[3]~0_combout\);
+
+-- Location: LCCOMB_X57_Y52_N0
+\secuenciador|IntLogic|sel~3\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \secuenciador|IntLogic|sel~3_combout\ = (\VF|internal_value~q\ & ((\INT~input_o\) # (!\Prueba|internal_value\(1))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010000011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \INT~input_o\,
+	datac => \VF|internal_value~q\,
+	datad => \Prueba|internal_value\(1),
+	combout => \secuenciador|IntLogic|sel~3_combout\);
+
+-- Location: LCCOMB_X56_Y52_N2
+\secuenciador|IntLogic|sel~4\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \secuenciador|IntLogic|sel~4_combout\ = (\Prueba|internal_value\(0) & (\Y~input_o\ & ((!\Prueba|internal_value\(1))))) # (!\Prueba|internal_value\(0) & (((\X~input_o\) # (\Prueba|internal_value\(1)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010111011000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Prueba|internal_value\(0),
+	datab => \Y~input_o\,
+	datac => \X~input_o\,
+	datad => \Prueba|internal_value\(1),
+	combout => \secuenciador|IntLogic|sel~4_combout\);
+
+-- Location: LCCOMB_X56_Y52_N8
+\secuenciador|IntLogic|sel~5\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \secuenciador|IntLogic|sel~5_combout\ = (\Instrucciones|internal_value\(0) & (\secuenciador|IntLogic|sel~3_combout\ & \secuenciador|IntLogic|sel~4_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100000000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \Instrucciones|internal_value\(0),
+	datac => \secuenciador|IntLogic|sel~3_combout\,
+	datad => \secuenciador|IntLogic|sel~4_combout\,
+	combout => \secuenciador|IntLogic|sel~5_combout\);
+
 -- Location: LCCOMB_X56_Y52_N0
 \secuenciador|Inc|Add0~4\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \secuenciador|Inc|Add0~4_combout\ = \secuenciador|MuxDireccion|salida[3]~2_combout\ $ (((\secuenciador|MuxDireccion|salida[2]~4_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\))))
+-- \secuenciador|Inc|Add0~4_combout\ = \secuenciador|MuxDireccion|salida[3]~2_combout\ $ (((\secuenciador|MuxDireccion|salida[0]~8_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2192,9 +2192,9 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datac => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \secuenciador|Inc|Add0~4_combout\);
 
@@ -2216,26 +2216,26 @@ PORT MAP (
 -- Location: LCCOMB_X56_Y52_N18
 \secuenciador|MuxDireccion|salida[3]~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \secuenciador|MuxDireccion|salida[3]~1_combout\ = (\Instrucciones|internal_value\(0) & (\secuenciador|MicroPC|internal_value\(3))) # (!\Instrucciones|internal_value\(0) & ((\Instrucciones|internal_value\(1) & 
+-- \secuenciador|MuxDireccion|salida[3]~1_combout\ = (\Instrucciones|internal_value\(0) & (((\secuenciador|MicroPC|internal_value\(3))))) # (!\Instrucciones|internal_value\(0) & ((\Instrucciones|internal_value\(1) & 
 -- ((\secuenciador|MuxDireccion|salida[3]~0_combout\))) # (!\Instrucciones|internal_value\(1) & (\secuenciador|MicroPC|internal_value\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1101110010001100",
+	lut_mask => "1111010010110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \Instrucciones|internal_value\(0),
-	datab => \secuenciador|MicroPC|internal_value\(3),
-	datac => \Instrucciones|internal_value\(1),
+	datab => \Instrucciones|internal_value\(1),
+	datac => \secuenciador|MicroPC|internal_value\(3),
 	datad => \secuenciador|MuxDireccion|salida[3]~0_combout\,
 	combout => \secuenciador|MuxDireccion|salida[3]~1_combout\);
 
--- Location: LCCOMB_X56_Y52_N20
+-- Location: LCCOMB_X56_Y52_N24
 \secuenciador|MuxDireccion|salida[3]~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \secuenciador|MuxDireccion|salida[3]~2_combout\ = (\secuenciador|IntLogic|sel~5_combout\ & (\secuenciador|MuxDireccion|salida[3]~0_combout\)) # (!\secuenciador|IntLogic|sel~5_combout\ & ((\secuenciador|IntLogic|sel~2_combout\ & 
--- (\secuenciador|MuxDireccion|salida[3]~0_combout\)) # (!\secuenciador|IntLogic|sel~2_combout\ & ((\secuenciador|MuxDireccion|salida[3]~1_combout\)))))
+-- \secuenciador|MuxDireccion|salida[3]~2_combout\ = (\secuenciador|IntLogic|sel~2_combout\ & (\secuenciador|MuxDireccion|salida[3]~0_combout\)) # (!\secuenciador|IntLogic|sel~2_combout\ & ((\secuenciador|IntLogic|sel~5_combout\ & 
+-- (\secuenciador|MuxDireccion|salida[3]~0_combout\)) # (!\secuenciador|IntLogic|sel~5_combout\ & ((\secuenciador|MuxDireccion|salida[3]~1_combout\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2243,16 +2243,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|IntLogic|sel~5_combout\,
+	dataa => \secuenciador|IntLogic|sel~2_combout\,
 	datab => \secuenciador|MuxDireccion|salida[3]~0_combout\,
-	datac => \secuenciador|IntLogic|sel~2_combout\,
+	datac => \secuenciador|IntLogic|sel~5_combout\,
 	datad => \secuenciador|MuxDireccion|salida[3]~1_combout\,
 	combout => \secuenciador|MuxDireccion|salida[3]~2_combout\);
 
 -- Location: LCCOMB_X58_Y52_N26
 \inst|Mux9~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux9~0_combout\ = (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\ $ (!\secuenciador|MuxDireccion|salida[2]~4_combout\))))
+-- \inst|Mux9~0_combout\ = (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ $ (!\secuenciador|MuxDireccion|salida[0]~8_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2260,10 +2260,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datab => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	datac => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datad => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	datad => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	combout => \inst|Mux9~0_combout\);
 
 -- Location: FF_X58_Y52_N27
@@ -2288,14 +2288,14 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0100101100000000",
+	lut_mask => "0000101010000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datab => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	datac => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datad => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	datad => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	combout => \inst|Mux10~0_combout\);
 
 -- Location: FF_X58_Y52_N29
@@ -2316,20 +2316,19 @@ PORT MAP (
 -- Location: LCCOMB_X56_Y52_N16
 \inst|Mux11~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux11~0_combout\ = (\secuenciador|MuxDireccion|salida[3]~2_combout\ & (((\secuenciador|MuxDireccion|salida[0]~8_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\)))) # (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & 
--- ((\secuenciador|MuxDireccion|salida[2]~4_combout\ & (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\)) # (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & 
--- (\secuenciador|MuxDireccion|salida[0]~8_combout\))))
+-- \inst|Mux11~0_combout\ = (\secuenciador|MuxDireccion|salida[1]~6_combout\ & (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ $ (\secuenciador|MuxDireccion|salida[0]~8_combout\)))) # 
+-- (!\secuenciador|MuxDireccion|salida[1]~6_combout\ & (\secuenciador|MuxDireccion|salida[0]~8_combout\ & ((\secuenciador|MuxDireccion|salida[3]~2_combout\) # (!\secuenciador|MuxDireccion|salida[2]~4_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0001001011010000",
+	lut_mask => "0100011100100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datac => \secuenciador|MuxDireccion|salida[0]~8_combout\,
-	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
+	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	datad => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	combout => \inst|Mux11~0_combout\);
 
 -- Location: FF_X56_Y52_N17
@@ -2347,25 +2346,26 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \SALIDAS|internal_value\(3));
 
--- Location: LCCOMB_X56_Y52_N14
+-- Location: LCCOMB_X56_Y52_N22
 \inst|Mux12~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|Mux12~0_combout\ = (\secuenciador|MuxDireccion|salida[0]~8_combout\ & (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & (\secuenciador|MuxDireccion|salida[3]~2_combout\ $ (!\secuenciador|MuxDireccion|salida[1]~6_combout\)))) # 
--- (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & (\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\)))
+-- (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & ((\secuenciador|MuxDireccion|salida[3]~2_combout\ & (\secuenciador|MuxDireccion|salida[2]~4_combout\ & !\secuenciador|MuxDireccion|salida[1]~6_combout\)) # 
+-- (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000100000100100",
+	lut_mask => "0000100101000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \inst|Mux12~0_combout\);
 
--- Location: FF_X56_Y52_N15
+-- Location: FF_X56_Y52_N23
 \SALIDAS|internal_value[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2389,12 +2389,12 @@ PORT MAP (
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0010010101001100",
+	lut_mask => "0100001100101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datab => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
 	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \inst|Mux13~0_combout\);
@@ -2414,25 +2414,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \SALIDAS|internal_value\(1));
 
--- Location: LCCOMB_X56_Y52_N22
+-- Location: LCCOMB_X56_Y52_N30
 \inst|Mux14~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|Mux14~0_combout\ = (\secuenciador|MuxDireccion|salida[2]~4_combout\ & (((!\secuenciador|MuxDireccion|salida[0]~8_combout\ & \secuenciador|MuxDireccion|salida[1]~6_combout\)))) # (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & 
+-- \inst|Mux14~0_combout\ = (\secuenciador|MuxDireccion|salida[2]~4_combout\ & (!\secuenciador|MuxDireccion|salida[0]~8_combout\ & ((\secuenciador|MuxDireccion|salida[1]~6_combout\)))) # (!\secuenciador|MuxDireccion|salida[2]~4_combout\ & 
 -- (!\secuenciador|MuxDireccion|salida[3]~2_combout\ & ((!\secuenciador|MuxDireccion|salida[1]~6_combout\) # (!\secuenciador|MuxDireccion|salida[0]~8_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000101100010001",
+	lut_mask => "0101000100000011",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \secuenciador|MuxDireccion|salida[2]~4_combout\,
+	dataa => \secuenciador|MuxDireccion|salida[0]~8_combout\,
 	datab => \secuenciador|MuxDireccion|salida[3]~2_combout\,
-	datac => \secuenciador|MuxDireccion|salida[0]~8_combout\,
+	datac => \secuenciador|MuxDireccion|salida[2]~4_combout\,
 	datad => \secuenciador|MuxDireccion|salida[1]~6_combout\,
 	combout => \inst|Mux14~0_combout\);
 
--- Location: FF_X56_Y52_N23
+-- Location: FF_X56_Y52_N31
 \SALIDAS|internal_value[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (

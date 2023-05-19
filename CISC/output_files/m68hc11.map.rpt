@@ -1,5 +1,5 @@
 Analysis & Synthesis report for m68hc11
-Fri May 12 08:21:59 2023
+Fri May 19 08:39:10 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -50,16 +50,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 12 08:21:58 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 19 08:39:10 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; m68hc11                                     ;
 ; Top-level Entity Name              ; m68hc11                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 336                                         ;
-;     Total combinational functions  ; 319                                         ;
-;     Dedicated logic registers      ; 131                                         ;
-; Total registers                    ; 131                                         ;
-; Total pins                         ; 130                                         ;
+; Total logic elements               ; 380                                         ;
+;     Total combinational functions  ; 363                                         ;
+;     Dedicated logic registers      ; 136                                         ;
+; Total registers                    ; 136                                         ;
+; Total pins                         ; 131                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -221,30 +221,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 336       ;
+; Estimated Total logic elements              ; 380       ;
 ;                                             ;           ;
-; Total combinational functions               ; 319       ;
+; Total combinational functions               ; 363       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 182       ;
-;     -- 3 input functions                    ; 98        ;
-;     -- <=2 input functions                  ; 39        ;
+;     -- 4 input functions                    ; 201       ;
+;     -- 3 input functions                    ; 114       ;
+;     -- <=2 input functions                  ; 48        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 285       ;
+;     -- normal mode                          ; 329       ;
 ;     -- arithmetic mode                      ; 34        ;
 ;                                             ;           ;
-; Total registers                             ; 131       ;
-;     -- Dedicated logic registers            ; 131       ;
+; Total registers                             ; 136       ;
+;     -- Dedicated logic registers            ; 136       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 130       ;
+; I/O pins                                    ; 131       ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 113       ;
-; Total fan-out                               ; 1757      ;
-; Average fan-out                             ; 2.47      ;
+; Maximum fan-out                             ; 117       ;
+; Total fan-out                               ; 1918      ;
+; Average fan-out                             ; 2.52      ;
 +---------------------------------------------+-----------+
 
 
@@ -253,186 +253,188 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                             ; Entity Name             ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
-; |m68hc11                             ; 319 (0)             ; 131 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 130  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
-;    |Flags:inst5|                     ; 7 (0)               ; 2 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5                                                            ; Flags                   ; work         ;
+; |m68hc11                             ; 363 (0)             ; 136 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 131  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
+;    |Flags:inst5|                     ; 9 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5                                                            ; Flags                   ; work         ;
 ;       |mux3:inst10|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst10                                                ; mux3                    ; work         ;
+;       |mux3:inst11|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst11                                                ; mux3                    ; work         ;
 ;       |registro:inst2|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst2                                             ; registro                ; work         ;
+;       |registro:inst3|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst3                                             ; registro                ; work         ;
 ;       |registro:inst|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst                                              ; registro                ; work         ;
 ;    |acumulador:ACCA|                 ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCA                                                        ; acumulador              ; work         ;
 ;    |acumulador:ACCB|                 ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCB                                                        ; acumulador              ; work         ;
+;    |busmux:inst13|                   ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13                                                          ; busmux                  ; work         ;
+;       |lpm_mux:$00000|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13|lpm_mux:$00000                                           ; lpm_mux                 ; work         ;
+;          |mux_t5c:auto_generated|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13|lpm_mux:$00000|mux_t5c:auto_generated                    ; mux_t5c                 ; work         ;
 ;    |contador:AUX|                    ; 18 (18)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:AUX                                                           ; contador                ; work         ;
 ;    |contador:PC|                     ; 34 (34)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:PC                                                            ; contador                ; work         ;
 ;    |ctrl_interrupciones:inst3|       ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ctrl_interrupciones:inst3                                              ; ctrl_interrupciones     ; work         ;
-;    |ram:inst6|                       ; 14 (14)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
+;    |ram:inst6|                       ; 15 (15)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
 ;    |registro_direccion:inst|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_direccion:inst                                                ; registro_direccion      ; work         ;
 ;    |registro_instruccion:inst8|      ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_instruccion:inst8                                             ; registro_instruccion    ; work         ;
-;    |registro_interrupciones:IRX|     ; 74 (74)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_interrupciones:IRX                                            ; registro_interrupciones ; work         ;
-;    |secuenciador:inst14|             ; 107 (0)             ; 38 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14                                                    ; secuenciador            ; work         ;
-;       |busmux:inst5|                 ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5                                       ; busmux                  ; work         ;
-;          |lpm_mux:$00000|            ; 16 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000                        ; lpm_mux                 ; work         ;
-;             |mux_f7c:auto_generated| ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c                 ; work         ;
-;       |logica_seleccion:inst3|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|logica_seleccion:inst3                             ; logica_seleccion        ; work         ;
-;       |memory:inst9|                 ; 75 (75)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|memory:inst9                                       ; memory                  ; work         ;
+;    |registro_interrupciones:IRX|     ; 72 (72)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_interrupciones:IRX                                            ; registro_interrupciones ; work         ;
+;    |secuenciador:inst14|             ; 148 (6)             ; 43 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14                                                    ; secuenciador            ; work         ;
+;       |busmux:inst5|                 ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5                                       ; busmux                  ; work         ;
+;          |lpm_mux:$00000|            ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000                        ; lpm_mux                 ; work         ;
+;             |mux_f7c:auto_generated| ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c                 ; work         ;
+;       |logica_seleccion:inst3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|logica_seleccion:inst3                             ; logica_seleccion        ; work         ;
+;       |memory:inst9|                 ; 110 (110)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|memory:inst9                                       ; memory                  ; work         ;
 ;       |registro_MicroInst:inst4|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_MicroInst:inst4                           ; registro_MicroInst      ; work         ;
-;       |registro_sec:inst13|          ; 0 (0)               ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_sec:inst13                                ; registro_sec            ; work         ;
-;    |upa:inst1|                       ; 25 (25)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|upa:inst1                                                              ; upa                     ; work         ;
+;       |registro_sec:inst13|          ; 3 (3)               ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_sec:inst13                                ; registro_sec            ; work         ;
+;    |upa:inst1|                       ; 26 (26)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|upa:inst1                                                              ; upa                     ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                       ;
-+-----------------------------------------------------+--------------------------------------------------------------------+
-; Register name                                       ; Reason for Removal                                                 ;
-+-----------------------------------------------------+--------------------------------------------------------------------+
-; registro_instruccion:inst8|valor_interno[0..3]      ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|liga[1..11] ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|selbus      ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|UPA[1..9]   ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEX2        ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEX1        ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEX0        ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|X[0..2]     ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|enaY        ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nERA2       ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEAP2       ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEAP1       ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEAP0       ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|AP[0..2]    ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|PC[1]       ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nWX         ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nWI         ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nEI         ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nRW         ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|DINT        ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|HINT        ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|SET_IRQ     ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|SET_XIRQ    ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|B9          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|B8          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|B5          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|B1          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|B0          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|CI          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|CX          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|CS          ; Stuck at GND due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|nHB         ; Stuck at VCC due to stuck port data_in                             ;
-; secuenciador:inst14|registro_sec:inst13|ACCSEC      ; Stuck at GND due to stuck port data_in                             ;
-; Flags:inst5|registro:inst7|valor_interno            ; Stuck at GND due to stuck port clock                               ;
-; Flags:inst5|registro:inst6|valor_interno            ; Stuck at GND due to stuck port clock                               ;
-; Flags:inst5|registro:inst4|valor_interno            ; Stuck at GND due to stuck port clock                               ;
-; registro_interrupciones:IRI|data_out[0..2,4]        ; Stuck at GND due to stuck port clock_enable                        ;
-; registro_interrupciones:IRI|data_out[3]             ; Stuck at VCC due to stuck port clock_enable                        ;
-; registro_interrupciones:IRI|data_out[5..15]         ; Stuck at GND due to stuck port clock_enable                        ;
-; ctrl_interrupciones:inst3|INT_flag                  ; Stuck at VCC due to stuck port clock_enable                        ;
-; secuenciador:inst14|registro_sec:inst13|nEPC2       ; Lost fanout                                                        ;
-; registro_interrupciones:IRX|data_out[0..2,5..15]    ; Merged with registro_interrupciones:IRX|data_out[4]                ;
-; contador_ID:Y|data_out[3]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[2,11]                        ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[1,2]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[7]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[13]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[3,15]                        ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[7]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[3,6]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[0]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[15]                            ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[5]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[1]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[9]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[9]                             ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[13]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[5,6]                         ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[13]                            ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[8,9]                         ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[4,8,12,14]                     ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[4]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[0]                             ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[15]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[1]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[14]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[5]                             ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[6]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[7]                             ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[8]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[2]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[10]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[11]                            ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[12]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[4]                           ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:X|data_out[14]                          ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador_ID:Y|data_out[10..12]                      ; Merged with contador_ID:Y|data_out[0]                              ;
-; contador:AP|data_out[10]                            ; Merged with contador_ID:Y|data_out[0]                              ;
-; upa:inst1|Q[7]                                      ; Merged with upa:inst1|Banderas[2]                                  ;
-; upa:inst1|Yupa_interno[7]                           ; Merged with upa:inst1|Banderas[2]                                  ;
-; upa:inst1|Yupa_interno[0]                           ; Merged with upa:inst1|Q[0]                                         ;
-; upa:inst1|Yupa_interno[4]                           ; Merged with upa:inst1|Banderas[4]                                  ;
-; secuenciador:inst14|registro_sec:inst13|B7          ; Merged with secuenciador:inst14|registro_sec:inst13|B4             ;
-; secuenciador:inst14|registro_sec:inst13|B6          ; Merged with secuenciador:inst14|registro_sec:inst13|B3             ;
-; secuenciador:inst14|registro_sec:inst13|EB[1]       ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]          ;
-; secuenciador:inst14|registro_sec:inst13|UPA[0]      ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]          ;
-; secuenciador:inst14|registro_sec:inst13|selmux      ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]          ;
-; secuenciador:inst14|registro_sec:inst13|RA[2]       ; Merged with secuenciador:inst14|registro_sec:inst13|BD             ;
-; secuenciador:inst14|registro_sec:inst13|RA[1]       ; Merged with secuenciador:inst14|registro_sec:inst13|RA[0]          ;
-; secuenciador:inst14|registro_sec:inst13|nOEUPA      ; Merged with secuenciador:inst14|registro_sec:inst13|nDUPA          ;
-; secuenciador:inst14|registro_sec:inst13|prueba[3]   ; Merged with secuenciador:inst14|registro_sec:inst13|instruccion[0] ;
-; secuenciador:inst14|registro_sec:inst13|prueba[1,2] ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[0]      ;
-; secuenciador:inst14|registro_sec:inst13|vf          ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[0]      ;
-; upa:inst1|Banderas[3]                               ; Merged with upa:inst1|Banderas[1]                                  ;
-; secuenciador:inst14|registro_sec:inst13|nEPC1       ; Merged with secuenciador:inst14|registro_sec:inst13|nEPC0          ;
-; registro_interrupciones:IRX|data_out[4]             ; Stuck at GND due to stuck port data_in                             ;
-; registro_interrupciones:IRX|data_out[3]             ; Stuck at VCC due to stuck port data_in                             ;
-; contador_ID:Y|data_out[0]                           ; Stuck at GND due to stuck port data_in                             ;
-; upa:inst1|contador[0..2]                            ; Stuck at GND due to stuck port clock_enable                        ;
-; Flags:inst5|registro:inst5|valor_interno            ; Lost fanout                                                        ;
-; secuenciador:inst14|registro_sec:inst13|CH          ; Lost fanout                                                        ;
-; Flags:inst5|registro:inst3|valor_interno            ; Lost fanout                                                        ;
-; secuenciador:inst14|registro_sec:inst13|CN          ; Lost fanout                                                        ;
-; Flags:inst5|registro:inst1|valor_interno            ; Lost fanout                                                        ;
-; secuenciador:inst14|registro_sec:inst13|B2          ; Lost fanout                                                        ;
-; secuenciador:inst14|registro_sec:inst13|CV          ; Lost fanout                                                        ;
-; ram:inst6|data[0]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; ram:inst6|data[1]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; ram:inst6|data[2]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; ram:inst6|data[3]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; ram:inst6|data[4]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; ram:inst6|data[5]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; ram:inst6|data[6]~en                                ; Merged with ram:inst6|data[7]~en                                   ;
-; Total Number of Removed Registers = 178             ;                                                                    ;
-+-----------------------------------------------------+--------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++------------------------------------------------------------+---------------------------------------------------------------+
+; Register name                                              ; Reason for Removal                                            ;
++------------------------------------------------------------+---------------------------------------------------------------+
+; registro_instruccion:inst8|valor_interno[0..3]             ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|liga[1,3..6,8..11] ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|selbus             ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|UPA[1..4,6..9]     ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEX2               ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEX1               ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEX0               ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|X[0..2]            ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|enaY               ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nERA2              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEAP2              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEAP1              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEAP0              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|AP[0..2]           ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|PC[1]              ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nWX                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nWI                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEI                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nRW                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|DINT               ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|HINT               ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|SET_IRQ            ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|SET_XIRQ           ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B9                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B8                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B5                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B1                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B0                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|CI                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|CX                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|CS                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nHB                ; Stuck at VCC due to stuck port data_in                        ;
+; Flags:inst5|registro:inst7|valor_interno                   ; Stuck at GND due to stuck port clock                          ;
+; Flags:inst5|registro:inst6|valor_interno                   ; Stuck at GND due to stuck port clock                          ;
+; Flags:inst5|registro:inst4|valor_interno                   ; Stuck at GND due to stuck port clock                          ;
+; registro_interrupciones:IRI|data_out[0..2,4]               ; Stuck at GND due to stuck port clock_enable                   ;
+; registro_interrupciones:IRI|data_out[3]                    ; Stuck at VCC due to stuck port clock_enable                   ;
+; registro_interrupciones:IRI|data_out[5..15]                ; Stuck at GND due to stuck port clock_enable                   ;
+; ctrl_interrupciones:inst3|INT_flag                         ; Stuck at VCC due to stuck port clock_enable                   ;
+; secuenciador:inst14|registro_sec:inst13|nEPC2              ; Lost fanout                                                   ;
+; registro_interrupciones:IRX|data_out[0..2,5..15]           ; Merged with registro_interrupciones:IRX|data_out[4]           ;
+; contador_ID:Y|data_out[3]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[2,11]                               ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[1,2]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[7]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[13]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[3,15]                               ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[7]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[3,6]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[0]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[15]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[5]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[1]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[9]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[9]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[13]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[5,6]                                ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[13]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[8,9]                                ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[4,8,12,14]                            ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[4]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[0]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[15]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[1]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[14]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[5]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[6]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[7]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[8]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[2]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[10]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[11]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[12]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[4]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[14]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[10..12]                             ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[10]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; upa:inst1|Q[7]                                             ; Merged with upa:inst1|Banderas[2]                             ;
+; upa:inst1|Yupa_interno[7]                                  ; Merged with upa:inst1|Banderas[2]                             ;
+; upa:inst1|Yupa_interno[0]                                  ; Merged with upa:inst1|Q[0]                                    ;
+; upa:inst1|Yupa_interno[4]                                  ; Merged with upa:inst1|Banderas[4]                             ;
+; secuenciador:inst14|registro_sec:inst13|liga[7]            ; Merged with secuenciador:inst14|registro_sec:inst13|liga[2]   ;
+; secuenciador:inst14|registro_sec:inst13|B7                 ; Merged with secuenciador:inst14|registro_sec:inst13|B4        ;
+; secuenciador:inst14|registro_sec:inst13|B6                 ; Merged with secuenciador:inst14|registro_sec:inst13|B3        ;
+; secuenciador:inst14|registro_sec:inst13|EB[1]              ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
+; secuenciador:inst14|registro_sec:inst13|UPA[0]             ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
+; secuenciador:inst14|registro_sec:inst13|selmux             ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
+; secuenciador:inst14|registro_sec:inst13|RA[2]              ; Merged with secuenciador:inst14|registro_sec:inst13|BD        ;
+; secuenciador:inst14|registro_sec:inst13|RA[1]              ; Merged with secuenciador:inst14|registro_sec:inst13|RA[0]     ;
+; secuenciador:inst14|registro_sec:inst13|nOEUPA             ; Merged with secuenciador:inst14|registro_sec:inst13|nDUPA     ;
+; secuenciador:inst14|registro_sec:inst13|vf                 ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[2] ;
+; upa:inst1|Banderas[3]                                      ; Merged with upa:inst1|Banderas[1]                             ;
+; secuenciador:inst14|registro_sec:inst13|UPA[5]             ; Merged with secuenciador:inst14|registro_sec:inst13|ACCSEC    ;
+; secuenciador:inst14|registro_sec:inst13|prueba[1]          ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[0] ;
+; secuenciador:inst14|registro_sec:inst13|nEPC1              ; Merged with secuenciador:inst14|registro_sec:inst13|nEPC0     ;
+; registro_interrupciones:IRX|data_out[4]                    ; Stuck at GND due to stuck port data_in                        ;
+; registro_interrupciones:IRX|data_out[3]                    ; Stuck at VCC due to stuck port data_in                        ;
+; contador_ID:Y|data_out[0]                                  ; Stuck at GND due to stuck port data_in                        ;
+; upa:inst1|contador[0..2]                                   ; Stuck at GND due to stuck port clock_enable                   ;
+; ram:inst6|data[5]~reg0                                     ; Stuck at GND due to stuck port data_in                        ;
+; Flags:inst5|registro:inst5|valor_interno                   ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|CH                 ; Lost fanout                                                   ;
+; Flags:inst5|registro:inst1|valor_interno                   ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|B2                 ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|CV                 ; Lost fanout                                                   ;
+; ram:inst6|data[0]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[1]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[2]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[3]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[4]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[5]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[6]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; Total Number of Removed Registers = 173                    ;                                                               ;
++------------------------------------------------------------+---------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                        ;
-+--------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; Register name                                    ; Reason for Removal        ; Registers Removed due to This Register                                              ;
-+--------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
-; secuenciador:inst14|registro_sec:inst13|nEX1     ; Stuck at VCC              ; Flags:inst5|registro:inst7|valor_interno, Flags:inst5|registro:inst6|valor_interno, ;
-;                                                  ; due to stuck port data_in ; Flags:inst5|registro:inst4|valor_interno, registro_interrupciones:IRI|data_out[8],  ;
-;                                                  ;                           ; registro_interrupciones:IRI|data_out[9], registro_interrupciones:IRI|data_out[10],  ;
-;                                                  ;                           ; registro_interrupciones:IRI|data_out[11], registro_interrupciones:IRI|data_out[12], ;
-;                                                  ;                           ; registro_interrupciones:IRI|data_out[13], registro_interrupciones:IRI|data_out[14], ;
-;                                                  ;                           ; registro_interrupciones:IRI|data_out[15], Flags:inst5|registro:inst5|valor_interno, ;
-;                                                  ;                           ; secuenciador:inst14|registro_sec:inst13|CH                                          ;
-; secuenciador:inst14|registro_sec:inst13|nEX0     ; Stuck at VCC              ; registro_interrupciones:IRI|data_out[4], registro_interrupciones:IRI|data_out[0],   ;
-;                                                  ; due to stuck port data_in ; registro_interrupciones:IRI|data_out[1], registro_interrupciones:IRI|data_out[2],   ;
-;                                                  ;                           ; registro_interrupciones:IRI|data_out[3], registro_interrupciones:IRI|data_out[5],   ;
-;                                                  ;                           ; registro_interrupciones:IRI|data_out[6], registro_interrupciones:IRI|data_out[7],   ;
-;                                                  ;                           ; registro_interrupciones:IRX|data_out[4],                                            ;
-;                                                  ;                           ; secuenciador:inst14|registro_sec:inst13|B2                                          ;
-; secuenciador:inst14|registro_sec:inst13|liga[11] ; Stuck at GND              ; registro_interrupciones:IRX|data_out[3], Flags:inst5|registro:inst3|valor_interno,  ;
-;                                                  ; due to stuck port data_in ; secuenciador:inst14|registro_sec:inst13|CN                                          ;
-; secuenciador:inst14|registro_sec:inst13|UPA[3]   ; Stuck at GND              ; upa:inst1|contador[0], upa:inst1|contador[1], upa:inst1|contador[2]                 ;
-;                                                  ; due to stuck port data_in ;                                                                                     ;
-; secuenciador:inst14|registro_sec:inst13|nHB      ; Stuck at VCC              ; Flags:inst5|registro:inst1|valor_interno,                                           ;
-;                                                  ; due to stuck port data_in ; secuenciador:inst14|registro_sec:inst13|CV                                          ;
-; secuenciador:inst14|registro_sec:inst13|nEX2     ; Stuck at VCC              ; secuenciador:inst14|registro_sec:inst13|nEPC2                                       ;
-;                                                  ; due to stuck port data_in ;                                                                                     ;
-; secuenciador:inst14|registro_sec:inst13|nEAP0    ; Stuck at VCC              ; contador_ID:Y|data_out[0]                                                           ;
-;                                                  ; due to stuck port data_in ;                                                                                     ;
-; secuenciador:inst14|registro_sec:inst13|DINT     ; Stuck at GND              ; ctrl_interrupciones:inst3|INT_flag                                                  ;
-;                                                  ; due to stuck port data_in ;                                                                                     ;
-+--------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                      ;
++------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; secuenciador:inst14|registro_sec:inst13|nEX1   ; Stuck at VCC              ; Flags:inst5|registro:inst7|valor_interno, Flags:inst5|registro:inst6|valor_interno, ;
+;                                                ; due to stuck port data_in ; Flags:inst5|registro:inst4|valor_interno, registro_interrupciones:IRI|data_out[8],  ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[9], registro_interrupciones:IRI|data_out[10],  ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[11], registro_interrupciones:IRI|data_out[12], ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[13], registro_interrupciones:IRI|data_out[14], ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[15], Flags:inst5|registro:inst5|valor_interno, ;
+;                                                ;                           ; secuenciador:inst14|registro_sec:inst13|CH                                          ;
+; secuenciador:inst14|registro_sec:inst13|nEX0   ; Stuck at VCC              ; registro_interrupciones:IRI|data_out[4], registro_interrupciones:IRI|data_out[0],   ;
+;                                                ; due to stuck port data_in ; registro_interrupciones:IRI|data_out[1], registro_interrupciones:IRI|data_out[2],   ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[3], registro_interrupciones:IRI|data_out[5],   ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[6], registro_interrupciones:IRI|data_out[7],   ;
+;                                                ;                           ; registro_interrupciones:IRX|data_out[4], registro_interrupciones:IRX|data_out[3],   ;
+;                                                ;                           ; secuenciador:inst14|registro_sec:inst13|B2                                          ;
+; secuenciador:inst14|registro_sec:inst13|UPA[3] ; Stuck at GND              ; upa:inst1|contador[0], upa:inst1|contador[1], upa:inst1|contador[2]                 ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
+; secuenciador:inst14|registro_sec:inst13|nHB    ; Stuck at VCC              ; Flags:inst5|registro:inst1|valor_interno,                                           ;
+;                                                ; due to stuck port data_in ; secuenciador:inst14|registro_sec:inst13|CV                                          ;
+; secuenciador:inst14|registro_sec:inst13|nEX2   ; Stuck at VCC              ; secuenciador:inst14|registro_sec:inst13|nEPC2                                       ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
+; secuenciador:inst14|registro_sec:inst13|nEAP0  ; Stuck at VCC              ; contador_ID:Y|data_out[0]                                                           ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
+; secuenciador:inst14|registro_sec:inst13|DINT   ; Stuck at GND              ; ctrl_interrupciones:inst3|INT_flag                                                  ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
++------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -440,10 +442,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 131   ;
+; Total registers                              ; 136   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 24    ;
-; Number of registers using Asynchronous Clear ; 88    ;
+; Number of registers using Asynchronous Clear ; 94    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 56    ;
 ; Number of registers using Preset             ; 0     ;
@@ -461,9 +463,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; secuenciador:inst14|registro_sec:inst13|nERA0 ; 2       ;
 ; secuenciador:inst14|registro_sec:inst13|nWA   ; 11      ;
 ; secuenciador:inst14|registro_sec:inst13|nEPC0 ; 1       ;
-; secuenciador:inst14|registro_sec:inst13|nWB   ; 19      ;
-; secuenciador:inst14|registro_sec:inst13|nDUPA ; 27      ;
-; secuenciador:inst14|registro_sec:inst13|nEX   ; 10      ;
+; secuenciador:inst14|registro_sec:inst13|nWB   ; 11      ;
+; secuenciador:inst14|registro_sec:inst13|nDUPA ; 28      ;
+; secuenciador:inst14|registro_sec:inst13|nEX   ; 11      ;
 ; secuenciador:inst14|registro_sec:inst13|nERA1 ; 2       ;
 ; secuenciador:inst14|registro_sec:inst13|nCRI  ; 8       ;
 ; secuenciador:inst14|registro_sec:inst13|nCBD  ; 8       ;
@@ -476,19 +478,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[0]      ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[2]      ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|B2             ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|EA[1]          ;
-; 20:1               ; 3 bits    ; 39 LEs        ; 39 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|instruccion[0] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCA|data_out[6]                            ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|EB[0]          ;
+; 28:1               ; 5 bits    ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|instruccion[0] ;
+; 29:1               ; 2 bits    ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[4]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCA|data_out[7]                            ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCB|data_out[0]                            ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[6]                               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[10]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[14]                               ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[1]                                ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nDUPA          ;
-; 19:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nERA0          ;
-; 20:1               ; 2 bits    ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nEPC0          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[13]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[8]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[4]                                ;
+; 28:1               ; 2 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nERA1          ;
+; 29:1               ; 2 bits    ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nCBD           ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |m68hc11|secuenciador:inst14|memory:inst9|data[6]               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
@@ -539,27 +541,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 130                         ;
-; cycloneiii_ff         ; 131                         ;
-;     CLR               ; 56                          ;
+; boundary_port         ; 131                         ;
+; cycloneiii_ff         ; 136                         ;
+;     CLR               ; 62                          ;
 ;     CLR SLD           ; 8                           ;
 ;     ENA               ; 16                          ;
 ;     ENA CLR           ; 24                          ;
 ;     ENA SLD           ; 16                          ;
-;     plain             ; 11                          ;
-; cycloneiii_lcell_comb ; 322                         ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 366                         ;
 ;     arith             ; 34                          ;
-;         2 data inputs ; 22                          ;
-;         3 data inputs ; 12                          ;
-;     normal            ; 288                         ;
-;         0 data inputs ; 3                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 86                          ;
-;         4 data inputs ; 182                         ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 10                          ;
+;     normal            ; 332                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 104                         ;
+;         4 data inputs ; 201                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 4.94                        ;
+; Max LUT depth         ; 14.00                       ;
+; Average LUT depth     ; 6.55                        ;
 +-----------------------+-----------------------------+
 
 
@@ -578,7 +580,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 12 08:21:41 2023
+    Info: Processing started: Fri May 19 08:38:54 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off m68hc11 -c m68hc11
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -994,17 +996,17 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "X_D[1]" is stuck at GND
     Warning (13410): Pin "X_D[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 490 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 533 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 126 output pins
-    Info (21061): Implemented 360 logic cells
+    Info (21059): Implemented 127 output pins
+    Info (21061): Implemented 402 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 257 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Fri May 12 08:21:59 2023
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 4804 megabytes
+    Info: Processing ended: Fri May 19 08:39:10 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:27
 
 

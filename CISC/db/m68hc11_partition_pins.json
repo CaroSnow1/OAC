@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "N",
+					"strict" : false
+				},
+				{
 					"name" : "ACCA_D[7]",
 					"strict" : false
 				},

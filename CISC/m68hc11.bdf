@@ -276,6 +276,22 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 632 1016 808 1032)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "N" (rect 90 0 98 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 2088 264 2264 472)
 	(text "ctrl_interrupciones" (rect 5 0 94 12)(font "Arial" ))
@@ -4818,10 +4834,6 @@ refer to the applicable agreement for further details.
 	(pt 560 1496)
 )
 (connector
-	(pt 624 704)
-	(pt 560 704)
-)
-(connector
 	(pt 560 704)
 	(pt 560 1496)
 )
@@ -5976,6 +5988,22 @@ refer to the applicable agreement for further details.
 	(pt 3400 1568)
 	(bus)
 )
+(connector
+	(pt 616 704)
+	(pt 616 1024)
+)
+(connector
+	(pt 560 704)
+	(pt 616 704)
+)
+(connector
+	(pt 616 704)
+	(pt 624 704)
+)
+(connector
+	(pt 616 1024)
+	(pt 632 1024)
+)
 (junction (pt 2528 -120))
 (junction (pt 2544 -136))
 (junction (pt 2632 -136))
@@ -6041,3 +6069,4 @@ refer to the applicable agreement for further details.
 (junction (pt 3104 576))
 (junction (pt 3320 1552))
 (junction (pt 3336 1568))
+(junction (pt 616 704))

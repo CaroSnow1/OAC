@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/12/2023 08:27:29"
+-- Generated on "05/19/2023 08:39:28"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          m68hc11
 -- 
@@ -44,6 +44,7 @@ SIGNAL Debug_Yupa : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL Edo_Pres : STD_LOGIC_VECTOR(11 DOWNTO 0);
 SIGNAL IRQn : STD_LOGIC;
 SIGNAL IX : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL N : STD_LOGIC;
 SIGNAL PC_D : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL RESET : STD_LOGIC;
 SIGNAL X_D : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -62,6 +63,7 @@ COMPONENT m68hc11
 	Edo_Pres : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
 	IRQn : IN STD_LOGIC;
 	IX : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	N : OUT STD_LOGIC;
 	PC_D : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	RESET : IN STD_LOGIC;
 	X_D : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -84,6 +86,7 @@ BEGIN
 	Edo_Pres => Edo_Pres,
 	IRQn => IRQn,
 	IX => IX,
+	N => N,
 	PC_D => PC_D,
 	RESET => RESET,
 	X_D => X_D,
@@ -103,19 +106,19 @@ LOOP
 END LOOP;
 END PROCESS t_prcs_CLK;
 
--- IRQn
-t_prcs_IRQn: PROCESS
-BEGIN
-	IRQn <= '1';
-WAIT;
-END PROCESS t_prcs_IRQn;
-
 -- RESET
 t_prcs_RESET: PROCESS
 BEGIN
 	RESET <= '1';
 WAIT;
 END PROCESS t_prcs_RESET;
+
+-- IRQn
+t_prcs_IRQn: PROCESS
+BEGIN
+	IRQn <= '1';
+WAIT;
+END PROCESS t_prcs_IRQn;
 
 -- XIRQn
 t_prcs_XIRQn: PROCESS

@@ -22,13 +22,17 @@ ADDRESS_RADIX=UNS;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	0    :   C6;
-	1    :   03;
-	2    :   86;
-	3    :   01;
-	4    :   1B;
-	5    :   7E;
-	6    :   00;
-	7    :   04;
-	[8..255]  :   00;
+	0    :   C6; -- LDAB INM
+	1    :   06; -- B
+	2    :   86; -- LDAA (INM)
+	3    :   05; -- A
+	4    :   1A; --CMP acceso inherente
+	5    :   08; --JB acceso extendido 
+	6    :   00; -- DIR
+	7    :   0A; -- DIR
+	8    :   86;
+	9    :   0A;
+	10    :  86;
+	11   :   06; --carga 06 
+	[12..255]  :   00;
 END;
