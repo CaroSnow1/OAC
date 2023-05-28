@@ -1,5 +1,5 @@
 Analysis & Synthesis report for practica06
-Fri May 12 03:35:21 2023
+Fri May 19 09:01:36 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,11 +14,12 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +45,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 12 03:35:21 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 19 09:01:36 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; practica06                                  ;
 ; Top-level Entity Name              ; implementacion                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 74                                          ;
-;     Total combinational functions  ; 66                                          ;
-;     Dedicated logic registers      ; 55                                          ;
-; Total registers                    ; 55                                          ;
-; Total pins                         ; 23                                          ;
+; Total logic elements               ; 69                                          ;
+;     Total combinational functions  ; 65                                          ;
+;     Dedicated logic registers      ; 51                                          ;
+; Total registers                    ; 51                                          ;
+; Total pins                         ; 19                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -154,7 +155,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -166,25 +167,25 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
-; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/div_frec.vhd       ;         ;
-; memory.vhd                       ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd         ;         ;
-; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/divisor_datos.vhd  ;         ;
-; registro_1.vhd                   ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_1.vhd     ;         ;
-; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/incrementador.vhd  ;         ;
-; mux_direccion.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd  ;         ;
-; logica_interna.vhd               ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd ;         ;
-; registro_12.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd    ;         ;
-; practica06.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/practica06.bdf     ;         ;
-; implementacion.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/implementacion.bdf ;         ;
-; registro.vhd                     ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd       ;         ;
-; registro_outs.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd  ;         ;
-; mux_inputs.vhd                   ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd     ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
+; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/div_frec.vhd       ;         ;
+; memory.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd         ;         ;
+; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/divisor_datos.vhd  ;         ;
+; registro_1.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro_1.vhd     ;         ;
+; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/incrementador.vhd  ;         ;
+; mux_direccion.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd  ;         ;
+; logica_interna.vhd               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd ;         ;
+; registro_12.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd    ;         ;
+; practica06.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/practica06/practica06.bdf     ;         ;
+; implementacion.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/practica06/implementacion.bdf ;         ;
+; registro.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd       ;         ;
+; registro_outs.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd  ;         ;
+; mux_inputs.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd     ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -192,54 +193,53 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 74        ;
+; Estimated Total logic elements              ; 69        ;
 ;                                             ;           ;
-; Total combinational functions               ; 66        ;
+; Total combinational functions               ; 65        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 29        ;
-;     -- 3 input functions                    ; 4         ;
-;     -- <=2 input functions                  ; 33        ;
+;     -- 4 input functions                    ; 27        ;
+;     -- 3 input functions                    ; 9         ;
+;     -- <=2 input functions                  ; 29        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 39        ;
+;     -- normal mode                          ; 38        ;
 ;     -- arithmetic mode                      ; 27        ;
 ;                                             ;           ;
-; Total registers                             ; 55        ;
-;     -- Dedicated logic registers            ; 55        ;
+; Total registers                             ; 51        ;
+;     -- Dedicated logic registers            ; 51        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 23        ;
+; I/O pins                                    ; 19        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 51        ;
-; Total fan-out                               ; 362       ;
-; Average fan-out                             ; 2.17      ;
+; Maximum fan-out                             ; 28        ;
+; Total fan-out                               ; 345       ;
+; Average fan-out                             ; 2.24      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
-+-------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                 ; Entity Name    ; Library Name ;
-+-------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------+----------------+--------------+
-; |implementacion                     ; 66 (0)              ; 55 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 23   ; 0            ; 0          ; |implementacion                                                     ; implementacion ; work         ;
-;    |memory:inst|                    ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|memory:inst                                         ; memory         ; work         ;
-;    |practica06:secuenciador|        ; 51 (0)              ; 32 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador                             ; practica06     ; work         ;
-;       |div_frec:DivisorFrecuencias| ; 28 (28)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|div_frec:DivisorFrecuencias ; div_frec       ; work         ;
-;       |incrementador:Inc|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|incrementador:Inc           ; incrementador  ; work         ;
-;       |logica_interna:IntLogic|     ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|logica_interna:IntLogic     ; logica_interna ; work         ;
-;       |mux_direccion:MuxDireccion|  ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|mux_direccion:MuxDireccion  ; mux_direccion  ; work         ;
-;       |registro_12:MicroPC|         ; 1 (1)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|registro_12:MicroPC         ; registro_12    ; work         ;
-;    |registro:Instrucciones|         ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro:Instrucciones                              ; registro       ; work         ;
-;    |registro:Prueba|                ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro:Prueba                                     ; registro       ; work         ;
-;    |registro_12:LIGA|               ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_12:LIGA                                    ; registro_12    ; work         ;
-;    |registro_12:R_Interru|          ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_12:R_Interru                               ; registro_12    ; work         ;
-;    |registro_12:R_Trans|            ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_12:R_Trans                                 ; registro_12    ; work         ;
-;    |registro_1:VF|                  ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_1:VF                                       ; registro_1     ; work         ;
-;    |registro_outs:SALIDAS|          ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_outs:SALIDAS                               ; registro_outs  ; work         ;
-+-------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                          ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                ; Entity Name    ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+----------------+--------------+
+; |implementacion                    ; 65 (0)              ; 51 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |implementacion                                                    ; implementacion ; work         ;
+;    |div_frec:inst2|                ; 28 (28)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|div_frec:inst2                                     ; div_frec       ; work         ;
+;    |memory:inst|                   ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|memory:inst                                        ; memory         ; work         ;
+;    |practica06:secuenciador|       ; 22 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador                            ; practica06     ; work         ;
+;       |incrementador:Inc|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|incrementador:Inc          ; incrementador  ; work         ;
+;       |logica_interna:IntLogic|    ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|logica_interna:IntLogic    ; logica_interna ; work         ;
+;       |mux_direccion:MuxDireccion| ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|mux_direccion:MuxDireccion ; mux_direccion  ; work         ;
+;       |registro_12:MicroPC|        ; 1 (1)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|practica06:secuenciador|registro_12:MicroPC        ; registro_12    ; work         ;
+;    |registro:Instrucciones|        ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro:Instrucciones                             ; registro       ; work         ;
+;    |registro:Prueba|               ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro:Prueba                                    ; registro       ; work         ;
+;    |registro_12:LIGA|              ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_12:LIGA                                   ; registro_12    ; work         ;
+;    |registro_12:R_Interru|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_12:R_Interru                              ; registro_12    ; work         ;
+;    |registro_1:VF|                 ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_1:VF                                      ; registro_1     ; work         ;
+;    |registro_outs:SALIDAS|         ; 0 (0)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |implementacion|registro_outs:SALIDAS                              ; registro_outs  ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -254,15 +254,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++---------------------------------------+-----------------------------------------------------+
+; Register name                         ; Reason for Removal                                  ;
++---------------------------------------+-----------------------------------------------------+
+; registro_12:R_Trans|internal_value[3] ; Merged with registro_12:R_Interru|internal_value[3] ;
+; registro_12:R_Trans|internal_value[2] ; Merged with registro_12:R_Interru|internal_value[2] ;
+; registro_12:R_Trans|internal_value[1] ; Merged with registro_12:R_Interru|internal_value[1] ;
+; registro_12:R_Trans|internal_value[0] ; Merged with registro_12:R_Interru|internal_value[0] ;
+; Total Number of Removed Registers = 4 ;                                                     ;
++---------------------------------------+-----------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 55    ;
+; Total registers                              ; 51    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 27    ;
+; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -274,7 +287,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |implementacion|practica06:secuenciador|mux_direccion:MuxDireccion|salida[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |implementacion|practica06:secuenciador|mux_direccion:MuxDireccion|salida[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
 
 
@@ -283,21 +296,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 23                          ;
-; cycloneiii_ff         ; 55                          ;
-;     CLR               ; 27                          ;
+; boundary_port         ; 19                          ;
+; cycloneiii_ff         ; 51                          ;
+;     CLR               ; 23                          ;
 ;     plain             ; 28                          ;
-; cycloneiii_lcell_comb ; 66                          ;
+; cycloneiii_lcell_comb ; 65                          ;
 ;     arith             ; 27                          ;
 ;         2 data inputs ; 27                          ;
-;     normal            ; 39                          ;
+;     normal            ; 38                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 29                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 27                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.59                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.10                        ;
 +-----------------------+-----------------------------+
 
 
@@ -306,7 +318,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -316,110 +328,110 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 12 03:34:30 2023
+    Info: Processing started: Fri May 19 09:01:22 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off practica06 -c practica06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file div_frec.vhd
-    Info (12022): Found design unit 1: div_frec-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/div_frec.vhd Line: 12
-    Info (12023): Found entity 1: div_frec File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/div_frec.vhd Line: 7
+    Info (12022): Found design unit 1: div_frec-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/div_frec.vhd Line: 12
+    Info (12023): Found entity 1: div_frec File: C:/intelFPGA_lite/18.0/oac/practica06/div_frec.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: memory-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 13
-    Info (12023): Found entity 1: memory File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 7
+    Info (12022): Found design unit 1: memory-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 13
+    Info (12023): Found entity 1: memory File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
-    Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/divisor_datos.vhd Line: 18
-    Info (12023): Found entity 1: divisor_datos File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/divisor_datos.vhd Line: 7
+    Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/divisor_datos.vhd Line: 18
+    Info (12023): Found entity 1: divisor_datos File: C:/intelFPGA_lite/18.0/oac/practica06/divisor_datos.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file registro_1.vhd
-    Info (12022): Found design unit 1: registro_1-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_1.vhd Line: 15
-    Info (12023): Found entity 1: registro_1 File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_1.vhd Line: 5
+    Info (12022): Found design unit 1: registro_1-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro_1.vhd Line: 15
+    Info (12023): Found entity 1: registro_1 File: C:/intelFPGA_lite/18.0/oac/practica06/registro_1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file incrementador.vhd
-    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/incrementador.vhd Line: 14
-    Info (12023): Found entity 1: incrementador File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/incrementador.vhd Line: 7
+    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/incrementador.vhd Line: 14
+    Info (12023): Found entity 1: incrementador File: C:/intelFPGA_lite/18.0/oac/practica06/incrementador.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux_direccion.vhd
-    Info (12022): Found design unit 1: mux_direccion-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 13
-    Info (12023): Found entity 1: mux_direccion File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 5
+    Info (12022): Found design unit 1: mux_direccion-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 13
+    Info (12023): Found entity 1: mux_direccion File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file logica_interna.vhd
-    Info (12022): Found design unit 1: logica_interna-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 17
-    Info (12023): Found entity 1: logica_interna File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 6
+    Info (12022): Found design unit 1: logica_interna-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 17
+    Info (12023): Found entity 1: logica_interna File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file registro_12.vhd
-    Info (12022): Found design unit 1: registro_12-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 15
-    Info (12023): Found entity 1: registro_12 File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 5
+    Info (12022): Found design unit 1: registro_12-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 15
+    Info (12023): Found entity 1: registro_12 File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file practica06.bdf
     Info (12023): Found entity 1: practica06
 Info (12021): Found 1 design units, including 1 entities, in source file implementacion.bdf
     Info (12023): Found entity 1: implementacion
 Info (12021): Found 2 design units, including 1 entities, in source file registro.vhd
-    Info (12022): Found design unit 1: registro-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 15
-    Info (12023): Found entity 1: registro File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 5
+    Info (12022): Found design unit 1: registro-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 15
+    Info (12023): Found entity 1: registro File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registro_outs.vhd
-    Info (12022): Found design unit 1: registro_outs-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 16
-    Info (12023): Found entity 1: registro_outs File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 6
+    Info (12022): Found design unit 1: registro_outs-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 16
+    Info (12023): Found entity 1: registro_outs File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux_inputs.vhd
-    Info (12022): Found design unit 1: mux_inputs-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 17
-    Info (12023): Found entity 1: mux_inputs File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 6
+    Info (12022): Found design unit 1: mux_inputs-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 17
+    Info (12023): Found entity 1: mux_inputs File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 6
 Info (12127): Elaborating entity "implementacion" for the top level hierarchy
 Info (12128): Elaborating entity "practica06" for hierarchy "practica06:secuenciador"
 Info (12128): Elaborating entity "logica_interna" for hierarchy "practica06:secuenciador|logica_interna:IntLogic"
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "sel", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "npl", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nmap", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nvect", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "nvect" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "nmap" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "npl" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "sel" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "sel", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "npl", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nmap", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nvect", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "nvect" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "nmap" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "npl" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "sel" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
 Info (12128): Elaborating entity "mux_direccion" for hierarchy "practica06:secuenciador|mux_direccion:MuxDireccion"
-Warning (10631): VHDL Process Statement warning at mux_direccion.vhd(15): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[0]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[1]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[2]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[3]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+Warning (10631): VHDL Process Statement warning at mux_direccion.vhd(15): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[0]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[1]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[2]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[3]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
 Info (12128): Elaborating entity "registro_12" for hierarchy "practica06:secuenciador|registro_12:MicroPC"
-Info (12128): Elaborating entity "div_frec" for hierarchy "practica06:secuenciador|div_frec:DivisorFrecuencias"
 Info (12128): Elaborating entity "incrementador" for hierarchy "practica06:secuenciador|incrementador:Inc"
 Info (12128): Elaborating entity "mux_inputs" for hierarchy "mux_inputs:Entradas"
-Warning (10492): VHDL Process Statement warning at mux_inputs.vhd(28): signal "I3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 28
-Warning (10631): VHDL Process Statement warning at mux_inputs.vhd(19): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 19
-Info (10041): Inferred latch for "O" at mux_inputs.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 19
+Warning (10492): VHDL Process Statement warning at mux_inputs.vhd(28): signal "I3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at mux_inputs.vhd(19): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 19
+Info (10041): Inferred latch for "O" at mux_inputs.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 19
 Info (12128): Elaborating entity "registro" for hierarchy "registro:Prueba"
+Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:inst2"
 Info (12128): Elaborating entity "divisor_datos" for hierarchy "divisor_datos:div_data"
 Info (12128): Elaborating entity "memory" for hierarchy "memory:inst"
-Warning (10492): VHDL Process Statement warning at memory.vhd(52): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 52
-Warning (10873): Using initial value X (don't care) for net "internal_mem[15]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 15
+Warning (10492): VHDL Process Statement warning at memory.vhd(52): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 52
+Warning (10873): Using initial value X (don't care) for net "internal_mem[15]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 15
 Info (12128): Elaborating entity "registro_1" for hierarchy "registro_1:VF"
 Info (12128): Elaborating entity "registro_outs" for hierarchy "registro_outs:SALIDAS"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[3]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[2]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[1]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[0]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
-    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[0]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[1]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[0]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[1]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[0]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[1]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[2]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[3]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
-Warning (14026): LATCH primitive "mux_inputs:Entradas|O" is permanently enabled File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 13
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[3]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[2]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[1]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[0]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[0]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[1]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[0]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[1]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[0]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[1]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[2]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[3]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
+Warning (14026): LATCH primitive "mux_inputs:Entradas|O" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 13
 Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[5]" to the node "OUTS[5]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[4]" to the node "OUTS[4]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[3]" to the node "OUTS[3]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[2]" to the node "OUTS[2]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[1]" to the node "OUTS[1]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[0]" to the node "OUTS[0]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[5]" to the node "OUTS[5]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[4]" to the node "OUTS[4]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[3]" to the node "OUTS[3]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[2]" to the node "OUTS[2]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[1]" to the node "OUTS[1]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[0]" to the node "OUTS[0]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
+Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 74 logic cells
+    Info (21061): Implemented 69 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Fri May 12 03:35:21 2023
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:20
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Fri May 19 09:01:36 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:26
 
 

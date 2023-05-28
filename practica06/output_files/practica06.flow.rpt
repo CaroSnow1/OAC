@@ -1,5 +1,5 @@
 Flow report for practica06
-Fri May 12 03:36:47 2023
+Fri May 19 09:02:02 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri May 12 03:36:46 2023       ;
+; Flow Status                        ; Successful - Fri May 19 09:02:02 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; practica06                                  ;
 ; Top-level Entity Name              ; implementacion                              ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 69 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 67 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 55 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 55                                          ;
-; Total pins                         ; 23 / 360 ( 6 % )                            ;
+; Total logic elements               ; 66 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 66 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 51 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 51                                          ;
+; Total pins                         ; 19 / 360 ( 5 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2023 03:34:34 ;
+; Start date & time ; 05/19/2023 09:01:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; practica06          ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+----------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 215866209042609.168388407210984        ; --            ; --             ; --             ;
+; COMPILER_SIGNATURE_ID               ; 1098531675395.168450848216356          ; --            ; --             ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --             ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --             ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --             ; eda_simulation ;
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:50     ; 1.0                     ; 4789 MB             ; 00:01:19                           ;
-; Fitter               ; 00:00:43     ; 1.0                     ; 5429 MB             ; 00:00:45                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 4674 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.0                     ; 4787 MB             ; 00:00:09                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4640 MB             ; 00:00:04                           ;
-; Total                ; 00:01:58     ; --                      ; --                  ; 00:02:26                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4786 MB             ; 00:00:26                           ;
+; Fitter               ; 00:00:11     ; 1.0                     ; 5369 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4678 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4787 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; Total                ; 00:00:32     ; --                      ; --                  ; 00:00:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,11 +112,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-CWBY     ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-CWBY     ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-CWBY     ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-CWBY     ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-CWBY     ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; CARO-LAPTOP      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; CARO-LAPTOP      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; CARO-LAPTOP      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; CARO-LAPTOP      ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; CARO-LAPTOP      ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

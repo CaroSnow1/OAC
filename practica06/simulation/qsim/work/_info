@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/oac/practica06/simulation/qsim
+Ehard_block
+Z1 w1683903088
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 b:4^GQG9SgzacjAmO=9`O0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 3g0@koWcWFU4ch:4ZJbzl1
+R0
+Z8 8practica06.vho
+Z9 Fpractica06.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1683903090
+!i10b 1
+Z12 !s108 1683903090.000000
+Z13 !s90 -work|work|practica06.vho|
+Z14 !s107 practica06.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eimplementacion
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R0
+R8
+R9
+l0
+L90
+V0j<H@AM5YjAj7Ed2?j>Q52
+!s100 kdU]@mk2hm>7oQB9l==lL0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 14 implementacion 0 22 0j<H@AM5YjAj7Ed2?j>Q52
+l281
+L125
+V6[:k@Eha^C]`;:VVaP39H2
+!s100 dUQO<EeV>5Aaai[69`0OL1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eimplementacion_vhd_vec_tst
+Z19 w1683903086
+R5
+R6
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+VX7;F^Mi<FhAczJ`^?iCdS3
+!s100 T^2gM:<4YBLVSSC`o;Q;^0
+R10
+32
+R11
+!i10b 1
+R12
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Aimplementacion_arch
+R5
+R6
+Z24 DEx4 work 26 implementacion_vhd_vec_tst 0 22 X7;F^Mi<FhAczJ`^?iCdS3
+l56
+L33
+VoCWYfc<aY5EmkQ3GaEZ:e0
+!s100 8aPz9X;cbh4Pe?gYL5Q<X1
+R10
+32
+R11
+!i10b 1
+R12
+R22
+R23
+!i113 1
+R15
+R16

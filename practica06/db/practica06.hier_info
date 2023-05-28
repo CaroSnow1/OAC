@@ -6,14 +6,7 @@ EDO_PST[3] <= practica06:secuenciador.Y[3]
 X => mux_inputs:Entradas.I0
 Y => mux_inputs:Entradas.I1
 INT => mux_inputs:Entradas.I2
-CLK => registro:Prueba.clk
-CLK => registro_1:VF.clk
-CLK => practica06:secuenciador.CLK
-CLK => registro_12:R_Trans.clk
-CLK => registro_12:LIGA.clk
-CLK => registro_12:R_Interru.clk
-CLK => registro:Instrucciones.clk
-CLK => registro_outs:SALIDAS.clk
+CLK => div_frec:inst2.reloj
 RESET => registro:Prueba.reset
 RESET => registro_1:VF.reset
 RESET => practica06:secuenciador.RESET
@@ -23,13 +16,13 @@ RESET => registro_12:R_Interru.reset
 RESET => registro:Instrucciones.reset
 RESET => registro_outs:SALIDAS.reset
 IN_1[0] => registro_12:R_Trans.data_in[0]
+IN_1[0] => registro_12:R_Interru.data_in[0]
 IN_1[1] => registro_12:R_Trans.data_in[1]
+IN_1[1] => registro_12:R_Interru.data_in[1]
 IN_1[2] => registro_12:R_Trans.data_in[2]
+IN_1[2] => registro_12:R_Interru.data_in[2]
 IN_1[3] => registro_12:R_Trans.data_in[3]
-IN_2[0] => registro_12:R_Interru.data_in[0]
-IN_2[1] => registro_12:R_Interru.data_in[1]
-IN_2[2] => registro_12:R_Interru.data_in[2]
-IN_2[3] => registro_12:R_Interru.data_in[3]
+IN_1[3] => registro_12:R_Interru.data_in[3]
 OUTS[0] <= registro_outs:SALIDAS.data_out[0]
 OUTS[1] <= registro_outs:SALIDAS.data_out[1]
 OUTS[2] <= registro_outs:SALIDAS.data_out[2]
@@ -49,7 +42,7 @@ Y[0] <= mux_direccion:MuxDireccion.salida[0]
 Y[1] <= mux_direccion:MuxDireccion.salida[1]
 Y[2] <= mux_direccion:MuxDireccion.salida[2]
 Y[3] <= mux_direccion:MuxDireccion.salida[3]
-CLK => div_frec:DivisorFrecuencias.reloj
+CLK => registro_12:MicroPC.clk
 RESET => registro_12:MicroPC.reset
 ENA => registro_12:MicroPC.ena
 D[0] => mux_direccion:MuxDireccion.E1[0]
@@ -117,38 +110,6 @@ data_out[2] <= data_out[2].DB_MAX_OUTPUT_PORT_TYPE
 data_out[3] <= data_out[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|implementacion|practica06:secuenciador|div_frec:DivisorFrecuencias
-reloj => cuenta[0].CLK
-reloj => cuenta[1].CLK
-reloj => cuenta[2].CLK
-reloj => cuenta[3].CLK
-reloj => cuenta[4].CLK
-reloj => cuenta[5].CLK
-reloj => cuenta[6].CLK
-reloj => cuenta[7].CLK
-reloj => cuenta[8].CLK
-reloj => cuenta[9].CLK
-reloj => cuenta[10].CLK
-reloj => cuenta[11].CLK
-reloj => cuenta[12].CLK
-reloj => cuenta[13].CLK
-reloj => cuenta[14].CLK
-reloj => cuenta[15].CLK
-reloj => cuenta[16].CLK
-reloj => cuenta[17].CLK
-reloj => cuenta[18].CLK
-reloj => cuenta[19].CLK
-reloj => cuenta[20].CLK
-reloj => cuenta[21].CLK
-reloj => cuenta[22].CLK
-reloj => cuenta[23].CLK
-reloj => cuenta[24].CLK
-reloj => cuenta[25].CLK
-reloj => cuenta[26].CLK
-reloj => cuenta[27].CLK
-div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
-
-
 |implementacion|practica06:secuenciador|incrementador:Inc
 entrada[0] => Add0.IN8
 entrada[1] => Add0.IN7
@@ -187,6 +148,38 @@ data_in[0] => internal_value[0].DATAIN
 data_in[1] => internal_value[1].DATAIN
 data_out[0] <= data_out[0].DB_MAX_OUTPUT_PORT_TYPE
 data_out[1] <= data_out[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|implementacion|div_frec:inst2
+reloj => cuenta[0].CLK
+reloj => cuenta[1].CLK
+reloj => cuenta[2].CLK
+reloj => cuenta[3].CLK
+reloj => cuenta[4].CLK
+reloj => cuenta[5].CLK
+reloj => cuenta[6].CLK
+reloj => cuenta[7].CLK
+reloj => cuenta[8].CLK
+reloj => cuenta[9].CLK
+reloj => cuenta[10].CLK
+reloj => cuenta[11].CLK
+reloj => cuenta[12].CLK
+reloj => cuenta[13].CLK
+reloj => cuenta[14].CLK
+reloj => cuenta[15].CLK
+reloj => cuenta[16].CLK
+reloj => cuenta[17].CLK
+reloj => cuenta[18].CLK
+reloj => cuenta[19].CLK
+reloj => cuenta[20].CLK
+reloj => cuenta[21].CLK
+reloj => cuenta[22].CLK
+reloj => cuenta[23].CLK
+reloj => cuenta[24].CLK
+reloj => cuenta[25].CLK
+reloj => cuenta[26].CLK
+reloj => cuenta[27].CLK
+div_clk <= cuenta[27].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |implementacion|divisor_datos:div_data

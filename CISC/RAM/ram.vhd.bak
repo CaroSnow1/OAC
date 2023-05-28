@@ -1,0 +1,102 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity memoria is
+	Port( address : in std_logic_vector(15 downto 0);
+			data : inout std_logic_vector(7 downto 0);
+			Wn : in std_logic;
+			CSn : in std_logic
+			);
+end memoria;
+
+architecture Behavioral of memoria is
+	type memory is array(0 to 255) of std_logic_vector(7 downto 0);
+	signal mem : memory;
+	signal data_out : std_logic_vector(7 downto 0) := X"00";
+	
+	begin
+	-- Programa HARDCODE PRUEBAS
+--	memoria(20) <= X"86"; -- LDAA
+--	memoria(21) <= X"FF"; 
+--	memoria(22) <= X"C6"; -- LDAB
+--	memoria(23) <= X"01";
+--	memoria(24) <= X"CE"; -- LDX
+--	memoria(25) <= X"00";
+--	memoria(26) <= X"10";
+--	memoria(27) <= X"1B"; -- ABA
+--	memoria(28) <= X"26"; -- BNE
+--	memoria(29) <= X"04";
+--	memoria(30) <= X"A7"; -- STAA
+--	memoria(31) <= X"00";
+--	memoria(32) <= X"20"; -- BRA
+--	memoria(33) <= X"02";
+--	memoria(34) <= X"E7"; -- STAB  -- ET1
+--	memoria(35) <= X"00";
+--	memoria(36) <= X"86"; -- LDAA  -- ET2
+--	memoria(37) <= X"07"; 
+--	memoria(38) <= X"C6"; -- LDAB
+--	memoria(39) <= X"02";
+--	memoria(40) <= X"3D"; -- MUL
+--	memoria(41) <= X"A7"; -- STAA
+--	memoria(42) <= X"01";
+--	memoria(43) <= X"E7"; -- STAB
+--	memoria(44) <= X"02";
+--	memoria(45) <= X"20"; -- BRA  -- FIN
+--	memoria(46) <= X"FE";
+--	
+--	-- DRIVERS DE INTERRUPCIONES
+--	-- Driver X Externo (0064 H)
+--	memoria(100) <= X"CE"; -- LDX
+--	memoria(101) <= X"00";
+--	memoria(102) <= X"20";
+--	memoria(103) <= X"B6"; -- LDAA Dir_6_bits
+--	memoria(104) <= X"00";
+--	memoria(105) <= X"30";
+--	memoria(106) <= X"A7"; -- STAA
+--	memoria(107) <= X"00";
+--	memoria(108) <= X"3B"; -- RTI
+--	
+--	-- Driver Y Interno (006D H)
+--	memoria(109) <= X"CE"; -- LDX
+--	memoria(110) <= X"00";
+--	memoria(111) <= X"30";
+--	memoria(112) <= X"F6"; -- LDAB Dir_6_bits
+--	memoria(113) <= X"00";
+--	memoria(114) <= X"20";
+--	memoria(115) <= X"E7"; -- STAB
+--	memoria(116) <= X"00";
+--	memoria(117) <= X"3B"; -- RTI
+	
+	
+	
+	-- Memory Write Block
+	MEM_WRITE: process (address, CSn, Wn, data) 
+	begin
+		mem(0) <= X"34";
+		if (CSn = '0' and Wn = '0') then
+			mem(conv_integer(unsigned(address))) <= data;
+		end if;
+	end process;
+
+	TRI_STATE: process (address, CSn, Wn, data_out)
+	begin
+		if (CSn = '0' and Wn = '1') then
+			data <= data_out;
+		else 
+			data <= (others => 'Z');
+		end if;
+	end process;
+		
+ -- Memory Read Block
+	MEM_READ: process (address, CSn, Wn, mem) 
+	begin
+		if (CSn = '0' and Wn = '1') then
+			data_out <= mem(conv_integer(unsigned(address)));
+		else
+			data_out <= (others => '0');
+		end if;
+	end process;
+	
+end Behavioral;

@@ -1,0 +1,1012 @@
+Analysis & Synthesis report for m68hc11
+Fri May 19 08:39:10 2023
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: secuenciador:inst14|BUSMUX:inst5
+ 14. Parameter Settings for User Entity Instance: secuenciador:inst14|MUX:inst6
+ 15. Parameter Settings for User Entity Instance: BUSMUX:inst13
+ 16. Parameter Settings for User Entity Instance: BUSMUX:inst12
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri May 19 08:39:10 2023       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; m68hc11                                     ;
+; Top-level Entity Name              ; m68hc11                                     ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 380                                         ;
+;     Total combinational functions  ; 363                                         ;
+;     Dedicated logic registers      ; 136                                         ;
+; Total registers                    ; 136                                         ;
+; Total pins                         ; 131                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Top-level entity name                                            ; m68hc11            ; m68hc11            ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
++--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; RAM/ram.vhd                                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/RAM/ram.vhd                                ;         ;
+; Interrupciones/ctrl_interrupciones.vhd     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/ctrl_interrupciones.vhd     ;         ;
+; flags/registro.vhd                         ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd                         ;         ;
+; flags/mux3.vhd                             ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/flags/mux3.vhd                             ;         ;
+; flags/mux2.vhd                             ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/flags/mux2.vhd                             ;         ;
+; flags/mux1.vhd                             ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/flags/mux1.vhd                             ;         ;
+; flags/Flags.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/CISC/flags/Flags.bdf                            ;         ;
+; flags/divisor_datos.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/flags/divisor_datos.vhd                    ;         ;
+; flags/concatenador_datos.vhd               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/flags/concatenador_datos.vhd               ;         ;
+; Contador/contador_id.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd                   ;         ;
+; Contador/contador.vhd                      ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd                      ;         ;
+; Acumulador/acumulador.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd                  ;         ;
+; UPA/upa.vhd                                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd                                ;         ;
+; m68hc11.bdf                                ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/CISC/m68hc11.bdf                                ;         ;
+; Secuenciador/secuenciador.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/secuenciador.bdf              ;         ;
+; Secuenciador/memory.vhd                    ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/memory.vhd                    ;         ;
+; Secuenciador/registro_sec.vhd              ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_sec.vhd              ;         ;
+; Secuenciador/logica_seleccion.vhd          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd          ;         ;
+; Secuenciador/registro_MicroInst.vhd        ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_MicroInst.vhd        ;         ;
+; registro_instruccion.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/registro_instruccion.vhd                   ;         ;
+; bufferDataBus.vhd                          ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd                          ;         ;
+; registro_direccion.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd                     ;         ;
+; concatenador_entradas.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/concatenador_entradas.vhd                  ;         ;
+; Interrupciones/registro_interrupciones.vhd ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd ;         ;
+; busmux.tdf                                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf          ;         ;
+; lpm_mux.inc                                ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc         ;         ;
+; lpm_mux.tdf                                ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf         ;         ;
+; aglobal180.inc                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc      ;         ;
+; muxlut.inc                                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/muxlut.inc          ;         ;
+; bypassff.inc                               ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/bypassff.inc        ;         ;
+; altshift.inc                               ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altshift.inc        ;         ;
+; db/mux_f7c.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf                             ;         ;
+; mux.tdf                                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mux.tdf             ;         ;
+; db/mux_k7c.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.0/oac/CISC/db/mux_k7c.tdf                             ;         ;
+; db/mux_t5c.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.0/oac/CISC/db/mux_t5c.tdf                             ;         ;
+; db/mux_46c.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/18.0/oac/CISC/db/mux_46c.tdf                             ;         ;
++--------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 380       ;
+;                                             ;           ;
+; Total combinational functions               ; 363       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 201       ;
+;     -- 3 input functions                    ; 114       ;
+;     -- <=2 input functions                  ; 48        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 329       ;
+;     -- arithmetic mode                      ; 34        ;
+;                                             ;           ;
+; Total registers                             ; 136       ;
+;     -- Dedicated logic registers            ; 136       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 131       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 117       ;
+; Total fan-out                               ; 1918      ;
+; Average fan-out                             ; 2.52      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                  ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                             ; Entity Name             ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
+; |m68hc11                             ; 363 (0)             ; 136 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 131  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
+;    |Flags:inst5|                     ; 9 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5                                                            ; Flags                   ; work         ;
+;       |mux3:inst10|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst10                                                ; mux3                    ; work         ;
+;       |mux3:inst11|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst11                                                ; mux3                    ; work         ;
+;       |registro:inst2|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst2                                             ; registro                ; work         ;
+;       |registro:inst3|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst3                                             ; registro                ; work         ;
+;       |registro:inst|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst                                              ; registro                ; work         ;
+;    |acumulador:ACCA|                 ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCA                                                        ; acumulador              ; work         ;
+;    |acumulador:ACCB|                 ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCB                                                        ; acumulador              ; work         ;
+;    |busmux:inst13|                   ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13                                                          ; busmux                  ; work         ;
+;       |lpm_mux:$00000|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13|lpm_mux:$00000                                           ; lpm_mux                 ; work         ;
+;          |mux_t5c:auto_generated|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13|lpm_mux:$00000|mux_t5c:auto_generated                    ; mux_t5c                 ; work         ;
+;    |contador:AUX|                    ; 18 (18)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:AUX                                                           ; contador                ; work         ;
+;    |contador:PC|                     ; 34 (34)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:PC                                                            ; contador                ; work         ;
+;    |ctrl_interrupciones:inst3|       ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ctrl_interrupciones:inst3                                              ; ctrl_interrupciones     ; work         ;
+;    |ram:inst6|                       ; 15 (15)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
+;    |registro_direccion:inst|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_direccion:inst                                                ; registro_direccion      ; work         ;
+;    |registro_instruccion:inst8|      ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_instruccion:inst8                                             ; registro_instruccion    ; work         ;
+;    |registro_interrupciones:IRX|     ; 72 (72)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_interrupciones:IRX                                            ; registro_interrupciones ; work         ;
+;    |secuenciador:inst14|             ; 148 (6)             ; 43 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14                                                    ; secuenciador            ; work         ;
+;       |busmux:inst5|                 ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5                                       ; busmux                  ; work         ;
+;          |lpm_mux:$00000|            ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000                        ; lpm_mux                 ; work         ;
+;             |mux_f7c:auto_generated| ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c                 ; work         ;
+;       |logica_seleccion:inst3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|logica_seleccion:inst3                             ; logica_seleccion        ; work         ;
+;       |memory:inst9|                 ; 110 (110)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|memory:inst9                                       ; memory                  ; work         ;
+;       |registro_MicroInst:inst4|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_MicroInst:inst4                           ; registro_MicroInst      ; work         ;
+;       |registro_sec:inst13|          ; 3 (3)               ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_sec:inst13                                ; registro_sec            ; work         ;
+;    |upa:inst1|                       ; 26 (26)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|upa:inst1                                                              ; upa                     ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++------------------------------------------------------------+---------------------------------------------------------------+
+; Register name                                              ; Reason for Removal                                            ;
++------------------------------------------------------------+---------------------------------------------------------------+
+; registro_instruccion:inst8|valor_interno[0..3]             ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|liga[1,3..6,8..11] ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|selbus             ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|UPA[1..4,6..9]     ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEX2               ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEX1               ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEX0               ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|X[0..2]            ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|enaY               ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nERA2              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEAP2              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEAP1              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEAP0              ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|AP[0..2]           ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|PC[1]              ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nWX                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nWI                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nEI                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nRW                ; Stuck at VCC due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|DINT               ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|HINT               ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|SET_IRQ            ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|SET_XIRQ           ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B9                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B8                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B5                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B1                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|B0                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|CI                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|CX                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|CS                 ; Stuck at GND due to stuck port data_in                        ;
+; secuenciador:inst14|registro_sec:inst13|nHB                ; Stuck at VCC due to stuck port data_in                        ;
+; Flags:inst5|registro:inst7|valor_interno                   ; Stuck at GND due to stuck port clock                          ;
+; Flags:inst5|registro:inst6|valor_interno                   ; Stuck at GND due to stuck port clock                          ;
+; Flags:inst5|registro:inst4|valor_interno                   ; Stuck at GND due to stuck port clock                          ;
+; registro_interrupciones:IRI|data_out[0..2,4]               ; Stuck at GND due to stuck port clock_enable                   ;
+; registro_interrupciones:IRI|data_out[3]                    ; Stuck at VCC due to stuck port clock_enable                   ;
+; registro_interrupciones:IRI|data_out[5..15]                ; Stuck at GND due to stuck port clock_enable                   ;
+; ctrl_interrupciones:inst3|INT_flag                         ; Stuck at VCC due to stuck port clock_enable                   ;
+; secuenciador:inst14|registro_sec:inst13|nEPC2              ; Lost fanout                                                   ;
+; registro_interrupciones:IRX|data_out[0..2,5..15]           ; Merged with registro_interrupciones:IRX|data_out[4]           ;
+; contador_ID:Y|data_out[3]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[2,11]                               ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[1,2]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[7]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[13]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[3,15]                               ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[7]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[3,6]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[0]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[15]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[5]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[1]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[9]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[9]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[13]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[5,6]                                ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[13]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[8,9]                                ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[4,8,12,14]                            ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[4]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[0]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[15]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[1]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[14]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[5]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[6]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[7]                                    ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[8]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[2]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[10]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[11]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[12]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[4]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:X|data_out[14]                                 ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador_ID:Y|data_out[10..12]                             ; Merged with contador_ID:Y|data_out[0]                         ;
+; contador:AP|data_out[10]                                   ; Merged with contador_ID:Y|data_out[0]                         ;
+; upa:inst1|Q[7]                                             ; Merged with upa:inst1|Banderas[2]                             ;
+; upa:inst1|Yupa_interno[7]                                  ; Merged with upa:inst1|Banderas[2]                             ;
+; upa:inst1|Yupa_interno[0]                                  ; Merged with upa:inst1|Q[0]                                    ;
+; upa:inst1|Yupa_interno[4]                                  ; Merged with upa:inst1|Banderas[4]                             ;
+; secuenciador:inst14|registro_sec:inst13|liga[7]            ; Merged with secuenciador:inst14|registro_sec:inst13|liga[2]   ;
+; secuenciador:inst14|registro_sec:inst13|B7                 ; Merged with secuenciador:inst14|registro_sec:inst13|B4        ;
+; secuenciador:inst14|registro_sec:inst13|B6                 ; Merged with secuenciador:inst14|registro_sec:inst13|B3        ;
+; secuenciador:inst14|registro_sec:inst13|EB[1]              ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
+; secuenciador:inst14|registro_sec:inst13|UPA[0]             ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
+; secuenciador:inst14|registro_sec:inst13|selmux             ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
+; secuenciador:inst14|registro_sec:inst13|RA[2]              ; Merged with secuenciador:inst14|registro_sec:inst13|BD        ;
+; secuenciador:inst14|registro_sec:inst13|RA[1]              ; Merged with secuenciador:inst14|registro_sec:inst13|RA[0]     ;
+; secuenciador:inst14|registro_sec:inst13|nOEUPA             ; Merged with secuenciador:inst14|registro_sec:inst13|nDUPA     ;
+; secuenciador:inst14|registro_sec:inst13|vf                 ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[2] ;
+; upa:inst1|Banderas[3]                                      ; Merged with upa:inst1|Banderas[1]                             ;
+; secuenciador:inst14|registro_sec:inst13|UPA[5]             ; Merged with secuenciador:inst14|registro_sec:inst13|ACCSEC    ;
+; secuenciador:inst14|registro_sec:inst13|prueba[1]          ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[0] ;
+; secuenciador:inst14|registro_sec:inst13|nEPC1              ; Merged with secuenciador:inst14|registro_sec:inst13|nEPC0     ;
+; registro_interrupciones:IRX|data_out[4]                    ; Stuck at GND due to stuck port data_in                        ;
+; registro_interrupciones:IRX|data_out[3]                    ; Stuck at VCC due to stuck port data_in                        ;
+; contador_ID:Y|data_out[0]                                  ; Stuck at GND due to stuck port data_in                        ;
+; upa:inst1|contador[0..2]                                   ; Stuck at GND due to stuck port clock_enable                   ;
+; ram:inst6|data[5]~reg0                                     ; Stuck at GND due to stuck port data_in                        ;
+; Flags:inst5|registro:inst5|valor_interno                   ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|CH                 ; Lost fanout                                                   ;
+; Flags:inst5|registro:inst1|valor_interno                   ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|B2                 ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|CV                 ; Lost fanout                                                   ;
+; ram:inst6|data[0]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[1]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[2]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[3]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[4]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[5]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; ram:inst6|data[6]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
+; Total Number of Removed Registers = 173                    ;                                                               ;
++------------------------------------------------------------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                      ;
++------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; secuenciador:inst14|registro_sec:inst13|nEX1   ; Stuck at VCC              ; Flags:inst5|registro:inst7|valor_interno, Flags:inst5|registro:inst6|valor_interno, ;
+;                                                ; due to stuck port data_in ; Flags:inst5|registro:inst4|valor_interno, registro_interrupciones:IRI|data_out[8],  ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[9], registro_interrupciones:IRI|data_out[10],  ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[11], registro_interrupciones:IRI|data_out[12], ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[13], registro_interrupciones:IRI|data_out[14], ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[15], Flags:inst5|registro:inst5|valor_interno, ;
+;                                                ;                           ; secuenciador:inst14|registro_sec:inst13|CH                                          ;
+; secuenciador:inst14|registro_sec:inst13|nEX0   ; Stuck at VCC              ; registro_interrupciones:IRI|data_out[4], registro_interrupciones:IRI|data_out[0],   ;
+;                                                ; due to stuck port data_in ; registro_interrupciones:IRI|data_out[1], registro_interrupciones:IRI|data_out[2],   ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[3], registro_interrupciones:IRI|data_out[5],   ;
+;                                                ;                           ; registro_interrupciones:IRI|data_out[6], registro_interrupciones:IRI|data_out[7],   ;
+;                                                ;                           ; registro_interrupciones:IRX|data_out[4], registro_interrupciones:IRX|data_out[3],   ;
+;                                                ;                           ; secuenciador:inst14|registro_sec:inst13|B2                                          ;
+; secuenciador:inst14|registro_sec:inst13|UPA[3] ; Stuck at GND              ; upa:inst1|contador[0], upa:inst1|contador[1], upa:inst1|contador[2]                 ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
+; secuenciador:inst14|registro_sec:inst13|nHB    ; Stuck at VCC              ; Flags:inst5|registro:inst1|valor_interno,                                           ;
+;                                                ; due to stuck port data_in ; secuenciador:inst14|registro_sec:inst13|CV                                          ;
+; secuenciador:inst14|registro_sec:inst13|nEX2   ; Stuck at VCC              ; secuenciador:inst14|registro_sec:inst13|nEPC2                                       ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
+; secuenciador:inst14|registro_sec:inst13|nEAP0  ; Stuck at VCC              ; contador_ID:Y|data_out[0]                                                           ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
+; secuenciador:inst14|registro_sec:inst13|DINT   ; Stuck at GND              ; ctrl_interrupciones:inst3|INT_flag                                                  ;
+;                                                ; due to stuck port data_in ;                                                                                     ;
++------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 136   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 24    ;
+; Number of registers using Asynchronous Clear ; 94    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 56    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------+
+; Inverted Register Statistics                            ;
++-----------------------------------------------+---------+
+; Inverted Register                             ; Fan out ;
++-----------------------------------------------+---------+
+; secuenciador:inst14|registro_sec:inst13|nAS   ; 2       ;
+; ctrl_interrupciones:inst3|IRQ_flag            ; 3       ;
+; ctrl_interrupciones:inst3|XIRQ_flag           ; 3       ;
+; secuenciador:inst14|registro_sec:inst13|nERA0 ; 2       ;
+; secuenciador:inst14|registro_sec:inst13|nWA   ; 11      ;
+; secuenciador:inst14|registro_sec:inst13|nEPC0 ; 1       ;
+; secuenciador:inst14|registro_sec:inst13|nWB   ; 11      ;
+; secuenciador:inst14|registro_sec:inst13|nDUPA ; 28      ;
+; secuenciador:inst14|registro_sec:inst13|nEX   ; 11      ;
+; secuenciador:inst14|registro_sec:inst13|nERA1 ; 2       ;
+; secuenciador:inst14|registro_sec:inst13|nCRI  ; 8       ;
+; secuenciador:inst14|registro_sec:inst13|nCBD  ; 8       ;
+; Total number of inverted registers = 12       ;         ;
++-----------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[2]      ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|B2             ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|EB[0]          ;
+; 28:1               ; 5 bits    ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|instruccion[0] ;
+; 29:1               ; 2 bits    ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[4]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCA|data_out[7]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCB|data_out[0]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[6]                               ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[13]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[8]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[4]                                ;
+; 28:1               ; 2 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nERA1          ;
+; 29:1               ; 2 bits    ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nCBD           ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |m68hc11|secuenciador:inst14|memory:inst9|data[6]               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secuenciador:inst14|BUSMUX:inst5 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 12    ; Untyped                                              ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: secuenciador:inst14|MUX:inst6 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; WIDTH          ; 32    ; Untyped                                           ;
+; WIDTHS         ; 5     ; Untyped                                           ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst13 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 1     ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst12 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 8     ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 131                         ;
+; cycloneiii_ff         ; 136                         ;
+;     CLR               ; 62                          ;
+;     CLR SLD           ; 8                           ;
+;     ENA               ; 16                          ;
+;     ENA CLR           ; 24                          ;
+;     ENA SLD           ; 16                          ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 366                         ;
+;     arith             ; 34                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 10                          ;
+;     normal            ; 332                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 104                         ;
+;         4 data inputs ; 201                         ;
+;                       ;                             ;
+; Max LUT depth         ; 14.00                       ;
+; Average LUT depth     ; 6.55                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Fri May 19 08:38:54 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off m68hc11 -c m68hc11
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ram/ram.vhd
+    Info (12022): Found design unit 1: ram-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/RAM/ram.vhd Line: 15
+    Info (12023): Found entity 1: ram File: C:/intelFPGA_lite/18.0/oac/CISC/RAM/ram.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file interrupciones/ctrl_interrupciones.vhd
+    Info (12022): Found design unit 1: ctrl_interrupciones-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/ctrl_interrupciones.vhd Line: 20
+    Info (12023): Found entity 1: ctrl_interrupciones File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/ctrl_interrupciones.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file flags/registro.vhd
+    Info (12022): Found design unit 1: registro-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 13
+    Info (12023): Found entity 1: registro File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file flags/mux3.vhd
+    Info (12022): Found design unit 1: mux3-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux3.vhd Line: 19
+    Info (12023): Found entity 1: mux3 File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux3.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file flags/mux2.vhd
+    Info (12022): Found design unit 1: mux2-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux2.vhd Line: 14
+    Info (12023): Found entity 1: mux2 File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file flags/mux1.vhd
+    Info (12022): Found design unit 1: mux1-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux1.vhd Line: 11
+    Info (12023): Found entity 1: mux1 File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux1.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file flags/flags.bdf
+    Info (12023): Found entity 1: Flags
+Info (12021): Found 2 design units, including 1 entities, in source file flags/divisor_datos.vhd
+    Info (12022): Found design unit 1: divisor_datos-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/flags/divisor_datos.vhd Line: 19
+    Info (12023): Found entity 1: divisor_datos File: C:/intelFPGA_lite/18.0/oac/CISC/flags/divisor_datos.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file flags/concatenador_datos.vhd
+    Info (12022): Found design unit 1: concatenador_datos-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/flags/concatenador_datos.vhd Line: 18
+    Info (12023): Found entity 1: concatenador_datos File: C:/intelFPGA_lite/18.0/oac/CISC/flags/concatenador_datos.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file contador/contador_id.vhd
+    Info (12022): Found design unit 1: contador_ID-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 26
+    Info (12023): Found entity 1: contador_ID File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file contador/contador.vhd
+    Info (12022): Found design unit 1: contador-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 25
+    Info (12023): Found entity 1: contador File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file acumulador/acumulador.vhd
+    Info (12022): Found design unit 1: acumulador-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 20
+    Info (12023): Found entity 1: acumulador File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file upa/upa.vhd
+    Info (12022): Found design unit 1: upa-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 33
+    Info (12023): Found entity 1: upa File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file m68hc11.bdf
+    Info (12023): Found entity 1: m68hc11
+Info (12021): Found 1 design units, including 1 entities, in source file secuenciador/secuenciador.bdf
+    Info (12023): Found entity 1: secuenciador
+Info (12021): Found 2 design units, including 1 entities, in source file secuenciador/memory.vhd
+    Info (12022): Found design unit 1: memory-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/memory.vhd Line: 12
+    Info (12023): Found entity 1: memory File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/memory.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file secuenciador/registro_sec.vhd
+    Info (12022): Found design unit 1: registro_sec-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_sec.vhd Line: 73
+    Info (12023): Found entity 1: registro_sec File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_sec.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file secuenciador/logica_seleccion.vhd
+    Info (12022): Found design unit 1: logica_seleccion-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 15
+    Info (12023): Found entity 1: logica_seleccion File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file secuenciador/registro_microinst.vhd
+    Info (12022): Found design unit 1: registro_MicroInst-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_MicroInst.vhd Line: 13
+    Info (12023): Found entity 1: registro_MicroInst File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_MicroInst.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file registro_instruccion.vhd
+    Info (12022): Found design unit 1: registro_instruccion-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/registro_instruccion.vhd Line: 13
+    Info (12023): Found entity 1: registro_instruccion File: C:/intelFPGA_lite/18.0/oac/CISC/registro_instruccion.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file bufferdatabus.vhd
+    Info (12022): Found design unit 1: bufferDataBus-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 12
+    Info (12023): Found entity 1: bufferDataBus File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file registro_direccion.vhd
+    Info (12022): Found design unit 1: registro_direccion-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 13
+    Info (12023): Found entity 1: registro_direccion File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file concatenador_entradas.vhd
+    Info (12022): Found design unit 1: concatenador_entradas-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/concatenador_entradas.vhd Line: 42
+    Info (12023): Found entity 1: concatenador_entradas File: C:/intelFPGA_lite/18.0/oac/CISC/concatenador_entradas.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file interrupciones/registro_interrupciones.vhd
+    Info (12022): Found design unit 1: registro_interrupciones-Behavioral File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 28
+    Info (12023): Found entity 1: registro_interrupciones File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 7
+Info (12127): Elaborating entity "m68hc11" for the top level hierarchy
+Warning (275083): Bus "Yupa2[7..0]" found using same base name as "Yupa", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "Yupa" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Yupa[7..0]" to "Yupa7..0"
+Warning (275080): Converted elements in bus name "Yupa2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "Yupa2[7..0]" to "Yupa27..0"
+Info (12128): Elaborating entity "Flags" for hierarchy "Flags:inst5"
+Warning (275011): Block or symbol "registro" of instance "inst4" overlaps another block or symbol
+Info (12128): Elaborating entity "registro" for hierarchy "Flags:inst5|registro:inst4"
+Info (12128): Elaborating entity "divisor_datos" for hierarchy "Flags:inst5|divisor_datos:inst15"
+Info (12128): Elaborating entity "mux1" for hierarchy "Flags:inst5|mux1:inst13"
+Warning (10631): VHDL Process Statement warning at mux1.vhd(13): inferring latch(es) for signal or variable "output", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux1.vhd Line: 13
+Info (10041): Inferred latch for "output" at mux1.vhd(13) File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux1.vhd Line: 13
+Info (12128): Elaborating entity "mux2" for hierarchy "Flags:inst5|mux2:inst9"
+Info (12128): Elaborating entity "mux3" for hierarchy "Flags:inst5|mux3:inst10"
+Info (12128): Elaborating entity "concatenador_datos" for hierarchy "Flags:inst5|concatenador_datos:inst14"
+Info (12128): Elaborating entity "secuenciador" for hierarchy "secuenciador:inst14"
+Info (12128): Elaborating entity "registro_sec" for hierarchy "secuenciador:inst14|registro_sec:inst13"
+Info (12128): Elaborating entity "memory" for hierarchy "secuenciador:inst14|memory:inst9"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "secuenciador:inst14|BUSMUX:inst5"
+Info (12130): Elaborated megafunction instantiation "secuenciador:inst14|BUSMUX:inst5"
+Info (12133): Instantiated megafunction "secuenciador:inst14|BUSMUX:inst5" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "12"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst14|BUSMUX:inst5|lpm_mux:$00000" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "secuenciador:inst14|BUSMUX:inst5|lpm_mux:$00000", which is child of megafunction instantiation "secuenciador:inst14|BUSMUX:inst5" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_f7c.tdf
+    Info (12023): Found entity 1: mux_f7c File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 22
+Info (12128): Elaborating entity "mux_f7c" for hierarchy "secuenciador:inst14|BUSMUX:inst5|lpm_mux:$00000|mux_f7c:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "logica_seleccion" for hierarchy "secuenciador:inst14|logica_seleccion:inst3"
+Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(17): inferring latch(es) for signal or variable "SELECTOR", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(17): inferring latch(es) for signal or variable "PL", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(17): inferring latch(es) for signal or variable "MAP1", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at logica_seleccion.vhd(17): inferring latch(es) for signal or variable "VECT", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Info (10041): Inferred latch for "VECT" at logica_seleccion.vhd(17) File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Info (10041): Inferred latch for "MAP1" at logica_seleccion.vhd(17) File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Info (10041): Inferred latch for "PL" at logica_seleccion.vhd(17) File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Info (10041): Inferred latch for "SELECTOR" at logica_seleccion.vhd(17) File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/logica_seleccion.vhd Line: 17
+Info (12128): Elaborating entity "MUX" for hierarchy "secuenciador:inst14|MUX:inst6"
+Info (12130): Elaborated megafunction instantiation "secuenciador:inst14|MUX:inst6"
+Info (12133): Instantiated megafunction "secuenciador:inst14|MUX:inst6" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "32"
+    Info (12134): Parameter "WIDTHS" = "5"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "secuenciador:inst14|MUX:inst6|lpm_mux:$00001" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "secuenciador:inst14|MUX:inst6|lpm_mux:$00001", which is child of megafunction instantiation "secuenciador:inst14|MUX:inst6" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/mux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_k7c.tdf
+    Info (12023): Found entity 1: mux_k7c File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_k7c.tdf Line: 22
+Info (12128): Elaborating entity "mux_k7c" for hierarchy "secuenciador:inst14|MUX:inst6|lpm_mux:$00001|mux_k7c:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "registro_MicroInst" for hierarchy "secuenciador:inst14|registro_MicroInst:inst4"
+Info (12128): Elaborating entity "ctrl_interrupciones" for hierarchy "ctrl_interrupciones:inst3"
+Info (12128): Elaborating entity "registro_instruccion" for hierarchy "registro_instruccion:inst8"
+Info (12128): Elaborating entity "acumulador" for hierarchy "acumulador:ACCB"
+Info (12128): Elaborating entity "bufferDataBus" for hierarchy "bufferDataBus:BusAlta"
+Info (12128): Elaborating entity "ram" for hierarchy "ram:inst6"
+Info (12128): Elaborating entity "registro_direccion" for hierarchy "registro_direccion:inst"
+Info (12128): Elaborating entity "contador" for hierarchy "contador:PC"
+Info (12128): Elaborating entity "contador_ID" for hierarchy "contador_ID:X"
+Info (12128): Elaborating entity "upa" for hierarchy "upa:inst1"
+Warning (10492): VHDL Process Statement warning at upa.vhd(107): signal "R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 107
+Warning (10492): VHDL Process Statement warning at upa.vhd(108): signal "S" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 108
+Warning (10492): VHDL Process Statement warning at upa.vhd(112): signal "R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 112
+Warning (10492): VHDL Process Statement warning at upa.vhd(113): signal "S" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 113
+Warning (10492): VHDL Process Statement warning at upa.vhd(122): signal "R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 122
+Warning (10492): VHDL Process Statement warning at upa.vhd(123): signal "S" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 123
+Warning (10631): VHDL Process Statement warning at upa.vhd(53): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (10631): VHDL Process Statement warning at upa.vhd(53): inferring latch(es) for signal or variable "S", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[0]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[1]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[2]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[3]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[4]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[5]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[6]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "S[7]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[0]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[1]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[2]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[3]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[4]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[5]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[6]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (10041): Inferred latch for "R[7]" at upa.vhd(53) File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst13"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst13"
+Info (12133): Instantiated megafunction "BUSMUX:inst13" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst13|lpm_mux:$00000" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst13|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst13" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_t5c.tdf
+    Info (12023): Found entity 1: mux_t5c File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_t5c.tdf Line: 22
+Info (12128): Elaborating entity "mux_t5c" for hierarchy "BUSMUX:inst13|lpm_mux:$00000|mux_t5c:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst12"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst12"
+Info (12133): Instantiated megafunction "BUSMUX:inst12" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "8"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst12|lpm_mux:$00000" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst12|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst12" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_46c.tdf
+    Info (12023): Found entity 1: mux_46c File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_46c.tdf Line: 22
+Info (12128): Elaborating entity "mux_46c" for hierarchy "BUSMUX:inst12|lpm_mux:$00000|mux_46c:auto_generated" File: c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "registro_interrupciones" for hierarchy "registro_interrupciones:IRX"
+Warning (10492): VHDL Process Statement warning at registro_interrupciones.vhd(45): signal "clk" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 45
+Info (12128): Elaborating entity "concatenador_entradas" for hierarchy "concatenador_entradas:inst2"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[7]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[6]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[5]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[4]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[3]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[2]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[1]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "registro_direccion:inst|valor_interno[0]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/registro_direccion.vhd Line: 18
+    Warning (13048): Converted tri-state node feeding "Flags:inst5|mux3:inst10|output" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux3.vhd Line: 16
+    Warning (13048): Converted tri-state node feeding "Flags:inst5|mux3:inst11|output" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/flags/mux3.vhd Line: 16
+    Warning (13049): Converted tri-state buffer "contador_ID:Y|R15~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "contador_ID:Y|R0~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 16
+    Warning (13049): Converted tri-state buffer "contador_ID:X|R15~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "contador_ID:X|R0~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 16
+    Warning (13049): Converted tri-state buffer "contador:AP|R15~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "contador:AP|R0~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 16
+    Warning (13049): Converted tri-state buffer "contador:PC|R15~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "contador:PC|R0~synth" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 16
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[11]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[10]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[9]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[8]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[7]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[6]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[5]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[4]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[3]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[2]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[1]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+    Warning (13048): Converted tri-state node feeding "secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated|result_node[0]" into a selector File: C:/intelFPGA_lite/18.0/oac/CISC/db/mux_f7c.tdf Line: 29
+Warning (14026): LATCH primitive "upa:inst1|S[0]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[1]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[2]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[3]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[4]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[5]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[6]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[7]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[0]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[1]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[2]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[3]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[4]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[5]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[6]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[7]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[0]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[1]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[2]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[3]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[4]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[5]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[6]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|S[7]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[0]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[1]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[2]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[3]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[4]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[5]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[6]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Warning (14026): LATCH primitive "upa:inst1|R[7]" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 53
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276013): RAM logic "ram:inst6|mem" is uninferred because MIF is not supported for the selected family File: C:/intelFPGA_lite/18.0/oac/CISC/RAM/ram.vhd Line: 17
+Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst5|SALIDA" to the node "bufferDataBus:BusBaja|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst3|SALIDA" to the node "bufferDataBus:BusBaja|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[3]" to the node "bufferDataBus:BusBaja|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst2|SALIDA" to the node "bufferDataBus:BusBaja|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst1|SALIDA" to the node "bufferDataBus:BusBaja|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst|SALIDA" to the node "bufferDataBus:BusBaja|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[7]" to the node "bufferDataBus:BusAlta|PortL[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[7]" to the node "bufferDataBus:BusAlta|PortL[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[6]" to the node "bufferDataBus:BusAlta|PortL[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[6]" to the node "bufferDataBus:BusAlta|PortL[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[5]" to the node "bufferDataBus:BusAlta|PortL[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[5]" to the node "bufferDataBus:BusAlta|PortL[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[4]" to the node "bufferDataBus:BusAlta|PortL[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[4]" to the node "bufferDataBus:BusAlta|PortL[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[3]" to the node "bufferDataBus:BusAlta|PortL[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[3]" to the node "bufferDataBus:BusAlta|PortL[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[2]" to the node "bufferDataBus:BusAlta|PortL[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[2]" to the node "bufferDataBus:BusAlta|PortL[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[1]" to the node "bufferDataBus:BusAlta|PortL[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[1]" to the node "bufferDataBus:BusAlta|PortL[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[0]" to the node "bufferDataBus:BusAlta|PortL[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[0]" to the node "bufferDataBus:BusAlta|PortL[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst7|SALIDA" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst6|SALIDA" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst4|SALIDA" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[3]" to the node "registro_instruccion:inst8|valor_interno[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[3]" to the node "registro_instruccion:inst8|valor_interno[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[3]" to the node "registro_instruccion:inst8|valor_interno[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "contador:AUX|R15" to the node "secuenciador:inst14|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|_" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 15
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[7]" to the node "upa:inst1|Mux35" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[7]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[6]" to the node "upa:inst1|Mux34" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[6]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[5]" to the node "upa:inst1|Mux33" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[5]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[4]" to the node "upa:inst1|Mux32" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[4]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[3]" to the node "upa:inst1|Mux31" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[3]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[2]" to the node "upa:inst1|Mux30" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[2]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[1]" to the node "upa:inst1|Mux29" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[1]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[0]" to the node "upa:inst1|Mux27" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+    Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCA|C[0]" to the node "upa:inst1|Add0" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "upa:inst1|Yupa[3]" to the node "registro_instruccion:inst8|valor_interno[7]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/UPA/upa.vhd Line: 25
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[7]" to the node "acumulador:ACCA|data_out[7]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[6]" to the node "acumulador:ACCA|data_out[6]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[5]" to the node "acumulador:ACCA|data_out[5]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[4]" to the node "acumulador:ACCA|data_out[4]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[3]" to the node "acumulador:ACCA|data_out[3]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[2]" to the node "acumulador:ACCA|data_out[2]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[1]" to the node "acumulador:ACCA|data_out[1]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[0]" to the node "acumulador:ACCA|data_out[0]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_sec.vhd Line: 44
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "AP_D[15]" is stuck at GND
+    Warning (13410): Pin "AP_D[14]" is stuck at GND
+    Warning (13410): Pin "AP_D[13]" is stuck at GND
+    Warning (13410): Pin "AP_D[12]" is stuck at GND
+    Warning (13410): Pin "AP_D[11]" is stuck at GND
+    Warning (13410): Pin "AP_D[10]" is stuck at GND
+    Warning (13410): Pin "AP_D[9]" is stuck at GND
+    Warning (13410): Pin "AP_D[8]" is stuck at GND
+    Warning (13410): Pin "AP_D[7]" is stuck at GND
+    Warning (13410): Pin "AP_D[6]" is stuck at GND
+    Warning (13410): Pin "AP_D[5]" is stuck at GND
+    Warning (13410): Pin "AP_D[4]" is stuck at GND
+    Warning (13410): Pin "AP_D[3]" is stuck at GND
+    Warning (13410): Pin "AP_D[2]" is stuck at GND
+    Warning (13410): Pin "AP_D[1]" is stuck at GND
+    Warning (13410): Pin "AP_D[0]" is stuck at GND
+    Warning (13410): Pin "IX[15]" is stuck at GND
+    Warning (13410): Pin "IX[14]" is stuck at GND
+    Warning (13410): Pin "IX[13]" is stuck at GND
+    Warning (13410): Pin "IX[12]" is stuck at GND
+    Warning (13410): Pin "IX[11]" is stuck at GND
+    Warning (13410): Pin "IX[10]" is stuck at GND
+    Warning (13410): Pin "IX[9]" is stuck at GND
+    Warning (13410): Pin "IX[8]" is stuck at GND
+    Warning (13410): Pin "IX[7]" is stuck at GND
+    Warning (13410): Pin "IX[6]" is stuck at GND
+    Warning (13410): Pin "IX[5]" is stuck at GND
+    Warning (13410): Pin "IX[4]" is stuck at GND
+    Warning (13410): Pin "IX[3]" is stuck at VCC
+    Warning (13410): Pin "IX[2]" is stuck at GND
+    Warning (13410): Pin "IX[1]" is stuck at GND
+    Warning (13410): Pin "IX[0]" is stuck at GND
+    Warning (13410): Pin "X_D[15]" is stuck at GND
+    Warning (13410): Pin "X_D[14]" is stuck at GND
+    Warning (13410): Pin "X_D[13]" is stuck at GND
+    Warning (13410): Pin "X_D[12]" is stuck at GND
+    Warning (13410): Pin "X_D[11]" is stuck at GND
+    Warning (13410): Pin "X_D[10]" is stuck at GND
+    Warning (13410): Pin "X_D[9]" is stuck at GND
+    Warning (13410): Pin "X_D[8]" is stuck at GND
+    Warning (13410): Pin "X_D[7]" is stuck at GND
+    Warning (13410): Pin "X_D[6]" is stuck at GND
+    Warning (13410): Pin "X_D[5]" is stuck at GND
+    Warning (13410): Pin "X_D[4]" is stuck at GND
+    Warning (13410): Pin "X_D[3]" is stuck at GND
+    Warning (13410): Pin "X_D[2]" is stuck at GND
+    Warning (13410): Pin "X_D[1]" is stuck at GND
+    Warning (13410): Pin "X_D[0]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 533 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 127 output pins
+    Info (21061): Implemented 402 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 257 warnings
+    Info: Peak virtual memory: 4804 megabytes
+    Info: Processing ended: Fri May 19 08:39:10 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:27
+
+

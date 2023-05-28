@@ -81,8 +81,8 @@ OUTS[1]                      : A9        : output : 2.5 V             :         
 OUTS[2]                      : A10       : output : 2.5 V             :         : 7         : Y              
 EDO_PST[2]                   : A11       : output : 2.5 V             :         : 7         : Y              
 IN_1[1]                      : A12       : input  : 2.5 V             :         : 7         : Y              
-IN_2[0]                      : A13       : input  : 2.5 V             :         : 7         : Y              
-IN_2[1]                      : A14       : input  : 2.5 V             :         : 7         : Y              
+IN_1[3]                      : A13       : input  : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
@@ -148,7 +148,7 @@ OUTS[3]                      : B10       : output : 2.5 V             :         
 EDO_PST[3]                   : B11       : output : 2.5 V             :         : 7         : Y              
 IN_1[2]                      : B12       : input  : 2.5 V             :         : 7         : Y              
 GND                          : B13       : gnd    :                   :         :           :                
-IN_2[2]                      : B14       : input  : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B17       :        :                   :         : 7         :                
@@ -170,7 +170,7 @@ INT                          : C10       : input  : 2.5 V             :         
 Y                            : C11       : input  : 2.5 V             :         : 7         : Y              
 IN_1[0]                      : C12       : input  : 2.5 V             :         : 7         : Y              
 OUTS[5]                      : C13       : output : 2.5 V             :         : 7         : Y              
-IN_1[3]                      : C14       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7         :                
@@ -213,7 +213,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7         :                
-IN_2[3]                      : E13       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E13       :        :                   :         : 7         :                
 EDO_PST[0]                   : E14       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 7         :                
