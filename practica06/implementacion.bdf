@@ -823,26 +823,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 568 264)
-	(pt 544 264)
-	(bus)
-)
-(connector
-	(pt 544 184)
-	(pt 544 264)
-	(bus)
-)
-(connector
-	(pt 504 184)
-	(pt 544 184)
-	(bus)
-)
-(connector
-	(pt 544 184)
-	(pt 568 184)
-	(bus)
-)
-(connector
 	(pt 1048 256)
 	(pt 1056 256)
 	(bus)
@@ -1085,11 +1065,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 296 168)
-	(pt 296 216)
-	(bus)
-)
-(connector
 	(pt 360 216)
 	(pt 352 216)
 )
@@ -1278,10 +1253,34 @@ refer to the applicable agreement for further details.
 	(pt 976 464)
 	(pt 976 576)
 )
+(connector
+	(pt 296 168)
+	(pt 296 216)
+	(bus)
+)
+(connector
+	(pt 568 264)
+	(pt 544 264)
+	(bus)
+)
+(connector
+	(pt 544 264)
+	(pt 544 184)
+	(bus)
+)
+(connector
+	(pt 504 184)
+	(pt 544 184)
+	(bus)
+)
+(connector
+	(pt 544 184)
+	(pt 568 184)
+	(bus)
+)
 (junction (pt 272 40))
 (junction (pt 48 104))
 (junction (pt 56 120))
-(junction (pt 544 184))
 (junction (pt 320 24))
 (junction (pt 312 40))
 (junction (pt 1000 112))
@@ -1299,3 +1298,4 @@ refer to the applicable agreement for further details.
 (junction (pt 24 152))
 (junction (pt 976 352))
 (junction (pt 976 464))
+(junction (pt 544 184))

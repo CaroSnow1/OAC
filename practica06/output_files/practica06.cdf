@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/intelFPGA_lite/18.0/oac/practica06/output_files/") File("practica06.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/output_files/") File("practica06.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

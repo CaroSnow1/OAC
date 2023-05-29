@@ -21,7 +21,7 @@ architecture behavioral of memory is
 	--ESTADO 0001 
 	internal_mem(1)  <= "00" & "1" & "01" & "0111"& "001111";
 	--ESTADO 0010 
-	internal_mem(2)  <= "00" & "0" & "00" & "0000"& "000111"; 
+	internal_mem(2)  <= "00" & "0" & "00" & "0000"& "000011"; 
 	--ESTADO 0011 
 	internal_mem(3)  <= "00" & "0" & "00" & "0000"& "001010";
 	--ESTADO 0100 

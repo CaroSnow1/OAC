@@ -1,5 +1,5 @@
 Analysis & Synthesis report for practica06
-Fri May 19 09:01:36 2023
+Sun May 28 22:22:09 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 19 09:01:36 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 28 22:22:09 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; practica06                                  ;
 ; Top-level Entity Name              ; implementacion                              ;
@@ -155,7 +155,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -167,25 +167,25 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
-; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/div_frec.vhd       ;         ;
-; memory.vhd                       ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd         ;         ;
-; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/divisor_datos.vhd  ;         ;
-; registro_1.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro_1.vhd     ;         ;
-; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/incrementador.vhd  ;         ;
-; mux_direccion.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd  ;         ;
-; logica_interna.vhd               ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd ;         ;
-; registro_12.vhd                  ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd    ;         ;
-; practica06.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/practica06/practica06.bdf     ;         ;
-; implementacion.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/18.0/oac/practica06/implementacion.bdf ;         ;
-; registro.vhd                     ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd       ;         ;
-; registro_outs.vhd                ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd  ;         ;
-; mux_inputs.vhd                   ; yes             ; User VHDL File                     ; C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd     ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/div_frec.vhd       ;         ;
+; memory.vhd                       ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd         ;         ;
+; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/divisor_datos.vhd  ;         ;
+; registro_1.vhd                   ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_1.vhd     ;         ;
+; incrementador.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/incrementador.vhd  ;         ;
+; mux_direccion.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd  ;         ;
+; logica_interna.vhd               ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd ;         ;
+; registro_12.vhd                  ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd    ;         ;
+; practica06.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/practica06.bdf     ;         ;
+; implementacion.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/implementacion.bdf ;         ;
+; registro.vhd                     ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd       ;         ;
+; registro_outs.vhd                ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd  ;         ;
+; mux_inputs.vhd                   ; yes             ; User VHDL File                     ; C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd     ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -318,7 +318,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -328,99 +328,99 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 19 09:01:22 2023
+    Info: Processing started: Sun May 28 22:21:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off practica06 -c practica06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file div_frec.vhd
-    Info (12022): Found design unit 1: div_frec-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/div_frec.vhd Line: 12
-    Info (12023): Found entity 1: div_frec File: C:/intelFPGA_lite/18.0/oac/practica06/div_frec.vhd Line: 7
+    Info (12022): Found design unit 1: div_frec-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/div_frec.vhd Line: 12
+    Info (12023): Found entity 1: div_frec File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/div_frec.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: memory-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 13
-    Info (12023): Found entity 1: memory File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 7
+    Info (12022): Found design unit 1: memory-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 13
+    Info (12023): Found entity 1: memory File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
-    Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/divisor_datos.vhd Line: 18
-    Info (12023): Found entity 1: divisor_datos File: C:/intelFPGA_lite/18.0/oac/practica06/divisor_datos.vhd Line: 7
+    Info (12022): Found design unit 1: divisor_datos-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/divisor_datos.vhd Line: 18
+    Info (12023): Found entity 1: divisor_datos File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/divisor_datos.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file registro_1.vhd
-    Info (12022): Found design unit 1: registro_1-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro_1.vhd Line: 15
-    Info (12023): Found entity 1: registro_1 File: C:/intelFPGA_lite/18.0/oac/practica06/registro_1.vhd Line: 5
+    Info (12022): Found design unit 1: registro_1-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_1.vhd Line: 15
+    Info (12023): Found entity 1: registro_1 File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file incrementador.vhd
-    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/incrementador.vhd Line: 14
-    Info (12023): Found entity 1: incrementador File: C:/intelFPGA_lite/18.0/oac/practica06/incrementador.vhd Line: 7
+    Info (12022): Found design unit 1: incrementador-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/incrementador.vhd Line: 14
+    Info (12023): Found entity 1: incrementador File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/incrementador.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux_direccion.vhd
-    Info (12022): Found design unit 1: mux_direccion-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 13
-    Info (12023): Found entity 1: mux_direccion File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 5
+    Info (12022): Found design unit 1: mux_direccion-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 13
+    Info (12023): Found entity 1: mux_direccion File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file logica_interna.vhd
-    Info (12022): Found design unit 1: logica_interna-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 17
-    Info (12023): Found entity 1: logica_interna File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 6
+    Info (12022): Found design unit 1: logica_interna-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 17
+    Info (12023): Found entity 1: logica_interna File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file registro_12.vhd
-    Info (12022): Found design unit 1: registro_12-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 15
-    Info (12023): Found entity 1: registro_12 File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 5
+    Info (12022): Found design unit 1: registro_12-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 15
+    Info (12023): Found entity 1: registro_12 File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file practica06.bdf
     Info (12023): Found entity 1: practica06
 Info (12021): Found 1 design units, including 1 entities, in source file implementacion.bdf
     Info (12023): Found entity 1: implementacion
 Info (12021): Found 2 design units, including 1 entities, in source file registro.vhd
-    Info (12022): Found design unit 1: registro-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 15
-    Info (12023): Found entity 1: registro File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 5
+    Info (12022): Found design unit 1: registro-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 15
+    Info (12023): Found entity 1: registro File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registro_outs.vhd
-    Info (12022): Found design unit 1: registro_outs-behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 16
-    Info (12023): Found entity 1: registro_outs File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 6
+    Info (12022): Found design unit 1: registro_outs-behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 16
+    Info (12023): Found entity 1: registro_outs File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux_inputs.vhd
-    Info (12022): Found design unit 1: mux_inputs-Behavioral File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 17
-    Info (12023): Found entity 1: mux_inputs File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 6
+    Info (12022): Found design unit 1: mux_inputs-Behavioral File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 17
+    Info (12023): Found entity 1: mux_inputs File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 6
 Info (12127): Elaborating entity "implementacion" for the top level hierarchy
 Info (12128): Elaborating entity "practica06" for hierarchy "practica06:secuenciador"
 Info (12128): Elaborating entity "logica_interna" for hierarchy "practica06:secuenciador|logica_interna:IntLogic"
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "sel", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "npl", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nmap", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nvect", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "nvect" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "nmap" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "npl" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
-Info (10041): Inferred latch for "sel" at logica_interna.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "sel", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "npl", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nmap", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at logica_interna.vhd(19): inferring latch(es) for signal or variable "nvect", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "nvect" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "nmap" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "npl" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
+Info (10041): Inferred latch for "sel" at logica_interna.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/logica_interna.vhd Line: 19
 Info (12128): Elaborating entity "mux_direccion" for hierarchy "practica06:secuenciador|mux_direccion:MuxDireccion"
-Warning (10631): VHDL Process Statement warning at mux_direccion.vhd(15): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[0]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[1]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[2]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-Info (10041): Inferred latch for "salida[3]" at mux_direccion.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
+Warning (10631): VHDL Process Statement warning at mux_direccion.vhd(15): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[0]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[1]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[2]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+Info (10041): Inferred latch for "salida[3]" at mux_direccion.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
 Info (12128): Elaborating entity "registro_12" for hierarchy "practica06:secuenciador|registro_12:MicroPC"
 Info (12128): Elaborating entity "incrementador" for hierarchy "practica06:secuenciador|incrementador:Inc"
 Info (12128): Elaborating entity "mux_inputs" for hierarchy "mux_inputs:Entradas"
-Warning (10492): VHDL Process Statement warning at mux_inputs.vhd(28): signal "I3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 28
-Warning (10631): VHDL Process Statement warning at mux_inputs.vhd(19): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 19
-Info (10041): Inferred latch for "O" at mux_inputs.vhd(19) File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 19
+Warning (10492): VHDL Process Statement warning at mux_inputs.vhd(28): signal "I3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at mux_inputs.vhd(19): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 19
+Info (10041): Inferred latch for "O" at mux_inputs.vhd(19) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 19
 Info (12128): Elaborating entity "registro" for hierarchy "registro:Prueba"
 Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:inst2"
 Info (12128): Elaborating entity "divisor_datos" for hierarchy "divisor_datos:div_data"
 Info (12128): Elaborating entity "memory" for hierarchy "memory:inst"
-Warning (10492): VHDL Process Statement warning at memory.vhd(52): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 52
-Warning (10873): Using initial value X (don't care) for net "internal_mem[15]" at memory.vhd(15) File: C:/intelFPGA_lite/18.0/oac/practica06/memory.vhd Line: 15
+Warning (10492): VHDL Process Statement warning at memory.vhd(52): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 52
+Warning (10873): Using initial value X (don't care) for net "internal_mem[15]" at memory.vhd(15) File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/memory.vhd Line: 15
 Info (12128): Elaborating entity "registro_1" for hierarchy "registro_1:VF"
 Info (12128): Elaborating entity "registro_outs" for hierarchy "registro_outs:SALIDAS"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[3]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[2]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[1]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[0]" into a selector File: C:/intelFPGA_lite/18.0/oac/practica06/mux_direccion.vhd Line: 15
-    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[0]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[1]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[0]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[1]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[0]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[1]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[2]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
-    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[3]" feeding internal logic into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_12.vhd Line: 11
-Warning (14026): LATCH primitive "mux_inputs:Entradas|O" is permanently enabled File: C:/intelFPGA_lite/18.0/oac/practica06/mux_inputs.vhd Line: 13
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[3]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[2]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[1]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+    Warning (13048): Converted tri-state node feeding "practica06:secuenciador|mux_direccion:MuxDireccion|salida[0]" into a selector File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_direccion.vhd Line: 15
+    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[0]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "registro:Instrucciones|data_out[1]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[0]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "registro:Prueba|data_out[1]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[0]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[1]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[2]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
+    Warning (13049): Converted tri-state buffer "practica06:secuenciador|registro_12:MicroPC|data_out[3]" feeding internal logic into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_12.vhd Line: 11
+Warning (14026): LATCH primitive "mux_inputs:Entradas|O" is permanently enabled File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/mux_inputs.vhd Line: 13
 Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[5]" to the node "OUTS[5]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[4]" to the node "OUTS[4]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[3]" to the node "OUTS[3]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[2]" to the node "OUTS[2]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[1]" to the node "OUTS[1]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[0]" to the node "OUTS[0]" into a wire File: C:/intelFPGA_lite/18.0/oac/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[5]" to the node "OUTS[5]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[4]" to the node "OUTS[4]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[3]" to the node "OUTS[3]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[2]" to the node "OUTS[2]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[1]" to the node "OUTS[1]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "registro_outs:SALIDAS|data_out[0]" to the node "OUTS[0]" into a wire File: C:/Users/alexi/OneDrive/Documentos/Universidad/OAC/practica06/registro_outs.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -429,9 +429,9 @@ Info (21057): Implemented 88 device resources after synthesis - the final resour
     Info (21059): Implemented 10 output pins
     Info (21061): Implemented 69 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Fri May 19 09:01:36 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Sun May 28 22:22:09 2023
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:01:18
 
 
