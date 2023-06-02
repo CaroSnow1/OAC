@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 06 19:05:21 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : m68hc11
+Top-level Entity Name : m68hc11
+Family : Cyclone IV E
+Total logic elements : 321
+    Total combinational functions : 305
+    Dedicated logic registers : 123
+Total registers : 123
+Total pins : 130
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

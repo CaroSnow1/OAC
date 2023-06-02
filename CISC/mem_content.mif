@@ -22,17 +22,31 @@ ADDRESS_RADIX=UNS;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	0    :   C6; -- LDAB INM
-	1    :   06; -- B
-	2    :   86; -- LDAA (INM)
-	3    :   05; -- A
-	4    :   1A; --CMP acceso inherente
-	5    :   08; --JB acceso extendido 
-	6    :   00; -- DIR
-	7    :   0A; -- DIR
-	8    :   86;
-	9    :   0A;
-	10    :  86;
-	11   :   06; --carga 06 
-	[12..255]  :   00;
+	0    :   B7; -- LDAB EXT
+	1    :   00; -- RES
+	2    :   18; -- RES
+	3    :   77; -- LDAA EXT
+	4    :   00; -- TEMP
+	5    :   19; -- TEMP
+	6    :   1A; -- CMP
+	7    :   08; -- JB EXT
+	8    :   00; -- SALTO
+	9    :   0F; -- SALTO
+	10    :  86; -- LDAA INM
+	11   :   0A; -- 0A
+	12    :  A7; -- STAA EXT
+	13    :  00; -- TEMP
+	14    :  19; -- TEMP
+	15    :  86; -- LDAA INM 
+	16    :  06; -- 06 
+	17    :  A7; -- STAA EXT 
+	18    :  00; -- RES
+	19    :  18; -- RES
+	20    :  1B; -- ABA UNH 
+	21    :  7E; -- JMP
+	22    :  00; -- 00
+	23    :  15; -- 13
+	24    :  06; -- RES DIR 16H
+	25    :  05; -- TEMP DIR 17H 
+	[26..255]  :   00;
 END;

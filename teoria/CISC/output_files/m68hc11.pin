@@ -1,0 +1,326 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+CHIP  "m68hc11"  ASSIGNED TO AN: EP4CE22F17C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+AP_D[10]                     : A2        : output : 2.5 V             :         : 8         : N              
+AP_D[13]                     : A3        : output : 2.5 V             :         : 8         : N              
+Debug_Q[0]                   : A4        : output : 2.5 V             :         : 8         : N              
+Debug_Q[4]                   : A5        : output : 2.5 V             :         : 8         : N              
+Debug_Q[2]                   : A6        : output : 2.5 V             :         : 8         : N              
+AUX_D[7]                     : A7        : output : 2.5 V             :         : 8         : N              
+GND+                         : A8        :        :                   :         : 8         :                
+GND+                         : A9        :        :                   :         : 7         :                
+X_D[1]                       : A10       : output : 2.5 V             :         : 7         : N              
+IX[6]                        : A11       : output : 2.5 V             :         : 7         : N              
+X_D[9]                       : A12       : output : 2.5 V             :         : 7         : N              
+X_D[4]                       : A13       : output : 2.5 V             :         : 7         : N              
+AP_D[14]                     : A14       : output : 2.5 V             :         : 7         : N              
+X_D[13]                      : A15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+X_D[6]                       : B1        : output : 2.5 V             :         : 1         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+IX[7]                        : B3        : output : 2.5 V             :         : 8         : N              
+IX[13]                       : B4        : output : 2.5 V             :         : 8         : N              
+Debug_Yupa[0]                : B5        : output : 2.5 V             :         : 8         : N              
+Debug_Q[3]                   : B6        : output : 2.5 V             :         : 8         : N              
+Edo_Pres[8]                  : B7        : output : 2.5 V             :         : 8         : N              
+GND+                         : B8        :        :                   :         : 8         :                
+GND+                         : B9        :        :                   :         : 7         :                
+AP_D[6]                      : B10       : output : 2.5 V             :         : 7         : N              
+IX[11]                       : B11       : output : 2.5 V             :         : 7         : N              
+X_D[10]                      : B12       : output : 2.5 V             :         : 7         : N              
+IX[9]                        : B13       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B14       :        :                   :         : 7         :                
+GND                          : B15       : gnd    :                   :         :           :                
+AUX_D[3]                     : B16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+X_D[11]                      : C2        : output : 2.5 V             :         : 1         : N              
+X_D[7]                       : C3        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+AUX_D[1]                     : C6        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+Edo_Pres[2]                  : C8        : output : 2.5 V             :         : 8         : N              
+X_D[5]                       : C9        : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+IX[1]                        : C11       : output : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+AP_D[3]                      : C14       : output : 2.5 V             :         : 7         : N              
+X_D[3]                       : C15       : output : 2.5 V             :         : 6         : N              
+AP_D[11]                     : C16       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+AP_D[0]                      : D3        : output : 2.5 V             :         : 8         : N              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+AP_D[9]                      : D5        : output : 2.5 V             :         : 8         : N              
+IX[5]                        : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+AUX_D[12]                    : D8        : output : 2.5 V             :         : 8         : N              
+IX[3]                        : D9        : output : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+IX[4]                        : D11       : output : 2.5 V             :         : 7         : N              
+AP_D[8]                      : D12       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+IX[12]                       : D14       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 6         :                
+AP_D[5]                      : D16       : output : 2.5 V             :         : 6         : N              
+GND+                         : E1        :        :                   :         : 1         :                
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+ACCB_D[0]                    : E6        : output : 2.5 V             :         : 8         : N              
+Debug_Q[6]                   : E7        : output : 2.5 V             :         : 8         : N              
+AUX_D[10]                    : E8        : output : 2.5 V             :         : 8         : N              
+Z                            : E9        : output : 2.5 V             :         : 7         : N              
+AP_D[4]                      : E10       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 7         :                
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+X_D[2]                       : F1        : output : 2.5 V             :         : 1         : N              
+IX[14]                       : F2        : output : 2.5 V             :         : 1         : N              
+IX[8]                        : F3        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+ACCB_D[1]                    : F8        : output : 2.5 V             :         : 8         : N              
+AP_D[15]                     : F9        : output : 2.5 V             :         : 7         : N              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+AP_D[2]                      : F13       : output : 2.5 V             :         : 6         : N              
+IX[10]                       : F14       : output : 2.5 V             :         : 6         : N              
+X_D[8]                       : F15       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+IX[2]                        : G1        : output : 2.5 V             :         : 1         : N              
+AUX_D[2]                     : G2        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+X_D[0]                       : G5        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 6         :                
+AP_D[12]                     : G16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+Edo_Pres[6]                  : J1        : output : 2.5 V             :         : 2         : N              
+IRQn                         : J2        : input  : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+X_D[15]                      : J13       : output : 2.5 V             :         : 5         : N              
+AP_D[7]                      : J14       : output : 2.5 V             :         : 5         : N              
+Edo_Pres[7]                  : J15       : output : 2.5 V             :         : 5         : N              
+Debug_Yupa[1]                : J16       : output : 2.5 V             :         : 5         : N              
+Edo_Pres[1]                  : K1        : output : 2.5 V             :         : 2         : N              
+Edo_Pres[9]                  : K2        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+AUX_D[15]                    : K5        : output : 2.5 V             :         : 2         : N              
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+AUX_D[11]                    : K15       : output : 2.5 V             :         : 5         : N              
+csnn                         : K16       : output : 2.5 V             :         : 5         : N              
+Debug_Yupa[6]                : L1        : output : 2.5 V             :         : 2         : N              
+Debug_Yupa[4]                : L2        : output : 2.5 V             :         : 2         : N              
+AUX_D[0]                     : L3        : output : 2.5 V             :         : 2         : N              
+ACCA_D[1]                    : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+AUX_D[4]                     : L7        : output : 2.5 V             :         : 3         : N              
+ACCA_D[3]                    : L8        : output : 2.5 V             :         : 3         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+PC_D[0]                      : L13       : output : 2.5 V             :         : 5         : N              
+Debug_Q[7]                   : L14       : output : 2.5 V             :         : 5         : N              
+Edo_Pres[4]                  : L15       : output : 2.5 V             :         : 5         : N              
+Debug_Yupa[5]                : L16       : output : 2.5 V             :         : 5         : N              
+GND+                         : M1        :        :                   :         : 2         :                
+GND+                         : M2        :        :                   :         : 2         :                
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+Edo_Pres[5]                  : M6        : output : 2.5 V             :         : 3         : N              
+ACCA_D[4]                    : M7        : output : 2.5 V             :         : 3         : N              
+ACCA_D[6]                    : M8        : output : 2.5 V             :         : 3         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+PC_D[11]                     : M10       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+Debug_Yupa[3]                : N1        : output : 2.5 V             :         : 2         : N              
+ACCB_D[6]                    : N2        : output : 2.5 V             :         : 2         : N              
+IX[15]                       : N3        : output : 2.5 V             :         : 3         : N              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+Debug_Q[1]                   : N5        : output : 2.5 V             :         : 3         : N              
+XIRQn                        : N6        : input  : 2.5 V             :         : 3         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+Edo_Pres[10]                 : N8        : output : 2.5 V             :         : 3         : N              
+PC_D[15]                     : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+AUX_D[5]                     : N11       : output : 2.5 V             :         : 4         : N              
+AUX_D[9]                     : N12       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+PC_D[5]                      : N14       : output : 2.5 V             :         : 5         : N              
+Debug_Yupa[7]                : N15       : output : 2.5 V             :         : 5         : N              
+AUX_D[6]                     : N16       : output : 2.5 V             :         : 5         : N              
+AUX_D[8]                     : P1        : output : 2.5 V             :         : 2         : N              
+AUX_D[13]                    : P2        : output : 2.5 V             :         : 2         : N              
+Edo_Pres[3]                  : P3        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+ACCB_D[5]                    : P6        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+PC_D[6]                      : P8        : output : 2.5 V             :         : 3         : N              
+PC_D[7]                      : P9        : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+PC_D[14]                     : P11       : output : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+AP_D[1]                      : P14       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 5         :                
+ACCA_D[2]                    : P16       : output : 2.5 V             :         : 5         : N              
+ACCA_D[0]                    : R1        : output : 2.5 V             :         : 2         : N              
+GND                          : R2        : gnd    :                   :         :           :                
+Debug_Yupa[2]                : R3        : output : 2.5 V             :         : 3         : N              
+Debug_Q[5]                   : R4        : output : 2.5 V             :         : 3         : N              
+ACCA_D[7]                    : R5        : output : 2.5 V             :         : 3         : N              
+ACCB_D[2]                    : R6        : output : 2.5 V             :         : 3         : N              
+Edo_Pres[0]                  : R7        : output : 2.5 V             :         : 3         : N              
+CLK                          : R8        : input  : 2.5 V             :         : 3         : Y              
+GND+                         : R9        :        :                   :         : 4         :                
+PC_D[2]                      : R10       : output : 2.5 V             :         : 4         : N              
+PC_D[1]                      : R11       : output : 2.5 V             :         : 4         : N              
+AUX_D[14]                    : R12       : output : 2.5 V             :         : 4         : N              
+PC_D[9]                      : R13       : output : 2.5 V             :         : 4         : N              
+X_D[14]                      : R14       : output : 2.5 V             :         : 4         : N              
+GND                          : R15       : gnd    :                   :         :           :                
+PC_D[13]                     : R16       : output : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+ACCB_D[3]                    : T2        : output : 2.5 V             :         : 3         : N              
+ACCB_D[7]                    : T3        : output : 2.5 V             :         : 3         : N              
+Edo_Pres[11]                 : T4        : output : 2.5 V             :         : 3         : N              
+ACCB_D[4]                    : T5        : output : 2.5 V             :         : 3         : N              
+PC_D[12]                     : T6        : output : 2.5 V             :         : 3         : N              
+ACCA_D[5]                    : T7        : output : 2.5 V             :         : 3         : N              
+RESET                        : T8        : input  : 2.5 V             :         : 3         : N              
+GND+                         : T9        :        :                   :         : 4         :                
+PC_D[4]                      : T10       : output : 2.5 V             :         : 4         : N              
+PC_D[8]                      : T11       : output : 2.5 V             :         : 4         : N              
+PC_D[10]                     : T12       : output : 2.5 V             :         : 4         : N              
+PC_D[3]                      : T13       : output : 2.5 V             :         : 4         : N              
+IX[0]                        : T14       : output : 2.5 V             :         : 4         : N              
+X_D[12]                      : T15       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

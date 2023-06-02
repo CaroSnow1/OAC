@@ -1,5 +1,5 @@
 EDA Netlist Writer report for m68hc11
-Fri May 19 08:39:29 2023
+Fri May 26 09:01:10 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri May 19 08:39:29 2023 ;
+; EDA Netlist Writer Status ; Successful - Fri May 26 09:01:10 2023 ;
 ; Revision Name             ; m68hc11                               ;
 ; Top-level Entity Name     ; m68hc11                               ;
 ; Family                    ; MAX 10                                ;
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri May 19 08:39:28 2023
+    Info: Processing started: Fri May 26 09:01:09 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/18.0/oac/CISC/simulation/qsim/ m68hc11 -c m68hc11
 Info (119006): Selected device 10M08DAF484C8G for design "m68hc11"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file m68hc11.vho in folder "C:/intelFPGA_lite/18.0/oac/CISC/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4638 megabytes
-    Info: Processing ended: Fri May 19 08:39:29 2023
+    Info: Peak virtual memory: 4646 megabytes
+    Info: Processing ended: Fri May 26 09:01:10 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

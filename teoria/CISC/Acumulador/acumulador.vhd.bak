@@ -1,0 +1,62 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.std_logic_misc.ALL;
+
+entity reg_acumulador is
+	Port(   E : in std_logic_vector(1 downto 0);
+			A : inout std_logic_vector(7 downto 0);
+			B : inout std_logic_vector(7 downto 0);
+			C : inout std_logic_vector(7 downto 0);
+			Wn : in std_logic;
+			clk : in std_logic;
+			Z : out std_logic;
+			N : out std_logic
+			);
+end reg_acumulador;
+
+architecture Behavioral of reg_acumulador is
+	signal data_out : std_logic_vector(7 downto 0) := X"00";
+	
+	begin	
+	
+	Z <= not(or_reduce(data_out));
+	N <= data_out(7);
+	
+	-- Write Block
+	ACC_WRITE: process (E, clk, Wn, A, B, C) 
+	begin
+		if (rising_edge(clk) and Wn = '0') then
+			if (E = "01") then
+				data_out <= A;
+			elsif (E = "10") then
+				data_out <= B;
+			elsif (E = "11") then
+				data_out <= C;
+			end if;
+		end if;
+	end process;
+
+	TRI_STATE: process (E, Wn, data_out)
+	begin
+		if (E = "01" and Wn = '1') then
+			A <= data_out;
+			B <= (others => 'Z');
+			C <= (others => 'Z');
+		elsif (E = "10" and Wn = '1') then
+			B <= data_out;
+			A <= (others => 'Z');
+			C <= (others => 'Z');
+		elsif (E = "11" and Wn = '1') then
+			C <= data_out;
+			A <= (others => 'Z');
+			B <= (others => 'Z');
+		else 
+			A <= (others => 'Z');
+			B <= (others => 'Z');
+			C <= (others => 'Z');
+		end if;
+	end process;
+		
+end Behavioral;

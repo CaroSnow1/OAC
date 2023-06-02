@@ -1,5 +1,5 @@
 Analysis & Synthesis report for m68hc11
-Fri May 19 08:39:10 2023
+Fri May 26 09:01:01 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -50,15 +50,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 19 08:39:10 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 26 09:01:01 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; m68hc11                                     ;
 ; Top-level Entity Name              ; m68hc11                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 380                                         ;
-;     Total combinational functions  ; 363                                         ;
-;     Dedicated logic registers      ; 136                                         ;
-; Total registers                    ; 136                                         ;
+; Total logic elements               ; 4,143                                       ;
+;     Total combinational functions  ; 2,162                                       ;
+;     Dedicated logic registers      ; 2,188                                       ;
+; Total registers                    ; 2188                                        ;
 ; Total pins                         ; 131                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -168,7 +168,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -221,20 +221,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 380       ;
+; Estimated Total logic elements              ; 4,143     ;
 ;                                             ;           ;
-; Total combinational functions               ; 363       ;
+; Total combinational functions               ; 2162      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 201       ;
-;     -- 3 input functions                    ; 114       ;
-;     -- <=2 input functions                  ; 48        ;
+;     -- 4 input functions                    ; 1912      ;
+;     -- 3 input functions                    ; 137       ;
+;     -- <=2 input functions                  ; 113       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 329       ;
+;     -- normal mode                          ; 2128      ;
 ;     -- arithmetic mode                      ; 34        ;
 ;                                             ;           ;
-; Total registers                             ; 136       ;
-;     -- Dedicated logic registers            ; 136       ;
+; Total registers                             ; 2188      ;
+;     -- Dedicated logic registers            ; 2188      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 131       ;
@@ -242,9 +242,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 117       ;
-; Total fan-out                               ; 1918      ;
-; Average fan-out                             ; 2.52      ;
+; Maximum fan-out                             ; 2169      ;
+; Total fan-out                               ; 15049     ;
+; Average fan-out                             ; 3.26      ;
 +---------------------------------------------+-----------+
 
 
@@ -253,33 +253,34 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                             ; Entity Name             ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
-; |m68hc11                             ; 363 (0)             ; 136 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 131  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
+; |m68hc11                             ; 2162 (8)            ; 2188 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 131  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
 ;    |Flags:inst5|                     ; 9 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5                                                            ; Flags                   ; work         ;
 ;       |mux3:inst10|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst10                                                ; mux3                    ; work         ;
 ;       |mux3:inst11|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst11                                                ; mux3                    ; work         ;
 ;       |registro:inst2|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst2                                             ; registro                ; work         ;
 ;       |registro:inst3|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst3                                             ; registro                ; work         ;
 ;       |registro:inst|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|registro:inst                                              ; registro                ; work         ;
-;    |acumulador:ACCA|                 ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCA                                                        ; acumulador              ; work         ;
+;    |acumulador:ACCA|                 ; 25 (25)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCA                                                        ; acumulador              ; work         ;
 ;    |acumulador:ACCB|                 ; 19 (19)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|acumulador:ACCB                                                        ; acumulador              ; work         ;
+;    |bufferDataBus:BusAlta|           ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|bufferDataBus:BusAlta                                                  ; bufferDataBus           ; work         ;
 ;    |busmux:inst13|                   ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13                                                          ; busmux                  ; work         ;
 ;       |lpm_mux:$00000|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13|lpm_mux:$00000                                           ; lpm_mux                 ; work         ;
 ;          |mux_t5c:auto_generated|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|busmux:inst13|lpm_mux:$00000|mux_t5c:auto_generated                    ; mux_t5c                 ; work         ;
 ;    |contador:AUX|                    ; 18 (18)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:AUX                                                           ; contador                ; work         ;
-;    |contador:PC|                     ; 34 (34)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:PC                                                            ; contador                ; work         ;
+;    |contador:PC|                     ; 35 (35)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:PC                                                            ; contador                ; work         ;
 ;    |ctrl_interrupciones:inst3|       ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ctrl_interrupciones:inst3                                              ; ctrl_interrupciones     ; work         ;
-;    |ram:inst6|                       ; 15 (15)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
+;    |ram:inst6|                       ; 1716 (1716)         ; 2057 (2057)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
 ;    |registro_direccion:inst|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_direccion:inst                                                ; registro_direccion      ; work         ;
 ;    |registro_instruccion:inst8|      ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_instruccion:inst8                                             ; registro_instruccion    ; work         ;
-;    |registro_interrupciones:IRX|     ; 72 (72)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_interrupciones:IRX                                            ; registro_interrupciones ; work         ;
-;    |secuenciador:inst14|             ; 148 (6)             ; 43 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14                                                    ; secuenciador            ; work         ;
-;       |busmux:inst5|                 ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5                                       ; busmux                  ; work         ;
-;          |lpm_mux:$00000|            ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000                        ; lpm_mux                 ; work         ;
-;             |mux_f7c:auto_generated| ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c                 ; work         ;
-;       |logica_seleccion:inst3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|logica_seleccion:inst3                             ; logica_seleccion        ; work         ;
-;       |memory:inst9|                 ; 110 (110)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|memory:inst9                                       ; memory                  ; work         ;
+;    |registro_interrupciones:IRX|     ; 74 (74)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_interrupciones:IRX                                            ; registro_interrupciones ; work         ;
+;    |secuenciador:inst14|             ; 212 (9)             ; 46 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14                                                    ; secuenciador            ; work         ;
+;       |busmux:inst5|                 ; 18 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5                                       ; busmux                  ; work         ;
+;          |lpm_mux:$00000|            ; 18 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000                        ; lpm_mux                 ; work         ;
+;             |mux_f7c:auto_generated| ; 18 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|busmux:inst5|lpm_mux:$00000|mux_f7c:auto_generated ; mux_f7c                 ; work         ;
+;       |logica_seleccion:inst3|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|logica_seleccion:inst3                             ; logica_seleccion        ; work         ;
+;       |memory:inst9|                 ; 154 (154)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|memory:inst9                                       ; memory                  ; work         ;
 ;       |registro_MicroInst:inst4|     ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_MicroInst:inst4                           ; registro_MicroInst      ; work         ;
-;       |registro_sec:inst13|          ; 3 (3)               ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_sec:inst13                                ; registro_sec            ; work         ;
+;       |registro_sec:inst13|          ; 14 (14)             ; 34 (34)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|secuenciador:inst14|registro_sec:inst13                                ; registro_sec            ; work         ;
 ;    |upa:inst1|                       ; 26 (26)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|upa:inst1                                                              ; upa                     ; work         ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -299,7 +300,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; secuenciador:inst14|registro_sec:inst13|nEX0               ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|X[0..2]            ; Stuck at GND due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|enaY               ; Stuck at GND due to stuck port data_in                        ;
-; secuenciador:inst14|registro_sec:inst13|nERA2              ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|nEAP2              ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|nEAP1              ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|nEAP0              ; Stuck at VCC due to stuck port data_in                        ;
@@ -308,7 +308,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; secuenciador:inst14|registro_sec:inst13|nWX                ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|nWI                ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|nEI                ; Stuck at VCC due to stuck port data_in                        ;
-; secuenciador:inst14|registro_sec:inst13|nRW                ; Stuck at VCC due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|DINT               ; Stuck at GND due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|HINT               ; Stuck at GND due to stuck port data_in                        ;
 ; secuenciador:inst14|registro_sec:inst13|SET_IRQ            ; Stuck at GND due to stuck port data_in                        ;
@@ -329,7 +328,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; registro_interrupciones:IRI|data_out[3]                    ; Stuck at VCC due to stuck port clock_enable                   ;
 ; registro_interrupciones:IRI|data_out[5..15]                ; Stuck at GND due to stuck port clock_enable                   ;
 ; ctrl_interrupciones:inst3|INT_flag                         ; Stuck at VCC due to stuck port clock_enable                   ;
-; secuenciador:inst14|registro_sec:inst13|nEPC2              ; Lost fanout                                                   ;
+; secuenciador:inst14|registro_sec:inst13|nERA2              ; Lost fanout                                                   ;
 ; registro_interrupciones:IRX|data_out[0..2,5..15]           ; Merged with registro_interrupciones:IRX|data_out[4]           ;
 ; contador_ID:Y|data_out[3]                                  ; Merged with contador_ID:Y|data_out[0]                         ;
 ; contador_ID:X|data_out[2,11]                               ; Merged with contador_ID:Y|data_out[0]                         ;
@@ -377,7 +376,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; secuenciador:inst14|registro_sec:inst13|EB[1]              ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
 ; secuenciador:inst14|registro_sec:inst13|UPA[0]             ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
 ; secuenciador:inst14|registro_sec:inst13|selmux             ; Merged with secuenciador:inst14|registro_sec:inst13|EA[1]     ;
-; secuenciador:inst14|registro_sec:inst13|RA[2]              ; Merged with secuenciador:inst14|registro_sec:inst13|BD        ;
 ; secuenciador:inst14|registro_sec:inst13|RA[1]              ; Merged with secuenciador:inst14|registro_sec:inst13|RA[0]     ;
 ; secuenciador:inst14|registro_sec:inst13|nOEUPA             ; Merged with secuenciador:inst14|registro_sec:inst13|nDUPA     ;
 ; secuenciador:inst14|registro_sec:inst13|vf                 ; Merged with secuenciador:inst14|registro_sec:inst13|prueba[2] ;
@@ -389,7 +387,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; registro_interrupciones:IRX|data_out[3]                    ; Stuck at VCC due to stuck port data_in                        ;
 ; contador_ID:Y|data_out[0]                                  ; Stuck at GND due to stuck port data_in                        ;
 ; upa:inst1|contador[0..2]                                   ; Stuck at GND due to stuck port clock_enable                   ;
-; ram:inst6|data[5]~reg0                                     ; Stuck at GND due to stuck port data_in                        ;
 ; Flags:inst5|registro:inst5|valor_interno                   ; Lost fanout                                                   ;
 ; secuenciador:inst14|registro_sec:inst13|CH                 ; Lost fanout                                                   ;
 ; Flags:inst5|registro:inst1|valor_interno                   ; Lost fanout                                                   ;
@@ -402,7 +399,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ram:inst6|data[4]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
 ; ram:inst6|data[5]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
 ; ram:inst6|data[6]~en                                       ; Merged with ram:inst6|data[7]~en                              ;
-; Total Number of Removed Registers = 173                    ;                                                               ;
+; Total Number of Removed Registers = 169                    ;                                                               ;
 +------------------------------------------------------------+---------------------------------------------------------------+
 
 
@@ -428,7 +425,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                                ; due to stuck port data_in ;                                                                                     ;
 ; secuenciador:inst14|registro_sec:inst13|nHB    ; Stuck at VCC              ; Flags:inst5|registro:inst1|valor_interno,                                           ;
 ;                                                ; due to stuck port data_in ; secuenciador:inst14|registro_sec:inst13|CV                                          ;
-; secuenciador:inst14|registro_sec:inst13|nEX2   ; Stuck at VCC              ; secuenciador:inst14|registro_sec:inst13|nEPC2                                       ;
+; secuenciador:inst14|registro_sec:inst13|nEX2   ; Stuck at VCC              ; secuenciador:inst14|registro_sec:inst13|nERA2                                       ;
 ;                                                ; due to stuck port data_in ;                                                                                     ;
 ; secuenciador:inst14|registro_sec:inst13|nEAP0  ; Stuck at VCC              ; contador_ID:Y|data_out[0]                                                           ;
 ;                                                ; due to stuck port data_in ;                                                                                     ;
@@ -442,12 +439,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 136   ;
+; Total registers                              ; 2188  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 24    ;
-; Number of registers using Asynchronous Clear ; 94    ;
+; Number of registers using Asynchronous Clear ; 97    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 56    ;
+; Number of registers using Clock Enable       ; 2104  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -457,19 +454,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------+---------+
 ; Inverted Register                             ; Fan out ;
 +-----------------------------------------------+---------+
-; secuenciador:inst14|registro_sec:inst13|nAS   ; 2       ;
+; secuenciador:inst14|registro_sec:inst13|nAS   ; 258     ;
 ; ctrl_interrupciones:inst3|IRQ_flag            ; 3       ;
 ; ctrl_interrupciones:inst3|XIRQ_flag           ; 3       ;
-; secuenciador:inst14|registro_sec:inst13|nERA0 ; 2       ;
-; secuenciador:inst14|registro_sec:inst13|nWA   ; 11      ;
+; secuenciador:inst14|registro_sec:inst13|nWA   ; 19      ;
 ; secuenciador:inst14|registro_sec:inst13|nEPC0 ; 1       ;
 ; secuenciador:inst14|registro_sec:inst13|nWB   ; 11      ;
-; secuenciador:inst14|registro_sec:inst13|nDUPA ; 28      ;
-; secuenciador:inst14|registro_sec:inst13|nEX   ; 11      ;
-; secuenciador:inst14|registro_sec:inst13|nERA1 ; 2       ;
+; secuenciador:inst14|registro_sec:inst13|nERA0 ; 1       ;
+; secuenciador:inst14|registro_sec:inst13|nDUPA ; 27      ;
+; secuenciador:inst14|registro_sec:inst13|nEX   ; 10      ;
+; secuenciador:inst14|registro_sec:inst13|nRW   ; 291     ;
+; secuenciador:inst14|registro_sec:inst13|nERA1 ; 1       ;
 ; secuenciador:inst14|registro_sec:inst13|nCRI  ; 8       ;
+; secuenciador:inst14|registro_sec:inst13|nEPC2 ; 1       ;
 ; secuenciador:inst14|registro_sec:inst13|nCBD  ; 8       ;
-; Total number of inverted registers = 12       ;         ;
+; Total number of inverted registers = 14       ;         ;
 +-----------------------------------------------+---------+
 
 
@@ -479,19 +478,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[2]      ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|B2             ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|EB[0]          ;
-; 28:1               ; 5 bits    ; 90 LEs        ; 90 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|instruccion[0] ;
-; 29:1               ; 2 bits    ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[4]      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCA|data_out[7]                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCB|data_out[0]                            ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|B3             ;
+; 28:1               ; 3 bits    ; 54 LEs        ; 54 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|instruccion[0] ;
+; 50:1               ; 2 bits    ; 66 LEs        ; 66 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|PC[2]          ;
+; 53:1               ; 2 bits    ; 70 LEs        ; 62 LEs               ; 8 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|prueba[4]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCA|data_out[0]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|acumulador:ACCB|data_out[7]                            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[14]                              ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[6]                               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:AUX|data_out[13]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[8]                                ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[4]                                ;
-; 28:1               ; 2 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nERA1          ;
-; 29:1               ; 2 bits    ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nCBD           ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |m68hc11|secuenciador:inst14|memory:inst9|data[6]               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[10]                               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|contador:PC|data_out[6]                                ;
+; 50:1               ; 2 bits    ; 66 LEs        ; 66 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nWB            ;
+; 51:1               ; 2 bits    ; 68 LEs        ; 68 LEs               ; 0 LEs                  ; Yes        ; |m68hc11|secuenciador:inst14|registro_sec:inst13|nEPC2          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
 
 
@@ -542,26 +540,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 131                         ;
-; cycloneiii_ff         ; 136                         ;
-;     CLR               ; 62                          ;
+; cycloneiii_ff         ; 2188                        ;
+;     CLR               ; 65                          ;
 ;     CLR SLD           ; 8                           ;
-;     ENA               ; 16                          ;
+;     ENA               ; 2064                        ;
 ;     ENA CLR           ; 24                          ;
 ;     ENA SLD           ; 16                          ;
-;     plain             ; 10                          ;
-; cycloneiii_lcell_comb ; 366                         ;
+;     plain             ; 11                          ;
+; cycloneiii_lcell_comb ; 2165                        ;
 ;     arith             ; 34                          ;
 ;         2 data inputs ; 24                          ;
 ;         3 data inputs ; 10                          ;
-;     normal            ; 332                         ;
+;     normal            ; 2131                        ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 20                          ;
-;         3 data inputs ; 104                         ;
-;         4 data inputs ; 201                         ;
+;         1 data inputs ; 72                          ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 127                         ;
+;         4 data inputs ; 1912                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 14.00                       ;
-; Average LUT depth     ; 6.55                        ;
+; Max LUT depth         ; 15.00                       ;
+; Average LUT depth     ; 6.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -570,7 +568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -580,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 19 08:38:54 2023
+    Info: Processing started: Fri May 26 09:00:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off m68hc11 -c m68hc11
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -827,88 +825,72 @@ Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst2|SALIDA" to the node "bufferDataBus:BusBaja|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst1|SALIDA" to the node "bufferDataBus:BusBaja|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
     Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst|SALIDA" to the node "bufferDataBus:BusBaja|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[7]" to the node "bufferDataBus:BusAlta|PortL[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[7]" to the node "bufferDataBus:BusAlta|PortL[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[6]" to the node "bufferDataBus:BusAlta|PortL[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[6]" to the node "bufferDataBus:BusAlta|PortL[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[5]" to the node "bufferDataBus:BusAlta|PortL[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[5]" to the node "bufferDataBus:BusAlta|PortL[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[4]" to the node "bufferDataBus:BusAlta|PortL[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[4]" to the node "bufferDataBus:BusAlta|PortL[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[3]" to the node "bufferDataBus:BusAlta|PortL[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[3]" to the node "bufferDataBus:BusAlta|PortL[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[2]" to the node "bufferDataBus:BusAlta|PortL[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[2]" to the node "bufferDataBus:BusAlta|PortL[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[1]" to the node "bufferDataBus:BusAlta|PortL[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[1]" to the node "bufferDataBus:BusAlta|PortL[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusAlta|PortR[0]" to the node "bufferDataBus:BusAlta|PortL[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "bufferDataBus:BusBaja|PortR[0]" to the node "bufferDataBus:BusAlta|PortL[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst7|SALIDA" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[7]" to the node "registro_instruccion:inst8|valor_interno[11]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst6|SALIDA" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[6]" to the node "registro_instruccion:inst8|valor_interno[10]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[5]" to the node "registro_instruccion:inst8|valor_interno[9]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst4|SALIDA" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[4]" to the node "registro_instruccion:inst8|valor_interno[8]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[3]" to the node "registro_instruccion:inst8|valor_interno[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[3]" to the node "registro_instruccion:inst8|valor_interno[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[3]" to the node "registro_instruccion:inst8|valor_interno[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[2]" to the node "registro_instruccion:inst8|valor_interno[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[1]" to the node "registro_instruccion:inst8|valor_interno[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[0]" to the node "registro_instruccion:inst8|valor_interno[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[7]" to the node "acumulador:ACCA|data_out[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[6]" to the node "acumulador:ACCA|data_out[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[5]" to the node "acumulador:ACCA|data_out[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[4]" to the node "acumulador:ACCA|data_out[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[3]" to the node "acumulador:ACCA|data_out[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[2]" to the node "acumulador:ACCA|data_out[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[1]" to the node "acumulador:ACCA|data_out[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[0]" to the node "acumulador:ACCA|data_out[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[7]" to the node "bufferDataBus:BusBaja|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[7]" to the node "bufferDataBus:BusBaja|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst7|SALIDA" to the node "bufferDataBus:BusBaja|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[7]" to the node "bufferDataBus:BusBaja|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[7]" to the node "bufferDataBus:BusBaja|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[6]" to the node "bufferDataBus:BusBaja|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[6]" to the node "bufferDataBus:BusBaja|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst6|SALIDA" to the node "bufferDataBus:BusBaja|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[6]" to the node "bufferDataBus:BusBaja|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[6]" to the node "bufferDataBus:BusBaja|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[5]" to the node "bufferDataBus:BusBaja|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[5]" to the node "bufferDataBus:BusBaja|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[5]" to the node "bufferDataBus:BusBaja|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[5]" to the node "bufferDataBus:BusBaja|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[4]" to the node "bufferDataBus:BusBaja|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[4]" to the node "bufferDataBus:BusBaja|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "Flags:inst5|registro:inst4|SALIDA" to the node "bufferDataBus:BusBaja|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/flags/registro.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[4]" to the node "bufferDataBus:BusBaja|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[4]" to the node "bufferDataBus:BusBaja|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[3]" to the node "bufferDataBus:BusBaja|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[3]" to the node "bufferDataBus:BusBaja|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[3]" to the node "bufferDataBus:BusBaja|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[2]" to the node "bufferDataBus:BusBaja|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[2]" to the node "bufferDataBus:BusBaja|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[2]" to the node "bufferDataBus:BusBaja|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[2]" to the node "bufferDataBus:BusBaja|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[1]" to the node "bufferDataBus:BusBaja|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[1]" to the node "bufferDataBus:BusBaja|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[1]" to the node "bufferDataBus:BusBaja|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[1]" to the node "bufferDataBus:BusBaja|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|D[0]" to the node "bufferDataBus:BusBaja|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|D[0]" to the node "bufferDataBus:BusBaja|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|D[0]" to the node "bufferDataBus:BusBaja|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|D[0]" to the node "bufferDataBus:BusBaja|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 10
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[7]" to the node "bufferDataBus:BusAlta|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[7]" to the node "bufferDataBus:BusAlta|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[7]" to the node "bufferDataBus:BusAlta|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[7]" to the node "bufferDataBus:BusAlta|PortR[7]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[6]" to the node "bufferDataBus:BusAlta|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[6]" to the node "bufferDataBus:BusAlta|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[6]" to the node "bufferDataBus:BusAlta|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[6]" to the node "bufferDataBus:BusAlta|PortR[6]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[5]" to the node "bufferDataBus:BusAlta|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[5]" to the node "bufferDataBus:BusAlta|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[5]" to the node "bufferDataBus:BusAlta|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[5]" to the node "bufferDataBus:BusAlta|PortR[5]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[4]" to the node "bufferDataBus:BusAlta|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[4]" to the node "bufferDataBus:BusAlta|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[4]" to the node "bufferDataBus:BusAlta|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[4]" to the node "bufferDataBus:BusAlta|PortR[4]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[3]" to the node "bufferDataBus:BusAlta|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[3]" to the node "bufferDataBus:BusAlta|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[3]" to the node "bufferDataBus:BusAlta|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[3]" to the node "bufferDataBus:BusAlta|PortR[3]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[2]" to the node "bufferDataBus:BusAlta|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[2]" to the node "bufferDataBus:BusAlta|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[2]" to the node "bufferDataBus:BusAlta|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[2]" to the node "bufferDataBus:BusAlta|PortR[2]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[1]" to the node "bufferDataBus:BusAlta|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[1]" to the node "bufferDataBus:BusAlta|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[1]" to the node "bufferDataBus:BusAlta|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[1]" to the node "bufferDataBus:BusAlta|PortR[1]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:Y|C[0]" to the node "bufferDataBus:BusAlta|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador_ID:X|C[0]" to the node "bufferDataBus:BusAlta|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador_id.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "contador:AP|C[0]" to the node "bufferDataBus:BusAlta|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 9
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "registro_interrupciones:IRI|C[0]" to the node "bufferDataBus:BusAlta|PortR[0]" File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "contador:AUX|R15" to the node "secuenciador:inst14|mux:inst6|lpm_mux:$00001|mux_k7c:auto_generated|_" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Contador/contador.vhd Line: 15
     Warning (13047): Converted the fan-out from the tri-state buffer "acumulador:ACCB|C[7]" to the node "upa:inst1|Mux35" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Acumulador/acumulador.vhd Line: 11
@@ -944,6 +926,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[2]" to the node "acumulador:ACCA|data_out[2]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
     Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[1]" to the node "acumulador:ACCA|data_out[1]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
     Warning (13047): Converted the fan-out from the tri-state buffer "registro_interrupciones:IRX|C[0]" to the node "acumulador:ACCA|data_out[0]" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/Interrupciones/registro_interrupciones.vhd Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[7]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[6]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[5]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[4]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[3]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[2]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[1]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
+    Warning (13047): Converted the fan-out from the tri-state buffer "bufferDataBus:BusAlta|PortR[0]" to the node "ram:inst6|mem" into an OR gate File: C:/intelFPGA_lite/18.0/oac/CISC/bufferDataBus.vhd Line: 7
 Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/18.0/oac/CISC/Secuenciador/registro_sec.vhd Line: 44
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -999,14 +989,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 533 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4307 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 127 output pins
-    Info (21061): Implemented 402 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 257 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Fri May 19 08:39:10 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:27
+    Info (21061): Implemented 4176 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 249 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Fri May 26 09:01:01 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:32
 
 

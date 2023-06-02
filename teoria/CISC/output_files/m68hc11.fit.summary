@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Dec 06 19:05:31 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : m68hc11
+Top-level Entity Name : m68hc11
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 319 / 22,320 ( 1 % )
+    Total combinational functions : 305 / 22,320 ( 1 % )
+    Dedicated logic registers : 123 / 22,320 ( < 1 % )
+Total registers : 123
+Total pins : 130 / 154 ( 84 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

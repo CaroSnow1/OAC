@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity memory is
+	Port( dir : in std_logic_vector(11 downto 0);
+			data : out std_logic_vector(5 downto 0)
+			);
+end memory;
+
+architecture Behavioral of memory is
+	type mem is array(0 to 63) of std_logic_vector(5 downto 0);
+	signal internal_mem : mem;
+	
+	begin
+		internal_mem(0) <= "00" & "1000";
+		internal_mem(1) <= "00" & "1000";
+		internal_mem(2) <= "11" & "1000";
+		internal_mem(3) <= "11" & "1000";
+		internal_mem(4) <= "01" & "1000";
+		internal_mem(5) <= "01" & "1000";
+		internal_mem(6) <= "01" & "1000";
+		internal_mem(7) <= "01" & "1000";
+		internal_mem(8)  <= "100011";
+		internal_mem(9)  <= "000101";
+		internal_mem(10) <= "100011";
+		internal_mem(11) <= "000101";
+		internal_mem(12) <= "100011";
+		internal_mem(13) <= "000101";
+		internal_mem(14) <= "100011";
+		internal_mem(15) <= "000101";
+		internal_mem(16) <= "000110";
+		internal_mem(17) <= "000110";
+		internal_mem(18) <= "000110";
+		internal_mem(19) <= "000110";
+		internal_mem(20) <= "000110";
+		internal_mem(21) <= "000110";
+		internal_mem(22) <= "000110";
+		internal_mem(23) <= "000110";
+		internal_mem(24) <= "000100";
+		internal_mem(25) <= "000100";
+		internal_mem(26) <= "000100";
+		internal_mem(27) <= "000100";
+		internal_mem(28) <= "000100";
+		internal_mem(29) <= "000100";
+		internal_mem(30) <= "000100";
+		internal_mem(31) <= "000100";
+			
+		process(dir)
+			begin
+				data <= internal_mem(conv_integer(unsigned(dir)));
+		end process;
+end Behavioral;
