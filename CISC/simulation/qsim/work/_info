@@ -9,25 +9,25 @@ z2
 cModel Technology
 d/home/julio/Documents/OAC/CISC/simulation/qsim
 Ehard_block
-Z0 w1638839216
+Z0 w1685715739
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 b:4^GQG9SgzacjAmO=9`O0
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
-Z7 dC:/Users/curt_/OneDrive/Documents/OAC/CISC/simulation/qsim
+Z6 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 3g0@koWcWFU4ch:4ZJbzl1
+Z7 dC:/intelFPGA_lite/18.0/oac/CISC/simulation/qsim
 Z8 8m68hc11.vho
 Z9 Fm68hc11.vho
 l0
 L34
-VOgIg9T_BR7joedFDVM>H13
-!s100 A`ID_i56<Ua56=ZD=[EG=2
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1638839217
+Z11 !s110 1685715775
 !i10b 1
-Z12 !s108 1638839217.000000
+Z12 !s108 1685715761.000000
 Z13 !s90 -work|work|m68hc11.vho|
 Z14 !s107 m68hc11.vho|
 !i113 1
@@ -40,11 +40,11 @@ R3
 R4
 R5
 R6
-DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
-l64
-L50
-V`^CmQg<48W[ez[JL_5@Yn2
-!s100 2S?JL;LJ@<3:BHXTNcXS]3
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
 R10
 32
 R11
@@ -56,16 +56,16 @@ R14
 R15
 R16
 Em68hc11
-Z17 w1685113270
-Z18 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 b:4^GQG9SgzacjAmO=9`O0
-Z19 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 3g0@koWcWFU4ch:4ZJbzl1
+Z17 w1685725836
+R2
+R6
 R1
-Z20 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+Z18 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
 R3
 R4
 R5
-Z21 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
-Z22 dC:/intelFPGA_lite/18.0/oac/CISC/simulation/qsim
+Z19 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R7
 R8
 R9
 l0
@@ -74,74 +74,74 @@ VF;NMmlaFhjTL`BLC>d6V32
 !s100 a0BkO[`OYKeM:AfEeh[ii1
 R10
 32
-Z23 !s110 1685113271
+Z20 !s110 1685725837
 !i10b 1
-Z24 !s108 1685113271.000000
+Z21 !s108 1685725837.000000
 R13
 R14
 !i113 1
 R15
 R16
 Astructure
-R18
-R19
+R2
+R6
 R1
-R20
+R18
 R3
 R4
 R5
-R21
+R19
 DEx4 work 7 m68hc11 0 22 F;NMmlaFhjTL`BLC>d6V32
-l4519
+l4518
 L58
-VgMC5zfGh;7Vg<>mlQNALT1
-!s100 KB9>XA=G6`W=GAg3W8kg=0
+VGmN7d6l4Zck?Ai;ZOgWBe2
+!s100 g;G8Hl>[A9?jZLGgfEHaB0
 R10
 32
-R23
+R20
 !i10b 1
-R24
+R21
 R13
 R14
 !i113 1
 R15
 R16
 Em68hc11_vhd_vec_tst
-Z25 w1685113269
+Z22 w1685725835
 R4
 R5
-R22
-Z26 8Waveform3.vwf.vht
-Z27 FWaveform3.vwf.vht
+R7
+Z23 8Waveform7.vwf.vht
+Z24 FWaveform7.vwf.vht
 l0
 L31
 VNFoPKaljP1zP>Ue4Uzioe3
 !s100 8D4ikSc[QJbg7<CL[32N=2
 R10
 32
-Z28 !s110 1685113272
+Z25 !s110 1685725838
 !i10b 1
-Z29 !s108 1685113272.000000
-Z30 !s90 -work|work|Waveform3.vwf.vht|
-Z31 !s107 Waveform3.vwf.vht|
+Z26 !s108 1685725838.000000
+Z27 !s90 -work|work|Waveform7.vwf.vht|
+Z28 !s107 Waveform7.vwf.vht|
 !i113 1
 R15
 R16
 Am68hc11_arch
 R4
 R5
-Z32 DEx4 work 19 m68hc11_vhd_vec_tst 0 22 NFoPKaljP1zP>Ue4Uzioe3
+Z29 DEx4 work 19 m68hc11_vhd_vec_tst 0 22 NFoPKaljP1zP>Ue4Uzioe3
 l74
 L33
-Z33 V451H:^C0Nbae<hfj;LRX?3
-Z34 !s100 iVS2QFP0P:Z2jW`4I_3^n0
+Z30 V@9b9iZVnAZH5?n^Fkg8FX0
+Z31 !s100 K`zbKm:ZzQ?A<5S?Rnfm]2
 R10
 32
-R28
+R25
 !i10b 1
-R29
-R30
-R31
+R26
+R27
+R28
 !i113 1
 R15
 R16

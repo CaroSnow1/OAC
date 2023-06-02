@@ -3,56 +3,56 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -8.441
-TNS   : -595.027
+Slack : -12.793
+TNS   : -18221.859
 
 Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst14|registro_sec:inst13|nCRI'
-Slack : -4.286
-TNS   : -29.757
+Slack : -12.417
+TNS   : -91.167
 
 Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst14|registro_sec:inst13|CZ'
-Slack : -3.637
-TNS   : -3.637
+Slack : -4.211
+TNS   : -4.211
 
 Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst14|registro_sec:inst13|CN'
-Slack : -3.382
-TNS   : -3.382
-
-Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst14|registro_sec:inst13|CC'
-Slack : -2.091
-TNS   : -2.091
+Slack : -3.325
+TNS   : -3.325
 
 Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst14|registro_sec:inst13|nCBD'
-Slack : 0.291
+Slack : -2.221
+TNS   : -17.747
+
+Type  : Slow 1200mV 85C Model Setup 'secuenciador:inst14|registro_sec:inst13|CC'
+Slack : -2.042
+TNS   : -2.042
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst14|registro_sec:inst13|nCBD'
-Slack : -0.065
-TNS   : -0.267
-
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.342
+Slack : 1.630
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst14|registro_sec:inst13|nCRI'
-Slack : 1.121
+Slack : 2.395
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst14|registro_sec:inst13|CC'
-Slack : 2.671
+Slack : 2.562
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst14|registro_sec:inst13|CN'
-Slack : 2.922
+Slack : 3.041
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'secuenciador:inst14|registro_sec:inst13|CZ'
-Slack : 3.153
+Slack : 3.368
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -174.005
+TNS   : -3228.303
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'secuenciador:inst14|registro_sec:inst13|nCBD'
 Slack : -1.487
@@ -75,56 +75,56 @@ Slack : -1.487
 TNS   : -1.487
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -7.873
-TNS   : -556.416
+Slack : -12.241
+TNS   : -17555.039
 
 Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|nCRI'
-Slack : -4.077
-TNS   : -29.061
+Slack : -11.917
+TNS   : -87.887
 
 Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CZ'
-Slack : -3.380
-TNS   : -3.380
+Slack : -3.905
+TNS   : -3.905
 
 Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CN'
-Slack : -3.153
-TNS   : -3.153
-
-Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CC'
-Slack : -1.924
-TNS   : -1.924
+Slack : -3.103
+TNS   : -3.103
 
 Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|nCBD'
-Slack : 0.205
+Slack : -2.181
+TNS   : -17.426
+
+Type  : Slow 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CC'
+Slack : -1.911
+TNS   : -1.911
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.324
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|nCBD'
-Slack : 0.058
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.305
+Slack : 1.555
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|nCRI'
-Slack : 1.095
+Slack : 2.256
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|CC'
-Slack : 2.508
+Slack : 2.419
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|CN'
-Slack : 2.758
+Slack : 2.868
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|CZ'
-Slack : 2.949
+Slack : 3.131
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -174.005
+TNS   : -3228.303
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst14|registro_sec:inst13|nCBD'
 Slack : -1.487
@@ -146,57 +146,57 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst14|registro_s
 Slack : -1.487
 TNS   : -1.487
 
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -2.868
-TNS   : -176.230
-
 Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|nCRI'
-Slack : -1.227
-TNS   : -8.048
+Slack : -4.677
+TNS   : -33.797
 
-Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CN'
-Slack : -1.098
-TNS   : -1.098
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -4.640
+TNS   : -6062.489
 
 Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CZ'
-Slack : -1.035
-TNS   : -1.035
+Slack : -1.337
+TNS   : -1.337
+
+Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CN'
+Slack : -1.068
+TNS   : -1.068
 
 Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|CC'
-Slack : -0.546
-TNS   : -0.546
+Slack : -0.525
+TNS   : -0.525
 
 Type  : Fast 1200mV 0C Model Setup 'secuenciador:inst14|registro_sec:inst13|nCBD'
-Slack : 0.584
+Slack : -0.521
+TNS   : -4.141
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.151
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|nCBD'
-Slack : 0.026
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.144
+Slack : 0.741
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|nCRI'
-Slack : 0.490
+Slack : 1.030
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|CC'
-Slack : 1.310
+Slack : 1.260
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|CN'
-Slack : 1.436
+Slack : 1.488
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'secuenciador:inst14|registro_sec:inst13|CZ'
-Slack : 1.492
+Slack : 1.605
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -121.817
+TNS   : -2310.120
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'secuenciador:inst14|registro_sec:inst13|nCBD'
 Slack : -1.000

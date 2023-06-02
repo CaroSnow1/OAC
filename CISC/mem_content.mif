@@ -14,7 +14,7 @@
 -- agreement for further details.
 
 -- Quartus Prime generated Memory Initialization File (.mif)
-
+-- Ejercicio 3
 WIDTH=8;
 DEPTH=256;
 
@@ -46,7 +46,7 @@ CONTENT BEGIN
 	21    :  7E; -- JMP
 	22    :  00; -- 00
 	23    :  15; -- 13
-	24    :  06; -- RES DIR 16H
-	25    :  05; -- TEMP DIR 17H 
+	24    :  06; -- RES DIR 16H  Valor de B
+	25    :  04; -- TEMP DIR 17H Valor de A
 	[26..255]  :   00;
 END;

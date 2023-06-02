@@ -1,5 +1,5 @@
 Analysis & Synthesis report for m68hc11
-Fri May 26 09:01:01 2023
+Fri Jun 02 11:07:37 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -50,13 +50,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 26 09:01:01 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 02 11:07:37 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; m68hc11                                     ;
 ; Top-level Entity Name              ; m68hc11                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; 4,143                                       ;
-;     Total combinational functions  ; 2,162                                       ;
+;     Total combinational functions  ; 2,161                                       ;
 ;     Dedicated logic registers      ; 2,188                                       ;
 ; Total registers                    ; 2188                                        ;
 ; Total pins                         ; 131                                         ;
@@ -168,7 +168,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -223,14 +223,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Estimated Total logic elements              ; 4,143     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2162      ;
+; Total combinational functions               ; 2161      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 1912      ;
 ;     -- 3 input functions                    ; 137       ;
-;     -- <=2 input functions                  ; 113       ;
+;     -- <=2 input functions                  ; 112       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2128      ;
+;     -- normal mode                          ; 2127      ;
 ;     -- arithmetic mode                      ; 34        ;
 ;                                             ;           ;
 ; Total registers                             ; 2188      ;
@@ -243,7 +243,7 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 2169      ;
-; Total fan-out                               ; 15049     ;
+; Total fan-out                               ; 15048     ;
 ; Average fan-out                             ; 3.26      ;
 +---------------------------------------------+-----------+
 
@@ -253,7 +253,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                             ; Entity Name             ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------+-------------------------+--------------+
-; |m68hc11                             ; 2162 (8)            ; 2188 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 131  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
+; |m68hc11                             ; 2161 (8)            ; 2188 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 131  ; 0            ; 0          ; |m68hc11                                                                        ; m68hc11                 ; work         ;
 ;    |Flags:inst5|                     ; 9 (0)               ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5                                                            ; Flags                   ; work         ;
 ;       |mux3:inst10|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst10                                                ; mux3                    ; work         ;
 ;       |mux3:inst11|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|Flags:inst5|mux3:inst11                                                ; mux3                    ; work         ;
@@ -269,7 +269,7 @@ refer to the applicable agreement for further details.
 ;    |contador:AUX|                    ; 18 (18)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:AUX                                                           ; contador                ; work         ;
 ;    |contador:PC|                     ; 35 (35)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|contador:PC                                                            ; contador                ; work         ;
 ;    |ctrl_interrupciones:inst3|       ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ctrl_interrupciones:inst3                                              ; ctrl_interrupciones     ; work         ;
-;    |ram:inst6|                       ; 1716 (1716)         ; 2057 (2057)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
+;    |ram:inst6|                       ; 1715 (1715)         ; 2057 (2057)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|ram:inst6                                                              ; ram                     ; work         ;
 ;    |registro_direccion:inst|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_direccion:inst                                                ; registro_direccion      ; work         ;
 ;    |registro_instruccion:inst8|      ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_instruccion:inst8                                             ; registro_instruccion    ; work         ;
 ;    |registro_interrupciones:IRX|     ; 74 (74)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |m68hc11|registro_interrupciones:IRX                                            ; registro_interrupciones ; work         ;
@@ -547,13 +547,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR           ; 24                          ;
 ;     ENA SLD           ; 16                          ;
 ;     plain             ; 11                          ;
-; cycloneiii_lcell_comb ; 2165                        ;
+; cycloneiii_lcell_comb ; 2164                        ;
 ;     arith             ; 34                          ;
 ;         2 data inputs ; 24                          ;
 ;         3 data inputs ; 10                          ;
-;     normal            ; 2131                        ;
+;     normal            ; 2130                        ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 72                          ;
+;         1 data inputs ; 71                          ;
 ;         2 data inputs ; 18                          ;
 ;         3 data inputs ; 127                         ;
 ;         4 data inputs ; 1912                        ;
@@ -578,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 26 09:00:41 2023
+    Info: Processing started: Fri Jun 02 11:07:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off m68hc11 -c m68hc11
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -995,8 +995,8 @@ Info (21057): Implemented 4307 device resources after synthesis - the final reso
     Info (21061): Implemented 4176 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 249 warnings
     Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Fri May 26 09:01:01 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Processing ended: Fri Jun 02 11:07:37 2023
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:33
 
 
